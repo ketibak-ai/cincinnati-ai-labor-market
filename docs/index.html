@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI and the Greater Cincinnati Labor Market</title>
+<meta name="description" content="An independent study of how AI adoption is affecting employment, occupational demand and workforce requirements in the Cincinnati OH-KY-IN metropolitan area.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+<style>
+  :root{
+    --bg:#FBFBF8; --surface:#FFFFFF; --surface-2:#F2F1EC;
+    --ink:#14213D; --ink-soft:#4A5568; --ink-faint:#6A7179;
+    --line:#D9DCD6; --line-soft:#E8E7E1;
+    --accent:#1F5FA8; --accent-soft:#DCE8F7; --accent-ink:#1F5FA8;
+    --warn:#B5451B; --warn-soft:#FCE9DF; --warn-ink:#8C3A10;
+    --bar-muted:#C9CCC4;
+    --maxw:860px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0E1524; --surface:#16203A; --surface-2:#1B2742;
+      --ink:#EEF3FA; --ink-soft:#AFBDD4; --ink-faint:#8795AE;
+      --line:#2A3657; --line-soft:#223052;
+      --accent:#6BA3E8; --accent-soft:#1D2E53; --accent-ink:#8FB4E3;
+      --warn:#E2794A; --warn-soft:#3A2016; --warn-ink:#F0A383;
+      --bar-muted:#46516B;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0E1524; --surface:#16203A; --surface-2:#1B2742;
+    --ink:#EEF3FA; --ink-soft:#AFBDD4; --ink-faint:#8795AE;
+    --line:#2A3657; --line-soft:#223052;
+    --accent:#6BA3E8; --accent-soft:#1D2E53; --accent-ink:#8FB4E3;
+    --warn:#E2794A; --warn-soft:#3A2016; --warn-ink:#F0A383;
+    --bar-muted:#46516B;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+    font-size:17px; line-height:1.65;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 16px}
+
+  /* ---------- masthead ---------- */
+  .masthead{background:var(--ink); color:#FBFBF8; padding:72px 0 56px; border-bottom:1px solid var(--line)}
+  :root[data-theme="dark"] .masthead,
+  .masthead{color:#FBFBF8}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .masthead{background:#111B2E} }
+  .eyebrow{font-size:13px; letter-spacing:.18em; text-transform:uppercase; font-weight:600; color:#8FB4E3; margin:0 0 20px}
+  .masthead h1{
+    font-family:'Source Serif 4',Georgia,serif; font-weight:600;
+    font-size:clamp(32px,6.2vw,54px); line-height:1.08; margin:0 0 20px; color:#FBFBF8;
+  }
+  .standfirst{font-size:clamp(17px,2.4vw,21px); line-height:1.55; color:#BFD8D5; margin:0 0 32px; max-width:62ch}
+  .meta{display:flex; flex-wrap:wrap; gap:10px 28px; font-size:14px; color:#8FB4E3; border-top:1px solid #2E4470; padding-top:24px}
+  .meta b{color:#FBFBF8; font-weight:600}
+  .actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:28px}
+  .btn{
+    display:inline-block; padding:11px 20px; border-radius:8px; text-decoration:none;
+    font-size:15px; font-weight:600; border:1px solid #2E4470; color:#FBFBF8;
+  }
+  .btn-primary{background:#1F5FA8; border-color:#1F5FA8}
+  .btn:hover{opacity:.88}
+
+  /* ---------- structure ---------- */
+  section{padding:56px 0; border-bottom:1px solid var(--line-soft)}
+  section:last-of-type{border-bottom:0}
+  h2{
+    font-family:'Source Serif 4',Georgia,serif; font-weight:600;
+    font-size:clamp(25px,4.2vw,34px); line-height:1.2; margin:0 0 8px; letter-spacing:-.01em;
+  }
+  .kicker{font-size:13px; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:var(--accent-ink); margin:0 0 14px}
+  h3{font-size:19px; font-weight:600; margin:32px 0 10px}
+  p{margin:0 0 18px; max-width:68ch}
+  .lede{font-size:clamp(18px,2.4vw,20px); line-height:1.55}
+  a{color:var(--accent-ink)}
+  strong{font-weight:600}
+
+  /* ---------- stat row ---------- */
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; margin:28px 0 8px}
+  .stat{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:24px}
+  .stat .n{font-size:40px; font-weight:700; line-height:1; color:var(--accent-ink); font-variant-numeric:tabular-nums; letter-spacing:-.02em}
+  .stat .l{font-size:15px; font-weight:600; margin:12px 0 6px}
+  .stat .d{font-size:14px; color:var(--ink-soft); line-height:1.5; margin:0}
+
+  /* ---------- callouts ---------- */
+  .note{background:var(--surface-2); border-radius:14px; padding:22px 24px; margin:26px 0; border:1px solid var(--line-soft)}
+  .note p{margin:0; max-width:none}
+  .note.warn{background:var(--warn-soft); border-color:transparent}
+  .note.warn p{color:var(--warn-ink)}
+  .note .h{font-weight:600; display:block; margin-bottom:6px}
+
+  /* ---------- tables ---------- */
+  .scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:24px 0}
+  table{border-collapse:collapse; width:100%; font-size:15px; min-width:520px}
+  caption{text-align:left; font-size:13px; color:var(--ink-faint); padding-bottom:10px; line-height:1.45}
+  th,td{padding:11px 14px; text-align:left; border-bottom:1px solid var(--line-soft)}
+  thead th{background:var(--ink); color:#FBFBF8; font-weight:600; font-size:14px; border-bottom:0}
+  thead th:first-child{border-radius:8px 0 0 0}
+  thead th:last-child{border-radius:0 8px 0 0}
+  .num{text-align:right; font-variant-numeric:tabular-nums}
+  tbody tr:nth-child(even){background:var(--surface-2)}
+  tr.hl td{background:var(--accent-soft); font-weight:600}
+  tr.alert td{background:var(--warn-soft); color:var(--warn-ink)}
+  .pos{color:var(--accent-ink)} .neg{color:var(--warn)}
+
+  /* ---------- figure ---------- */
+  figure{margin:28px 0 24px}
+  figure svg{display:block; width:100%; height:auto}
+  figcaption{font-size:13px; color:var(--ink-faint); line-height:1.5; margin-top:12px}
+
+  /* ---------- claims list ---------- */
+  .claims{list-style:none; padding:0; margin:22px 0; display:grid; gap:12px}
+  .claims li{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--warn); border-radius:10px; padding:16px 18px; font-size:15px; line-height:1.55}
+  .claims b{display:block; margin-bottom:4px}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--surface-2); padding:48px 0 64px; font-size:14px; color:var(--ink-soft)}
+  footer h2{font-size:20px; margin-bottom:16px}
+  footer ul{margin:0 0 20px; padding-left:20px}
+  footer li{margin-bottom:7px}
+  .byline-edit{font-size:13px; color:var(--ink-faint); border-top:1px solid var(--line); padding-top:18px; margin-top:26px}
+
+  @media (max-width:560px){
+    body{font-size:16px}
+    .masthead{padding:48px 0 40px}
+    section{padding:40px 0}
+    .stat{padding:20px}
+    .stat .n{font-size:34px}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Independent regional economic research</p>
+    <h1>AI and the Greater Cincinnati Labor Market</h1>
+    <p class="standfirst">Cincinnati&rsquo;s occupational mix is almost exactly as exposed to AI as the nation&rsquo;s. The region&rsquo;s distinctive risk is not unusual exposure &mdash; it is a labour market with almost no job creation to absorb a shock.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://github.com/ketibak-ai/cincinnati-ai-labor-market">Data, scripts &amp; methodology</a>
+      <a class="btn" href="Cincinnati_AI_Labor_Market_Dataset.xlsx">Download the workbook (XLSX)</a>
+    </div>
+    <div class="meta">
+      <span><b>Geography</b> Cincinnati OH&ndash;KY&ndash;IN MSA</span>
+      <span><b>Occupations</b> May 2025</span>
+      <span><b>Employment</b> to September 2026</span>
+      <span><b>Published</b> November 2026</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">The findings</p>
+    <h2>Four numbers carry the study</h2>
+    <p class="lede">Each is computed from primary government data and reproduces from the published scripts.</p>
+
+    <div class="stats">
+      <div class="stat">
+        <p class="n">0.005</p>
+        <p class="l">standard deviations</p>
+        <p class="d">The gap between Cincinnati&rsquo;s generative-AI exposure and the national average. The region is ordinary.</p>
+      </div>
+      <div class="stat">
+        <p class="n">98.0%</p>
+        <p class="l">of openings are churn</p>
+        <p class="d">Just 2,074 of 101,316 projected annual openings come from growth. The rest exist because someone leaves.</p>
+      </div>
+      <div class="stat">
+        <p class="n">0.87</p>
+        <p class="l">computing location quotient</p>
+        <p class="d">13% fewer computer and maths jobs than the metro&rsquo;s size implies. AI capability is bought, not built.</p>
+      </div>
+      <div class="stat">
+        <p class="n">&minus;13.9%</p>
+        <p class="l">banking jobs since 2019</p>
+        <p class="d">The steepest sectoral decline in the metro &mdash; and it began well before generative AI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Before any figure</p>
+    <h2>Four different geographies are called &ldquo;Cincinnati&rdquo;</h2>
+    <p>They differ by about 194,000 jobs. Mixing them is the most common way regional AI analysis goes wrong, and one of the four is actively mislabelled.</p>
+
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Geography</th><th>What it covers</th><th class="num">Employment</th></tr></thead>
+        <tbody>
+          <tr><td>Cincinnati OH&ndash;KY&ndash;IN MSA</td><td>Full metro, three states</td><td class="num">1,101,030</td></tr>
+          <tr><td>MSA covered employment</td><td>Same area, UI-insured jobs</td><td class="num">1,096,580</td></tr>
+          <tr><td>Core seven counties</td><td>4 Ohio + 3 Northern Kentucky</td><td class="num">1,056,205</td></tr>
+          <tr class="alert"><td>ODJFS &ldquo;Cincinnati MSA&rdquo;</td><td><strong>Ohio counties only</strong> &mdash; no Kentucky, no Indiana</td><td class="num">907,032</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note warn">
+      <p><span class="h">The mislabel</span>Ohio publishes occupational projections titled &ldquo;Cincinnati Metropolitan Statistical Area&rdquo; which its own documentation equates to the Southwest Ohio JobsOhio region. Every projection in that file excludes Northern Kentucky and Indiana &mdash; roughly a sixth of the metro workforce &mdash; while carrying a title that says otherwise. Projections in this study are labelled Ohio-portion throughout.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Exposure</p>
+    <h2>Cincinnati sits within five thousandths of the national average</h2>
+    <p>Weighting every detailed occupation by its May 2025 employment produces one exposure score per geography. On every measure the metro is indistinguishable from the nation, and slightly <em>below</em> it on both generative-AI measures.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>AIOE scores are standardised across occupations (mean 0, sd 1), so units are standard deviations. Observed exposure runs 0&ndash;1.</caption>
+        <thead><tr><th>Geography</th><th class="num">AIOE</th><th class="num">Language models</th><th class="num">Observed use</th></tr></thead>
+        <tbody>
+          <tr><td>Cincinnati MSA</td><td class="num">0.032</td><td class="num">0.088</td><td class="num">0.127</td></tr>
+          <tr><td>Ohio</td><td class="num">0.010</td><td class="num">0.066</td><td class="num">0.123</td></tr>
+          <tr><td>Kentucky</td><td class="num">&minus;0.063</td><td class="num">&minus;0.003</td><td class="num">0.118</td></tr>
+          <tr><td>United States</td><td class="num">0.033</td><td class="num">0.093</td><td class="num">0.131</td></tr>
+          <tr class="hl"><td>Cincinnati minus US</td><td class="num">&minus;0.000</td><td class="num">&minus;0.005</td><td class="num">&minus;0.004</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The aggregate hides the distribution that matters. Exposure is not spread evenly across the workforce &mdash; it concentrates sharply, and not where most commentary assumes.</p>
+
+    <figure>
+      <svg viewBox="0 0 760 420" role="img" aria-label="Generative-AI exposure rises with pay while actual AI use peaks just below the top wage quintile">
+        <text x="0" y="22" font-size="17" font-weight="600" fill="var(--ink)" font-family="'Source Serif 4',Georgia,serif">Exposure rises with pay; actual use peaks just below the top</text>
+        <text x="0" y="46" font-size="13" fill="var(--ink-soft)">Cincinnati occupations ranked by median wage, split into five quintiles of about 211,000 jobs each.</text>
+
+        <text x="150" y="82" font-size="13" font-weight="600" text-anchor="middle" fill="var(--ink)">Potential exposure to language models</text>
+        <text x="560" y="82" font-size="13" font-weight="600" text-anchor="middle" fill="var(--ink)">Observed AI task overlap</text>
+
+        <!-- left panel: zero line at y=230, scale 150px per 1.0 unit -->
+        <line x1="20" y1="230" x2="300" y2="230" stroke="var(--line)" stroke-width="1"/>
+        <line x1="20" y1="217" x2="300" y2="217" stroke="var(--accent)" stroke-width="1" stroke-dasharray="4 3" opacity=".65"/>
+        <text x="22" y="211" font-size="11" fill="var(--ink-soft)">metro average 0.088</text>
+
+        <rect x="30"  y="230" width="38" height="47" rx="3" fill="var(--bar-muted)"/>
+        <text x="49"  y="292" font-size="12" text-anchor="middle" fill="var(--ink-soft)">&minus;0.311</text>
+        <rect x="86"  y="230" width="38" height="55" rx="3" fill="var(--bar-muted)"/>
+        <text x="105" y="300" font-size="12" text-anchor="middle" fill="var(--ink-soft)">&minus;0.364</text>
+        <rect x="142" y="230" width="38" height="24" rx="3" fill="var(--bar-muted)"/>
+        <text x="161" y="269" font-size="12" text-anchor="middle" fill="var(--ink-soft)">&minus;0.163</text>
+        <rect x="198" y="152" width="38" height="78" rx="3" fill="var(--accent)"/>
+        <text x="217" y="144" font-size="12" text-anchor="middle" font-weight="600" fill="var(--accent-ink)">+0.521</text>
+        <rect x="254" y="125" width="38" height="105" rx="3" fill="var(--accent)"/>
+        <text x="273" y="117" font-size="12" text-anchor="middle" font-weight="600" fill="var(--accent-ink)">+0.703</text>
+
+        <text x="49"  y="327" font-size="12" text-anchor="middle" fill="var(--ink)">Q1</text>
+        <text x="105" y="327" font-size="12" text-anchor="middle" fill="var(--ink)">Q2</text>
+        <text x="161" y="327" font-size="12" text-anchor="middle" fill="var(--ink)">Q3</text>
+        <text x="217" y="327" font-size="12" text-anchor="middle" font-weight="600" fill="var(--ink)">Q4</text>
+        <text x="273" y="327" font-size="12" text-anchor="middle" font-weight="600" fill="var(--ink)">Q5</text>
+        <text x="49"  y="345" font-size="10.5" text-anchor="middle" fill="var(--ink-faint)">$27&ndash;37k</text>
+        <text x="105" y="345" font-size="10.5" text-anchor="middle" fill="var(--ink-faint)">$37&ndash;46k</text>
+        <text x="161" y="345" font-size="10.5" text-anchor="middle" fill="var(--ink-faint)">$46&ndash;62k</text>
+        <text x="217" y="345" font-size="10.5" text-anchor="middle" fill="var(--ink-faint)">$62&ndash;82k</text>
+        <text x="273" y="345" font-size="10.5" text-anchor="middle" fill="var(--ink-faint)">$83k+</text>
+
+        <!-- right panel: baseline y=300, scale 795px per 1.0 -->
+        <line x1="430" y1="300" x2="700" y2="300" stroke="var(--line)" stroke-width="1"/>
+        <line x1="430" y1="199" x2="700" y2="199" stroke="var(--accent)" stroke-width="1" stroke-dasharray="4 3" opacity=".65"/>
+        <text x="432" y="193" font-size="11" fill="var(--ink-soft)">metro average 0.127</text>
+
+        <rect x="440" y="244" width="38" height="56" rx="3" fill="var(--bar-muted)"/>
+        <text x="459" y="236" font-size="12" text-anchor="middle" fill="var(--ink-soft)">0.071</text>
+        <rect x="496" y="234" width="38" height="66" rx="3" fill="var(--bar-muted)"/>
+        <text x="515" y="226" font-size="12" text-anchor="middle" fill="var(--ink-soft)">0.083</text>
+        <rect x="552" y="179" width="38" height="121" rx="3" fill="var(--bar-muted)"/>
+        <text x="571" y="171" font-size="12" text-anchor="middle" fill="var(--ink-soft)">0.152</text>
+        <rect x="608" y="146" width="38" height="154" rx="3" fill="var(--accent)"/>
+        <text x="627" y="138" font-size="12" text-anchor="middle" font-weight="600" fill="var(--accent-ink)">0.194</text>
+        <rect x="664" y="194" width="38" height="106" rx="3" fill="var(--accent)"/>
+        <text x="683" y="186" font-size="12" text-anchor="middle" font-weight="600" fill="var(--accent-ink)">0.134</text>
+
+        <text x="459" y="327" font-size="12" text-anchor="middle" fill="var(--ink)">Q1</text>
+        <text x="515" y="327" font-size="12" text-anchor="middle" fill="var(--ink)">Q2</text>
+        <text x="571" y="327" font-size="12" text-anchor="middle" fill="var(--ink)">Q3</text>
+        <text x="627" y="327" font-size="12" text-anchor="middle" font-weight="600" fill="var(--ink)">Q4</text>
+        <text x="683" y="327" font-size="12" text-anchor="middle" font-weight="600" fill="var(--ink)">Q5</text>
+
+        <text x="0" y="390" font-size="12" fill="var(--ink-soft)">Generative AI points at the region&rsquo;s better-paid desk jobs, not its low-wage work &mdash;</text>
+        <text x="0" y="408" font-size="12" fill="var(--ink-soft)">reversing the pattern of every previous automation wave.</text>
+      </svg>
+      <figcaption>Source: BLS OEWS May 2025 Cincinnati MSA employment and wages; AIOE language-model index (Felten, Raj &amp; Seamans 2023); observed exposure from the Anthropic Economic Index. Each quintile holds about one fifth of covered employment.</figcaption>
+    </figure>
+
+    <p>A worker earning $35,000 in food service or warehousing faces very little measured AI exposure. One earning $75,000 in accounting, human resources or marketing analysis faces a great deal.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>Observed AI task overlap across 592 Cincinnati occupations covering 1,008,490 jobs.</caption>
+        <thead><tr><th>Observed overlap</th><th class="num">Occupations</th><th class="num">Employment</th><th class="num">Share</th><th class="num">Median wage</th></tr></thead>
+        <tbody>
+          <tr><td>None measured</td><td class="num">297</td><td class="num">417,870</td><td class="num">41.4%</td><td class="num">$50,964</td></tr>
+          <tr><td>0.00 to 0.10</td><td class="num">131</td><td class="num">230,970</td><td class="num">22.9%</td><td class="num">$73,333</td></tr>
+          <tr><td>0.10 to 0.25</td><td class="num">87</td><td class="num">127,660</td><td class="num">12.7%</td><td class="num">$83,964</td></tr>
+          <tr><td>0.25 to 0.40</td><td class="num">47</td><td class="num">131,160</td><td class="num">13.0%</td><td class="num">$69,113</td></tr>
+          <tr class="hl"><td>Above 0.40</td><td class="num">30</td><td class="num">100,830</td><td class="num">10.0%</td><td class="num">$59,383</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Two national benchmarks make these figures interpretable. The New York Fed reports that roughly 40% of US workers are in occupations with zero measured exposure and fewer than 10% score 0.40 or above. Cincinnati&rsquo;s equivalents are 41.4% and 10.0% &mdash; the region tracks the nation closely on both.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">The structural finding</p>
+    <h2>98% of job openings exist only because someone leaves</h2>
+    <p>Ohio projects the Cincinnati area to add 20,737 jobs across the decade to 2032 &mdash; growth of 2.3%, or roughly 0.23% a year. Of 101,316 projected average annual openings, just 2,074 come from growth.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>ODJFS projections 2022&ndash;2032, Ohio portion of the Cincinnati MSA. These are projected average annual openings, <strong>not</strong> current job vacancies.</caption>
+        <thead><tr><th>Source of projected annual openings</th><th class="num">Openings</th><th class="num">Share</th></tr></thead>
+        <tbody>
+          <tr><td>Growth (new positions)</td><td class="num">2,074</td><td class="num">2.0%</td></tr>
+          <tr><td>Exits (leaving the labour force)</td><td class="num">43,731</td><td class="num">43.2%</td></tr>
+          <tr><td>Transfers (moving occupation)</td><td class="num">55,511</td><td class="num">54.8%</td></tr>
+          <tr class="hl"><td>Total</td><td class="num">101,316</td><td class="num">100%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <p><span class="h">Why this is the number that matters</span>Where openings come from growth, a technology that slows hiring reduces the rate of expansion. Where 98% come from churn, the same slowdown attacks the only door into employment that exists. Entry-level hiring in a replacement-driven market is not a share of growth &mdash; it <em>is</em> the market.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Hiring demand</p>
+    <h2>The region is buying AI capability, not building it</h2>
+    <p>AI-skill postings in Cincinnati grew 159% in the year to September 2026 &mdash; fourth fastest of the 50 largest-posting US metros &mdash; but from a very small base: 619 postings added, implying roughly 1,008 in total. More Cincinnati postings mention nursing (906) than every AI term combined.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>Largest advertisers of AI-related roles, CareerOneStop / National Labor Exchange, Cincinnati 25-mile radius, 30 October 2026. Staffing postings may double-count a single vacancy, so treat as upper bounds.</caption>
+        <thead><tr><th>Advertiser</th><th class="num">&ldquo;artificial intelligence&rdquo;</th><th class="num">&ldquo;data analytics&rdquo;</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td>Deloitte</td><td class="num">57</td><td class="num">25</td><td>Consulting</td></tr>
+          <tr><td>Kelly Services</td><td class="num">40</td><td class="num">&mdash;</td><td>Staffing</td></tr>
+          <tr><td>Accenture</td><td class="num">11</td><td class="num">35</td><td>Consulting</td></tr>
+          <tr><td>EY</td><td class="num">&mdash;</td><td class="num">30</td><td>Consulting</td></tr>
+          <tr><td>PwC</td><td class="num">14</td><td class="num">10</td><td>Consulting</td></tr>
+          <tr><td>Eliassen Group</td><td class="num">13</td><td class="num">&mdash;</td><td>Staffing</td></tr>
+          <tr class="hl"><td>GE Aerospace</td><td class="num">&mdash;</td><td class="num">8</td><td>Regional employer</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Of the top advertisers across both searches, only GE Aerospace is a Cincinnati-headquartered employer. The rest are national consultancies and staffing agencies selling implementation capacity into the region. That is consistent with the metro&rsquo;s computing location quotient of 0.87, and it makes capturing AI work locally an economic development question rather than a workforce training one.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Employers</p>
+    <h2>Deployment is broad. Attributed displacement is narrow.</h2>
+    <p>The test applied throughout: did the employer eliminate roles, and did the employer say AI was the reason? Company filings and releases are treated as primary; reporting of internal memos as secondary.</p>
+
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Employer</th><th>Workforce action</th><th>Attributed to AI?</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Kroger</strong></td><td>~3,000 corporate roles over 3 years</td><td>Partly &mdash; the memo cites organisational layers, not AI headcount</td></tr>
+          <tr><td><strong>Fifth Third</strong></td><td>None announced</td><td>No &mdash; the CEO says AI is <em>not</em> driving current productivity gains</td></tr>
+          <tr><td><strong>Procter &amp; Gamble</strong></td><td>Up to 7,000 non-manufacturing roles</td><td>No &mdash; cost, tariffs and consumer uncertainty</td></tr>
+          <tr><td><strong>GE Aerospace</strong></td><td>Net hiring; $115m regional investment</td><td>Framed as process improvement</td></tr>
+          <tr><td><strong>Cincinnati Children&rsquo;s</strong></td><td>None announced</td><td>Framed as clinical augmentation</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Fifth Third generates roughly 30% of new code with AI and more than 80% of its IT unit tests are AI-executed, with 56% of colleagues using AI tools daily &mdash; and it has announced no reductions at all. Kroger is training more than 400,000 associates while cutting corporate layers. <strong>The employers quantifying the largest AI gains are not the ones announcing the largest cuts.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Discipline</p>
+    <h2>What this study does not claim</h2>
+    <p>Each of these would make a better headline than what the evidence supports.</p>
+
+    <ul class="claims">
+      <li><b>That AI has caused measurable job losses in Greater Cincinnati.</b> Beyond Kroger&rsquo;s announcement, no employer attributes reductions to AI and no regional dataset isolates AI-caused separations.</li>
+      <li><b>That P&amp;G&rsquo;s 7,000 cuts are an AI story.</b> The company attributes them to cost, tariffs and consumer uncertainty. It is cited as AI anyway.</li>
+      <li><b>That banking&rsquo;s 13.9% decline reflects AI.</b> It began before generative AI, and the region&rsquo;s largest bank attributes current gains to older automation.</li>
+      <li><b>That entry-level hiring collapsed because of AI.</b> National posting evidence shows no AI-specific break in junior hiring, and no Cincinnati-specific test is possible with available data.</li>
+      <li><b>Any current Cincinnati vacancy count.</b> JOLTS has no metropolitan estimates. Posting counts are not vacancies, and projected openings are not vacancies.</li>
+      <li><b>That exposure scores predict displacement.</b> They measure task overlap. Whether overlap becomes job loss is exactly what remains unestablished.</li>
+    </ul>
+
+    <div class="note">
+      <p><span class="h">The honest summary</span>Greater Cincinnati shows extensive, documented and in places quantified AI deployment, one partially attributed corporate reduction, and no measurable aggregate employment effect separable from a labour market that was already slowing. The risk worth planning for is not that AI destroys Cincinnati jobs &mdash; it is that AI slows hiring in an economy with no growth cushion.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Method</p>
+    <h2>Every figure reproduces from public data</h2>
+    <p>Occupational employment is extracted from BLS flat files by deterministic series identifier, classified to SOC aggregation level, and restricted to detailed occupations &mdash; which cover 96.0% of published Cincinnati employment. Published exposure measures are joined on six-digit SOC, covering 82.9% of that employment for AIOE and 95.4% for observed exposure.</p>
+    <p>All exposure bands are set on the <strong>national unweighted distribution of occupations</strong>, so a band means the same thing in every geography compared. Employment-weighted statistics exclude occupations with no score from both numerator and denominator rather than treating them as zero, which would bias every regional average toward the middle.</p>
+
+    <div class="note">
+      <p><span class="h">Two corrections are documented, not hidden</span>A SOC misclassification that double-counted national employment by about 58%, caught by a coverage check; and four wrong values in an exposure-band table, caught by a script that re-derives every published figure from the data. Both are described in full in the methodology. Most published regional analysis contains errors of exactly that kind that nobody ever finds.</p>
+    </div>
+
+    <p>The repository carries the pipeline, the derived datasets, a 20-sheet workbook whose summary sheets recalculate from live formulas, and a verification sheet that recomputes 51 of those figures independently in Python.</p>
+    <div class="actions" style="margin-top:22px">
+      <a class="btn btn-primary" style="color:#FBFBF8" href="https://github.com/ketibak-ai/cincinnati-ai-labor-market/blob/main/CALCULATIONS.md">Read the full methodology</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Sources</h2>
+    <ul>
+      <li><a href="https://download.bls.gov/pub/time.series/oe/">BLS Occupational Employment and Wage Statistics</a>, May 2025</li>
+      <li><a href="https://data.bls.gov/cew/data/api/2025/a/area/39061.csv">BLS Quarterly Census of Employment and Wages</a>, 2024&ndash;2025 annual averages</li>
+      <li><a href="https://download.bls.gov/pub/time.series/sm/">BLS State and Metro Area Employment</a> and <a href="https://download.bls.gov/pub/time.series/la/">Local Area Unemployment Statistics</a>, to September 2026</li>
+      <li><a href="https://ohiolmi.com/_docs/PROJ/MSA/LTOP_Cincinnati2032.xlsx">ODJFS long-term occupational projections</a>, 2022&ndash;2032</li>
+      <li><a href="https://github.com/AIOE-Data/AIOE">AIOE dataset</a> &mdash; Felten E, Raj M, Seamans R (2021), <em>Strategic Management Journal</em> 42(12):2195&ndash;2217</li>
+      <li><a href="https://huggingface.co/datasets/Anthropic/EconomicIndex">Anthropic Economic Index</a>, release 26 June 2026 (CC-BY)</li>
+      <li><a href="https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/">Audoly, Guerin &amp; Topa</a>, Federal Reserve Bank of New York, 14 May 2026</li>
+      <li><a href="https://www.federalreserve.gov/econres/notes/feds-notes/ai-on-the-factory-floor-evidence-from-manufacturing-job-postings-20260930.html">Tito, M.D.</a>, FEDS Notes, Federal Reserve Board, 30 September 2026</li>
+    </ul>
+    <p>BLS and ODJFS data are US government works. Anthropic Economic Index data are released CC-BY. Fifth Third&rsquo;s annual report is not redistributed; read it from <a href="https://www.sec.gov/Archives/edgar/data/35527/000003552726000124/a2025annualreport.pdf">SEC EDGAR</a>.</p>
+
+    <p class="byline-edit">Byline not set. To add your name and affiliation, edit the <code>&lt;p class="eyebrow"&gt;</code> line near the top of <code>docs/index.html</code> and this footer.</p>
+  </div>
+</footer>
+
+</body>
+</html>
