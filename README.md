@@ -97,10 +97,14 @@ Indiana job. Projections in this study are labelled Ohio-portion throughout.
 ```
 AUDIT.md           What the preliminary draft got right and wrong, checked line by line
 CALCULATIONS.md    How every published number was produced, with formulas
+VERIFICATION.md    How the study is checked, and what the checks cannot do
 scripts/           The pipeline, in run order
+tests/             Regression tests over every published figure
 data/              Derived analysis-ready datasets (CSV), incl. cincinnati_rebased_2024.csv
 raw/               Source extracts as downloaded (large files gitignored)
 output/            The reproducible workbook and the number trace
+docs/              The published site (GitHub Pages)
+.vscode/           Run configurations for VS Code
 ```
 
 ### Scripts, in run order
@@ -133,6 +137,44 @@ python -I scripts/trace_numbers.py .
 
 Requires Python 3 with `openpyxl`. The three large source extracts are gitignored; section 1 of
 `CALCULATIONS.md` gives the exact commands that produce them.
+
+### Checking it
+
+```bash
+python tests/test_study.py
+```
+
+Thirteen checks recompute every published finding from `data/` and report what moved. No
+dependencies; exit code 0 means everything reproduces. `python -m pytest tests/ -v` runs the same
+checks if pytest is installed.
+
+Two of the thirteen exist because the work got those things wrong once — an occupational
+misclassification that double-counted national employment by about 58%, and four wrong values in
+an exposure-band table. Both reached a published draft. Neither can return silently.
+
+The suite is mutation-tested: flipping the sign on banking fails two checks, and shifting one
+occupation's employment by 5,000 fails four. `VERIFICATION.md` describes all five layers of
+checking, the external cross-checks, and what the checks cannot do.
+
+### Opening it in VS Code
+
+```bash
+code .
+```
+
+`Ctrl+Shift+P` → **Tasks: Run Task** gives the common jobs without typing a command line:
+
+| Task | What it does |
+|---|---|
+| Check every published figure | Runs the regression suite |
+| Print the number trace | Re-derives every figure with its formula |
+| Show the 2024 re-baselining | Industry, unemployment and county tables |
+| Rebuild the workbook | Regenerates the Excel workbook |
+| Rebuild everything from raw/ | The full pipeline, then the checks |
+| Preview the site | Serves `docs/` at http://127.0.0.1:8750 |
+
+`Ctrl+Shift+D` → **Debug: the checks** steps through a failing check line by line. The recommended
+extensions (Python, plus a CSV viewer) make `data/` readable in the editor.
 
 ---
 

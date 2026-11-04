@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Check every published figure",
+      "detail": "Recomputes all 13 published findings from data/ and reports what moved.",
+      "type": "shell",
+      "command": "python",
+      "args": ["-I", "tests/test_study.py"],
+      "group": { "kind": "test", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Print the number trace",
+      "detail": "Re-derives every figure with its formula, line by line.",
+      "type": "shell",
+      "command": "python",
+      "args": ["-I", "scripts/trace_numbers.py", "."],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Show the 2024 re-baselining",
+      "detail": "Industry, unemployment and county tables on the 2024 baseline.",
+      "type": "shell",
+      "command": "python",
+      "args": ["-I", "scripts/rebase_2024.py", "."],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rebuild the workbook",
+      "detail": "Regenerates the 20-sheet Excel workbook from data/.",
+      "type": "shell",
+      "command": "python",
+      "args": ["-I", "scripts/build_workbook.py", "."],
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rebuild everything from raw/",
+      "detail": "Full pipeline in order. Needs the three large extracts; see CALCULATIONS.md section 1.",
+      "type": "shell",
+      "command": "python -I scripts/parse_oes.py raw/oes data/oes_may2025_cincinnati_panel.csv && python -I scripts/build_exposure.py . && python -I scripts/parse_projections.py . && python -I scripts/parse_ces_laus.py . && python -I scripts/build_qcew_aei.py . && python -I scripts/analyze_exposure.py . && python -I scripts/rebase_2024.py . && python -I scripts/build_workbook.py . && python -I scripts/verify_workbook.py . && python -I tests/test_study.py",
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Preview the site",
+      "detail": "Serves docs/ at http://127.0.0.1:8750 so you can read the published page locally.",
+      "type": "shell",
+      "command": "python",
+      "args": ["-m", "http.server", "8750", "--directory", "docs"],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "problemMatcher": []
+    }
+  ]
+}
