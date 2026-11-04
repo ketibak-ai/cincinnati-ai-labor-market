@@ -1,0 +1,12 @@
+source,geography,query,query_type,postings,retrieved,notes
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius","(none)",baseline,,2026-10-30,"Display capped at 10000; true total exceeds 10000. 5-mile radius returns 8782, confirming the cap."
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 5-mile radius","(none)",baseline,8782,2026-10-30,"Uncapped; narrower geography than the MSA"
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius","""artificial intelligence""",ai_term,177,2026-10-30,"Full-text match; contains visible false positives (e.g. 9 OSL Retail Services wireless sales associate ads)"
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius","""data analytics""",adjacent_term,170,2026-10-30,"Analytics rather than AI per se"
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius","""machine learning""",ai_term,95,2026-10-30,"Results inspected; high apparent precision"
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius","""data scientist""",adjacent_term,79,2026-10-30,
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius","""generative AI""",genai_term,64,2026-10-30,"Results inspected; high apparent precision"
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius","""large language model""",genai_term,17,2026-10-30,
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius","""robotic process automation""",automation_term,6,2026-10-30,
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius","""prompt engineering""",genai_term,4,2026-10-30,
+CareerOneStop Job Finder (NLx),"Cincinnati OH, 25-mile radius",nurse,benchmark,906,2026-10-30,"Non-AI benchmark for scale comparison"

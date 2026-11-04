@@ -1,0 +1,149 @@
+
+================================================================================================
+1. OEWS May 2025 published totals (read directly, no arithmetic)
+================================================================================================
+  Cincinnati MSA total employment                               1,101,030   series datatype 01, occupation 000000
+    median annual wage                                            $50,170   datatype 13
+    mean annual wage                                              $67,370   datatype 04
+  Ohio total employment                                         5,550,180   series datatype 01, occupation 000000
+  Kentucky total employment                                     2,000,360   series datatype 01, occupation 000000
+  National total employment                                   155,495,730   series datatype 01, occupation 000000
+
+================================================================================================
+2. Detailed-occupation coverage  =  sum(detailed employment) / published total
+================================================================================================
+  Cincinnati MSA                                                    96.0%   1,056,940 / 1,101,030  over 638 occupations
+  Ohio                                                              95.4%   5,294,860 / 5,550,180  over 758 occupations
+  Kentucky                                                          94.9%   1,898,000 / 2,000,360  over 681 occupations
+  National                                                          95.7%   148,807,680 / 155,495,730  over 823 occupations
+
+================================================================================================
+3. Exposure match rate  =  sum(employment where measure present) / sum(detailed employment)
+================================================================================================
+  Cincinnati MSA — AIOE                                             82.9%   876,090 / 1,056,940
+  Cincinnati MSA — observed exposure                                95.4%   1,008,490 / 1,056,940
+  Ohio — AIOE                                                       82.7%   4,376,900 / 5,294,860
+  Ohio — observed exposure                                          95.4%   5,051,220 / 5,294,860
+  Kentucky — AIOE                                                   85.0%   1,613,020 / 1,898,000
+  Kentucky — observed exposure                                      95.5%   1,813,430 / 1,898,000
+  National — AIOE                                                   82.7%   123,021,140 / 148,807,680
+  National — observed exposure                                      94.4%   140,542,930 / 148,807,680
+
+================================================================================================
+4. Employment-weighted exposure  =  SUM(emp_i * score_i) / SUM(emp_i), over occupations where score exists
+================================================================================================
+  Cincinnati MSA                                                   0.0884   AIOE 0.0320 | IG -0.1570 | observed 0.1267
+  Ohio                                                             0.0656   AIOE 0.0104 | IG -0.1699 | observed 0.1230
+  Kentucky                                                        -0.0033   AIOE -0.0633 | IG -0.2527 | observed 0.1182
+  National                                                         0.0931   AIOE 0.0325 | IG -0.1606 | observed 0.1305
+  Cincinnati minus National (LM-AIOE)                             -0.0047   0.0884 - 0.0931
+
+================================================================================================
+5. National thresholds — UNWEIGHTED across occupations, so a band means the same everywhere
+================================================================================================
+  LM-AIOE quartile cut points                                     -0.9230   median -0.1205, Q3 0.9571, n=673
+  observed exposure national median                                0.0000   410/755 = 54.3% are exactly 0
+
+================================================================================================
+6. Cincinnati employment by observed-exposure band  =  SUM(emp) where band matches
+================================================================================================
+  0.00 none measured                                              417,870   41.4% of 1,008,490 | emp-wtd median wage $50,964 | 297 occs
+  0.00-0.10                                                       230,970   22.9% of 1,008,490 | emp-wtd median wage $73,333 | 131 occs
+  0.10-0.25                                                       127,660   12.7% of 1,008,490 | emp-wtd median wage $83,964 | 87 occs
+  0.25-0.40                                                       131,160   13.0% of 1,008,490 | emp-wtd median wage $69,113 | 47 occs
+  above 0.40                                                      100,830   10.0% of 1,008,490 | emp-wtd median wage $59,383 | 30 occs
+
+================================================================================================
+7. Cincinnati employment by LM-AIOE national quartile
+================================================================================================
+  Q4 (most exposed)                                               227,900   26.0% of 876,090
+  Q3                                                              282,670   32.3% of 876,090
+  Q2                                                              172,690   19.7% of 876,090
+  Q1                                                              192,830   22.0% of 876,090
+
+================================================================================================
+8. Four quadrants  =  split at national LM-AIOE median and national observed median
+================================================================================================
+  High exposure / some use                                        460,970   52.9% of 872,030 | median wage $72,095 | 208 occs
+  High exposure / no use                                           47,150   5.4% of 872,030 | median wage $66,261 | 78 occs
+  Low exposure / some use                                          79,080   9.1% of 872,030 | median wage $51,467 | 44 occs
+  Low exposure / no use                                           284,830   32.7% of 872,030 | median wage $50,721 | 190 occs
+
+================================================================================================
+9. Wage quintiles  =  sort by median wage, cut at equal CUMULATIVE EMPLOYMENT (not equal occupations)
+================================================================================================
+  Q1  $27,400-$36,530                                             211,570   LM-AIOE -0.311 | observed 0.071
+  Q2  $36,650-$46,410                                             207,880   LM-AIOE -0.364 | observed 0.083
+  Q3  $46,470-$61,540                                             214,210   LM-AIOE -0.163 | observed 0.152
+  Q4  $61,570-$82,330                                             212,180   LM-AIOE +0.521 | observed 0.194
+  Q5  $82,820-$551,320                                            209,840   LM-AIOE +0.703 | observed 0.134
+
+================================================================================================
+10. ODJFS projections, Ohio portion (read directly from the workbook, then two ratios)
+================================================================================================
+  2022 base                                                       907,032   published
+  2032 projected                                                  927,769   published
+  change                                                          +20,737   927,769 - 907,032  =  +2.29%
+  total annual openings                                           101,316   growth 2,074 + exits 43,731 + transfers 55,511
+  growth share of openings                                           2.0%   2,074 / 101,316
+  replacement share                                                 98.0%   (101,316 - 2,074) / 101,316
+
+================================================================================================
+11. Projected openings by exposure tercile (matched detailed occupations only)
+================================================================================================
+  top third (most exposed)                                         24,856   32.1% of 77,397 | net +2.09% | growth-driven 2.3%
+  middle third                                                     27,870   36.0% of 77,397 | net +0.61% | growth-driven 0.5%
+  bottom third                                                     24,671   31.9% of 77,397 | net +2.52% | growth-driven 2.2%
+
+================================================================================================
+12. QCEW county employment and pay  (avg annual pay = total wages / employment)
+================================================================================================
+  2024 Ohio 4-county                                              841,640   avg pay $72,180  =  $60,749,171,120 / 841,640
+  2024 Northern Kentucky 3-county                                 209,322   avg pay $63,483  =  $13,288,402,536 / 209,322
+  2024 seven-county total                                       1,050,962   avg pay $70,447
+  2025 Ohio 4-county                                              843,262   avg pay $74,121  =  $62,503,571,751 / 843,262
+  2025 Northern Kentucky 3-county                                 212,943   avg pay $64,564  =  $13,748,420,859 / 212,943
+  2025 seven-county total                                       1,056,205   avg pay $72,194
+  Ohio 4-county employment change                                  +0.19%   (843,262 - 841,640) / 841,640
+  NKY 3-county employment change                                   +1.73%   (212,943 - 209,322) / 209,322
+
+================================================================================================
+13. CES industry employment, September of each year (levels published in thousands)
+================================================================================================
+  Total nonfarm                                                 1,178,200   vs 2019 +4.7%  |  vs 2025 +0.4%
+  Credit intermediation                                            23,500   vs 2019 -13.9%  |  vs 2025 -1.3%
+  Employment services                                              29,800   vs 2019 -4.5%  |  vs 2025 -0.3%
+  Health care and social assistance                               171,600   vs 2019 +12.2%  |  vs 2025 +1.0%
+  Information                                                      13,100   vs 2019 -3.0%  |  vs 2025 -4.4%
+  Transportation and warehousing                                   59,300   vs 2019 +17.0%  |  vs 2025 -3.7%
+  Retail trade                                                    100,500   vs 2019 -4.9%  |  vs 2025 -0.7%
+  Air transportation                                                5,200   vs 2019 +52.9%  |  vs 2025 +0.0%
+  Employment services vs 2022 peak                                 -24.9%   (29,800 - 39,700) / 39,700
+
+================================================================================================
+14. LAUS, September (published levels; rate = unemployment / labour force)
+================================================================================================
+  September 2019                                                     3.6%   LF 1,150,407 | employed 1,109,401 | unemployed 41,006 | check 3.56%
+  September 2025                                                     4.0%   LF 1,189,154 | employed 1,141,504 | unemployed 47,650 | check 4.01%
+  September 2026                                                     3.6%   LF 1,178,550 | employed 1,136,625 | unemployed 41,925 | check 3.56%
+  employment change 2025-2026                                      -4,879   September to September
+  labour force change 2025-2026                                   -10,604   September to September
+
+================================================================================================
+15. Job postings — the ONE derived figure, stated as a calculation in the paper
+================================================================================================
+  Cincinnati AI postings added                                        619   published by BPC/Lightcast
+  growth rate                                                        159%   published by BPC/Lightcast
+  implied prior-year base                                             389   619 / (159/100)   [DERIVED, not published]
+  implied current total                                             1,008   389 + 619   [DERIVED, not published]
+
+================================================================================================
+16. Anthropic Economic Index — state level, read directly (no arithmetic)
+================================================================================================
+  Ohio                                                               0.59   automation 50.78% | augmentation 49.22% | work use 39.95%
+  Kentucky                                                           0.39   automation 53.04% | augmentation 46.96% | work use 40.04%
+  United States                                                      3.87   automation 49.59% | augmentation 50.41% | work use 41.32%
+
+================================================================================================
+End of trace. Every figure above is recomputed from data/ at run time.
+================================================================================================

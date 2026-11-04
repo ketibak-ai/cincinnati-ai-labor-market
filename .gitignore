@@ -1,0 +1,17 @@
+# Large source extracts — regenerate with the commands in CALCULATIONS.md section 1.
+# All three exceed or approach GitHub's 100 MB file limit.
+raw/oes/oes_filtered.txt
+raw/aei/aei_claude_ai_2026-06-26.csv
+raw/aei/aei_states_filtered.csv
+
+# Third-party copyrighted document. Read it from SEC EDGAR instead:
+# https://www.sec.gov/Archives/edgar/data/35527/000003552726000124/a2025annualreport.pdf
+raw/pdf/
+
+# Deck source files are published to the artifact, not needed to reproduce the analysis
+deck/
+
+__pycache__/
+*.pyc
+~$*
+.DS_Store

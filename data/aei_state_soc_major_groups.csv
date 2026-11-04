@@ -1,0 +1,159 @@
+geography,geo_id,geo_level,month,metric_id,value,node_name,node_external_id
+Indiana,US-IN,subregion,2026-04-01,pct,3.5,Architecture and Engineering,17
+Indiana,US-IN,subregion,2026-04-01,pct,12.41,"Arts, Design, Entertainment, Sports, and Media",27
+Indiana,US-IN,subregion,2026-04-01,pct,5.46,Business and Financial Operations,13
+Indiana,US-IN,subregion,2026-04-01,pct,2.76,Community and Social Service,21
+Indiana,US-IN,subregion,2026-04-01,pct,22.87,Computer and Mathematical,15
+Indiana,US-IN,subregion,2026-04-01,pct,12.21,Educational Instruction and Library,25
+Indiana,US-IN,subregion,2026-04-01,pct,0.38,Food Preparation and Serving Related,35
+Indiana,US-IN,subregion,2026-04-01,pct,2.9,Healthcare Practitioners and Technical,29
+Indiana,US-IN,subregion,2026-04-01,pct,0.5,Healthcare Support,31
+Indiana,US-IN,subregion,2026-04-01,pct,0.65,"Installation, Maintenance, and Repair",49
+Indiana,US-IN,subregion,2026-04-01,pct,0.65,Legal,23
+Indiana,US-IN,subregion,2026-04-01,pct,4.82,"Life, Physical, and Social Science",19
+Indiana,US-IN,subregion,2026-04-01,pct,5.22,Management,11
+Indiana,US-IN,subregion,2026-04-01,pct,7.32,Office and Administrative Support,43
+Indiana,US-IN,subregion,2026-04-01,pct,1.29,Personal Care and Service,39
+Indiana,US-IN,subregion,2026-04-01,pct,1.23,Production,51
+Indiana,US-IN,subregion,2026-04-01,pct,0.51,Protective Service,33
+Indiana,US-IN,subregion,2026-04-01,pct,8.64,Sales and Related,41
+Indiana,US-IN,subregion,2026-04-01,pct,0.33,Transportation and Material Moving,53
+Indiana,US-IN,subregion,2026-05-01,pct,3.09,Architecture and Engineering,17
+Indiana,US-IN,subregion,2026-05-01,pct,12.81,"Arts, Design, Entertainment, Sports, and Media",27
+Indiana,US-IN,subregion,2026-05-01,pct,5.21,Business and Financial Operations,13
+Indiana,US-IN,subregion,2026-05-01,pct,2.85,Community and Social Service,21
+Indiana,US-IN,subregion,2026-05-01,pct,21.18,Computer and Mathematical,15
+Indiana,US-IN,subregion,2026-05-01,pct,0.22,Construction and Extraction,47
+Indiana,US-IN,subregion,2026-05-01,pct,12.28,Educational Instruction and Library,25
+Indiana,US-IN,subregion,2026-05-01,pct,0.47,Food Preparation and Serving Related,35
+Indiana,US-IN,subregion,2026-05-01,pct,4.1,Healthcare Practitioners and Technical,29
+Indiana,US-IN,subregion,2026-05-01,pct,0.65,Healthcare Support,31
+Indiana,US-IN,subregion,2026-05-01,pct,0.93,"Installation, Maintenance, and Repair",49
+Indiana,US-IN,subregion,2026-05-01,pct,0.82,Legal,23
+Indiana,US-IN,subregion,2026-05-01,pct,4.26,"Life, Physical, and Social Science",19
+Indiana,US-IN,subregion,2026-05-01,pct,5.51,Management,11
+Indiana,US-IN,subregion,2026-05-01,pct,6.59,Office and Administrative Support,43
+Indiana,US-IN,subregion,2026-05-01,pct,1.76,Personal Care and Service,39
+Indiana,US-IN,subregion,2026-05-01,pct,1.09,Production,51
+Indiana,US-IN,subregion,2026-05-01,pct,0.47,Protective Service,33
+Indiana,US-IN,subregion,2026-05-01,pct,10.73,Sales and Related,41
+Indiana,US-IN,subregion,2026-05-01,pct,0.35,Transportation and Material Moving,53
+Kentucky,US-KY,subregion,2026-04-01,pct,2.84,Architecture and Engineering,17
+Kentucky,US-KY,subregion,2026-04-01,pct,13.22,"Arts, Design, Entertainment, Sports, and Media",27
+Kentucky,US-KY,subregion,2026-04-01,pct,5.81,Business and Financial Operations,13
+Kentucky,US-KY,subregion,2026-04-01,pct,3.15,Community and Social Service,21
+Kentucky,US-KY,subregion,2026-04-01,pct,23.06,Computer and Mathematical,15
+Kentucky,US-KY,subregion,2026-04-01,pct,11.44,Educational Instruction and Library,25
+Kentucky,US-KY,subregion,2026-04-01,pct,3.84,Healthcare Practitioners and Technical,29
+Kentucky,US-KY,subregion,2026-04-01,pct,0.67,Healthcare Support,31
+Kentucky,US-KY,subregion,2026-04-01,pct,1.06,"Installation, Maintenance, and Repair",49
+Kentucky,US-KY,subregion,2026-04-01,pct,0.94,Legal,23
+Kentucky,US-KY,subregion,2026-04-01,pct,4.57,"Life, Physical, and Social Science",19
+Kentucky,US-KY,subregion,2026-04-01,pct,4.84,Management,11
+Kentucky,US-KY,subregion,2026-04-01,pct,7.11,Office and Administrative Support,43
+Kentucky,US-KY,subregion,2026-04-01,pct,1.12,Personal Care and Service,39
+Kentucky,US-KY,subregion,2026-04-01,pct,1.39,Production,51
+Kentucky,US-KY,subregion,2026-04-01,pct,10.02,Sales and Related,41
+Kentucky,US-KY,subregion,2026-05-01,pct,3.24,Architecture and Engineering,17
+Kentucky,US-KY,subregion,2026-05-01,pct,13.66,"Arts, Design, Entertainment, Sports, and Media",27
+Kentucky,US-KY,subregion,2026-05-01,pct,5.91,Business and Financial Operations,13
+Kentucky,US-KY,subregion,2026-05-01,pct,2.74,Community and Social Service,21
+Kentucky,US-KY,subregion,2026-05-01,pct,21.64,Computer and Mathematical,15
+Kentucky,US-KY,subregion,2026-05-01,pct,11.08,Educational Instruction and Library,25
+Kentucky,US-KY,subregion,2026-05-01,pct,0.59,Food Preparation and Serving Related,35
+Kentucky,US-KY,subregion,2026-05-01,pct,4.18,Healthcare Practitioners and Technical,29
+Kentucky,US-KY,subregion,2026-05-01,pct,0.99,Healthcare Support,31
+Kentucky,US-KY,subregion,2026-05-01,pct,0.95,"Installation, Maintenance, and Repair",49
+Kentucky,US-KY,subregion,2026-05-01,pct,0.87,Legal,23
+Kentucky,US-KY,subregion,2026-05-01,pct,4.28,"Life, Physical, and Social Science",19
+Kentucky,US-KY,subregion,2026-05-01,pct,5.79,Management,11
+Kentucky,US-KY,subregion,2026-05-01,pct,7.96,Office and Administrative Support,43
+Kentucky,US-KY,subregion,2026-05-01,pct,1.38,Personal Care and Service,39
+Kentucky,US-KY,subregion,2026-05-01,pct,1.3,Production,51
+Kentucky,US-KY,subregion,2026-05-01,pct,0.64,Protective Service,33
+Kentucky,US-KY,subregion,2026-05-01,pct,10.66,Sales and Related,41
+Kentucky,US-KY,subregion,2026-05-01,pct,0.44,Transportation and Material Moving,53
+Ohio,US-OH,subregion,2026-04-01,pct,3.22,Architecture and Engineering,17
+Ohio,US-OH,subregion,2026-04-01,pct,12.3,"Arts, Design, Entertainment, Sports, and Media",27
+Ohio,US-OH,subregion,2026-04-01,pct,5.56,Business and Financial Operations,13
+Ohio,US-OH,subregion,2026-04-01,pct,3.11,Community and Social Service,21
+Ohio,US-OH,subregion,2026-04-01,pct,22.33,Computer and Mathematical,15
+Ohio,US-OH,subregion,2026-04-01,pct,0.2,Construction and Extraction,47
+Ohio,US-OH,subregion,2026-04-01,pct,12.34,Educational Instruction and Library,25
+Ohio,US-OH,subregion,2026-04-01,pct,0.52,Food Preparation and Serving Related,35
+Ohio,US-OH,subregion,2026-04-01,pct,3.94,Healthcare Practitioners and Technical,29
+Ohio,US-OH,subregion,2026-04-01,pct,0.63,Healthcare Support,31
+Ohio,US-OH,subregion,2026-04-01,pct,0.72,"Installation, Maintenance, and Repair",49
+Ohio,US-OH,subregion,2026-04-01,pct,0.78,Legal,23
+Ohio,US-OH,subregion,2026-04-01,pct,4.25,"Life, Physical, and Social Science",19
+Ohio,US-OH,subregion,2026-04-01,pct,4.72,Management,11
+Ohio,US-OH,subregion,2026-04-01,pct,7.25,Office and Administrative Support,43
+Ohio,US-OH,subregion,2026-04-01,pct,1.42,Personal Care and Service,39
+Ohio,US-OH,subregion,2026-04-01,pct,1.27,Production,51
+Ohio,US-OH,subregion,2026-04-01,pct,0.45,Protective Service,33
+Ohio,US-OH,subregion,2026-04-01,pct,10.53,Sales and Related,41
+Ohio,US-OH,subregion,2026-04-01,pct,0.33,Transportation and Material Moving,53
+Ohio,US-OH,subregion,2026-05-01,pct,2.93,Architecture and Engineering,17
+Ohio,US-OH,subregion,2026-05-01,pct,13.08,"Arts, Design, Entertainment, Sports, and Media",27
+Ohio,US-OH,subregion,2026-05-01,pct,0.21,Building and Grounds Cleaning and Maintenance,37
+Ohio,US-OH,subregion,2026-05-01,pct,6.24,Business and Financial Operations,13
+Ohio,US-OH,subregion,2026-05-01,pct,3.21,Community and Social Service,21
+Ohio,US-OH,subregion,2026-05-01,pct,21.6,Computer and Mathematical,15
+Ohio,US-OH,subregion,2026-05-01,pct,11.04,Educational Instruction and Library,25
+Ohio,US-OH,subregion,2026-05-01,pct,0.55,Food Preparation and Serving Related,35
+Ohio,US-OH,subregion,2026-05-01,pct,4.24,Healthcare Practitioners and Technical,29
+Ohio,US-OH,subregion,2026-05-01,pct,0.77,Healthcare Support,31
+Ohio,US-OH,subregion,2026-05-01,pct,0.85,"Installation, Maintenance, and Repair",49
+Ohio,US-OH,subregion,2026-05-01,pct,0.79,Legal,23
+Ohio,US-OH,subregion,2026-05-01,pct,4.41,"Life, Physical, and Social Science",19
+Ohio,US-OH,subregion,2026-05-01,pct,5.84,Management,11
+Ohio,US-OH,subregion,2026-05-01,pct,7.63,Office and Administrative Support,43
+Ohio,US-OH,subregion,2026-05-01,pct,1.28,Personal Care and Service,39
+Ohio,US-OH,subregion,2026-05-01,pct,1.27,Production,51
+Ohio,US-OH,subregion,2026-05-01,pct,0.4,Protective Service,33
+Ohio,US-OH,subregion,2026-05-01,pct,11.99,Sales and Related,41
+Ohio,US-OH,subregion,2026-05-01,pct,0.33,Transportation and Material Moving,53
+United States,USA,country,2026-04-01,pct,3.0,Architecture and Engineering,17
+United States,USA,country,2026-04-01,pct,12.63,"Arts, Design, Entertainment, Sports, and Media",27
+United States,USA,country,2026-04-01,pct,0.17,Building and Grounds Cleaning and Maintenance,37
+United States,USA,country,2026-04-01,pct,6.15,Business and Financial Operations,13
+United States,USA,country,2026-04-01,pct,3.05,Community and Social Service,21
+United States,USA,country,2026-04-01,pct,21.93,Computer and Mathematical,15
+United States,USA,country,2026-04-01,pct,0.12,Construction and Extraction,47
+United States,USA,country,2026-04-01,pct,11.94,Educational Instruction and Library,25
+United States,USA,country,2026-04-01,pct,0.06,"Farming, Fishing, and Forestry",45
+United States,USA,country,2026-04-01,pct,0.52,Food Preparation and Serving Related,35
+United States,USA,country,2026-04-01,pct,3.83,Healthcare Practitioners and Technical,29
+United States,USA,country,2026-04-01,pct,0.63,Healthcare Support,31
+United States,USA,country,2026-04-01,pct,0.71,"Installation, Maintenance, and Repair",49
+United States,USA,country,2026-04-01,pct,0.95,Legal,23
+United States,USA,country,2026-04-01,pct,4.45,"Life, Physical, and Social Science",19
+United States,USA,country,2026-04-01,pct,5.52,Management,11
+United States,USA,country,2026-04-01,pct,7.34,Office and Administrative Support,43
+United States,USA,country,2026-04-01,pct,1.18,Personal Care and Service,39
+United States,USA,country,2026-04-01,pct,1.02,Production,51
+United States,USA,country,2026-04-01,pct,0.44,Protective Service,33
+United States,USA,country,2026-04-01,pct,10.14,Sales and Related,41
+United States,USA,country,2026-04-01,pct,0.34,Transportation and Material Moving,53
+United States,USA,country,2026-05-01,pct,2.91,Architecture and Engineering,17
+United States,USA,country,2026-05-01,pct,12.91,"Arts, Design, Entertainment, Sports, and Media",27
+United States,USA,country,2026-05-01,pct,0.17,Building and Grounds Cleaning and Maintenance,37
+United States,USA,country,2026-05-01,pct,6.27,Business and Financial Operations,13
+United States,USA,country,2026-05-01,pct,3.2,Community and Social Service,21
+United States,USA,country,2026-05-01,pct,21.13,Computer and Mathematical,15
+United States,USA,country,2026-05-01,pct,0.14,Construction and Extraction,47
+United States,USA,country,2026-05-01,pct,11.92,Educational Instruction and Library,25
+United States,USA,country,2026-05-01,pct,0.05,"Farming, Fishing, and Forestry",45
+United States,USA,country,2026-05-01,pct,0.64,Food Preparation and Serving Related,35
+United States,USA,country,2026-05-01,pct,4.33,Healthcare Practitioners and Technical,29
+United States,USA,country,2026-05-01,pct,0.68,Healthcare Support,31
+United States,USA,country,2026-05-01,pct,0.81,"Installation, Maintenance, and Repair",49
+United States,USA,country,2026-05-01,pct,1.04,Legal,23
+United States,USA,country,2026-05-01,pct,4.23,"Life, Physical, and Social Science",19
+United States,USA,country,2026-05-01,pct,5.85,Management,11
+United States,USA,country,2026-05-01,pct,7.64,Office and Administrative Support,43
+United States,USA,country,2026-05-01,pct,1.27,Personal Care and Service,39
+United States,USA,country,2026-05-01,pct,1.08,Production,51
+United States,USA,country,2026-05-01,pct,0.41,Protective Service,33
+United States,USA,country,2026-05-01,pct,11.6,Sales and Related,41
+United States,USA,country,2026-05-01,pct,0.39,Transportation and Material Moving,53

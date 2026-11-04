@@ -1,0 +1,11 @@
+query,rank,employer,postings,employer_type,retrieved
+"""artificial intelligence""",1,Deloitte,57,Professional services / consulting,2026-10-30
+"""artificial intelligence""",2,Kelly Services,40,Staffing agency,2026-10-30
+"""artificial intelligence""",3,PwC,14,Professional services / consulting,2026-10-30
+"""artificial intelligence""",4,Eliassen Group,13,Staffing agency,2026-10-30
+"""artificial intelligence""",5,Accenture,11,Professional services / consulting,2026-10-30
+"""data analytics""",1,Accenture,35,Professional services / consulting,2026-10-30
+"""data analytics""",2,EY,30,Professional services / consulting,2026-10-30
+"""data analytics""",3,Deloitte,25,Professional services / consulting,2026-10-30
+"""data analytics""",4,PwC,10,Professional services / consulting,2026-10-30
+"""data analytics""",5,GE Aerospace,8,Regional employer (aerospace),2026-10-30

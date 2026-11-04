@@ -1,0 +1,459 @@
+State and Area Employment, Hours and Earnings (SM)
+					sm.txt
+
+
+Section Listing
+
+1. Survey Definition
+2. FTP files listed in the survey directory.
+3. Time series, series file, data file, & mapping file definitions and relationships
+4. Series file format and field definitions
+5. Data file format and field definitions
+6. Mapping file formats and field definitions
+7. Data Element Dictionary
+
+
+
+================================================================================
+Section 1
+================================================================================
+
+The following is a definition of:  STATE AND AREA EMPLOYMENT, HOURS AND EARNINGS (SM)
+
+Survey Description:  The Current Employment Statistics survey, as a joint 
+Federal-State undertaking, generates State and area, as well as national, 
+statistics on employment, hours, and earnings.
+
+BLS collects data each month from a sample of establishments in 
+all nonagricultural industries including government.  From these data, a 
+large number of series on employment, hours, and earnings in considerable 
+industrial detail are published monthly for each of the 50 States, the 
+District of Columbia, Puerto Rico, and the Virgin Islands.
+
+Those industries which reflect significant economic activities are selected
+for publication.
+
+All employment, hours, and earnings series, State and area as well as 
+national, are classified according to the 2012 North American Industrial 
+Classification System (NAICS).
+
+Summary Data Available:  For total payroll employment, nearly 19,000 series of
+monthly data are available; they cover each State and about 450 major 
+labor areas, most of which are Metropolitan Statistical Areas (MSAs). Estimates 
+for the total nonfarm series will begin in 1939. In most cases, other industry series   
+will start with January 1990. 
+
+In the largest States, up to 300 industries are reported.
+
+Expanded Supersector data is available for all States and MSAs.  Most States also have 
+detail at the NAICS sector level.  Some industry detail is available at the 4-digit, 
+5-digit, and 6-digit NAICS level.
+
+Frequency of Observations:  All data are monthly.
+
+Annual Averages:  Annual averages are available.
+
+Data Characteristics:  Employment is measured in thousands of workers and is
+stored with one decimal place.  Earnings are measured in dollars and are 
+stored with two decimal places.  Average weekly hours are measured in hours 
+and are stored with one decimal place.
+
+Updating Schedule:  Updates are usually available 10 to 12 weeks following 
+the survey week (the week containing the 12th) in the reference month.
+
+Reference:	BLS Handbook of Methods, Chapter 2, "Employment, hours and 
+		earnings from the establishment survey" available at
+		http://www.bls.gov/opub/hom/pdf/homch2.pdf.
+		
+
+==================================================================================
+Section 2
+==================================================================================
+The following State and Area Employment, Hours and Earnings files are on the BLS 
+internet in the sub-directory pub/time.series/sm:
+
+       	sm.data.0.Current	  - All current year-to-date
+ 	sm.data.1.Alabama	  - (state code=01) AL=ALABAMA
+  	sm.data.2.Alaska	  - (state code=02) AK=ALASKA
+ 	sm.data.3.Arizona	  - (state code=04) AZ=ARIZONA
+ 	sm.data.4.Arkansas	  - (state code=05) AR=ARKANSAS
+ 	sm.data.5a.California	  - (state code=06) CA=CALIFORNIA, Origin-1995
+ 	sm.data.5b.California	  - (state code=06) CA=CALIFORNIA, 1996-2004
+ 	sm.data.5c.California	  - (state code=06) CA=CALIFORNIA, 2005-Present
+ 	sm.data.6.Colorado	  - (state code=08) CO=COLORADO
+ 	sm.data.7.Connecticut	  - (state code=09) CT=CONNECTICUT
+ 	sm.data.8.Delaware	  - (state code=10) DE=DELAWARE
+ 	sm.data.9.DC		  - (state code=11) DC=DISTRICT OF COLUMBIA
+ 	sm.data.10a.Florida	  - (state code=12) FL=FLORIDA, Origin-2004 
+ 	sm.data.10b.Florida	  - (state code=12) FL=FLORIDA, 2005-Present 
+ 	sm.data.11.Georgia	  - (state code=13) GA=GEORGIA
+ 	sm.data.12.Hawaii	  - (state code=15) HI=HAWAII
+ 	sm.data.13.Idaho	  - (state code=16) ID=IDAHO
+ 	sm.data.14.Illinois	  - (state code=17) IL=ILLINOIS
+ 	sm.data.15.Indiana	  - (state code=18) IN=INDIANA
+ 	sm.data.16.Iowa	  	  - (state code=19) IA=IOWA
+ 	sm.data.17.Kansas	  - (state code=20) KS=KANSAS
+ 	sm.data.18.Kentucky	  - (state code=21) KY=KENTUCKY
+ 	sm.data.19.Louisiana	  - (state code=22) LA=LOUISIANA
+ 	sm.data.20.Maine	  - (state code=23) ME=MAINE
+ 	sm.data.21.Maryland	  - (state code=24) MD=MARYLAND
+ 	sm.data.22.Massachusetts  - (state code=25) MA=MASSACHUSETTS
+ 	sm.data.23a.Michigan	  - (state code=26) MI=MICHIGAN, Origin-2004
+ 	sm.data.23b.Michigan	  - (state code=26) MI=MICHIGAN, 2005-Present
+ 	sm.data.24.Minnesota	  - (state code=27) MN=MINNESOTA
+ 	sm.data.25.Mississippi	  - (state code=28) MS=MISSISSIPPI
+ 	sm.data.26.Missouri	  - (state code=29) MO=MISSOURI
+ 	sm.data.27.Montana	  - (state code=30) MT=MONTANA
+ 	sm.data.28.Nebraska	  - (state code=31) NE=NEBRASKA
+ 	sm.data.29.Nevada	  - (state code=32) NV=NEVADA
+ 	sm.data.30.New Hampshire  - (state code=33) NH=NEW HAMPSHIRE
+ 	sm.data.31.New Jersey	  - (state code=34) NJ=NEW JERSEY
+ 	sm.data.32.New Mexico	  - (state code=35) NM=NEW MEXICO
+ 	sm.data.33a.New York	  - (state code=36) NY=NEW YORK, Origin-2004
+ 	sm.data.33b.New York	  - (state code=36) NY=NEW YORK, 2005-Present
+ 	sm.data.34.North Carolina - (state code=37) NC=NORTH CAROLINA
+ 	sm.data.35.North Dakota   - (state code=38) ND=NORTH DAKOTA
+ 	sm.data.36.Ohio	          - (state code=39) OH=OHIO
+ 	sm.data.37.Oklahoma	  - (state code=40) OK=OKLAHOMA
+ 	sm.data.38.Oregon	  - (state code=41) OR=OREGON
+ 	sm.data.39a.Pennsylvania   - (state code=42) PA=PENNSYLVANIA, Origin-2004
+ 	sm.data.39b.Pennsylvania   - (state code=42) PA=PENNSYLVANIA, 2005-Present
+ 	sm.data.40.Puerto Rico	  - (state code=43) PR=PUERTO RICO	
+	sm.data.41.RhodeIsland	  - (state code=44) RI=RHODE ISLAND
+ 	sm.data.42.South Carolina - (state code=45) SC=SOUTH CAROLINA
+ 	sm.data.43.South Dakota	  - (state code=46) SD=SOUTH DAKOTA
+ 	sm.data.44.Tennessee	  - (state code=47) TN=TENNESSEE
+ 	sm.data.45a.Texas	  - (state code=48) TX=TEXAS, Origin-1995
+ 	sm.data.45b.Texas	  - (state code=48) TX=TEXAS, 1996-2004
+ 	sm.data.45c.Texas	  - (state code=48) TX=TEXAS, 2005-Present
+ 	sm.data.46.Utah	  	  - (state code=49) UT=UTAH
+ 	sm.data.47.Vermont	  - (state code=50) VT=VERMONT
+ 	sm.data.48.Virginia	  - (state code=51) VA=VIRGINIA
+ 	sm.data.49.Virgin Islands - (state code=52) VI=VIRGIN ISLANDS
+	sm.data.50.Washington	  - (state code=53) WA=WASHINGTON
+ 	sm.data.51.West Virginia  - (state code=54) WV=WEST VIRGINIA
+ 	sm.data.52.Wisconsin	  - (state code=55) WI=WISCONSIN
+ 	sm.data.53.Wyoming	  - (state code=56) WY=WYOMING
+	sm.data.54.TotalNonFarm.All		  - Total Non-Farm, All Areas (incl. Statewide), All Employee Series
+	sm.data.55.TotalNonFarmStatewide.All	  - Total Non-Farm, Statewide Only, All Employee Series
+	sm.data.56.TotalPrivate.Current		  - All Total Private Series, 2007-Present
+	sm.data.57.GoodsProducing.Current	  - All Goods Producing Series, 2007-Present
+	sm.data.58.ServiceProviding.Current	  - All Service Providing Series, 2007-Present
+	sm.data.59.PrivateServiceProviding.Current	  - All Private Service Providing Series, 2007-Present
+	sm.data.60.MiningandLogging.Current	  - All Mining and Logging Series, 2007-Present
+	sm.data.61.MiningLoggingConstr.Current	  - All Mining, Logging and Construction Series, 2007-Present
+	sm.data.62.Construction.Current		  - All Construction Series, 2007-Present
+	sm.data.63.Manufacturing.Current	  - All Manufacturing Series, 2007-Present
+	sm.data.64.DurableGoods.Current		  - All Durable Goods Series, 2007-Present
+	sm.data.65.NonDurableGoods.Current	  - All Non-durable Goods Series, 2007-Present
+	sm.data.66.TradeTransUtilities.Current	  - All Trade, Transportation and Utilities Series, 2007-Present
+	sm.data.67.WholesaleTrade.Current	  - All Wholesale Trade Series, 2007-Present
+	sm.data.68.RetailTrade.Current		  - All Retail Trade Series, 2007-Present
+	sm.data.69.TransUtilities.Current	  - All Transportation and Utilities Series, 2007-Present
+	sm.data.70.Information.Current		  - All Information Series, 2007-Present
+	sm.data.71.FinancialActivities.Current	  - All Financial Activities Series, 2007-Present
+	sm.data.72.ProfBusSrvc.Current		  - All Professional and Business Services Series, 2007-Present
+	sm.data.73.EduHealthSrvc.Current	  - All Education and Health Services Series, 2007-Present
+	sm.data.74.LeisureandHospitality.Current  - All Leisure and Hospitality Series, 2007-Present
+	sm.data.75.OtherServices.Current	  - All Other Services Series, 2007-Present
+	sm.data.76.Government.Current		  - All Government Series, 2007-Present
+	sm.area			  - Area codes			mapping file						
+	sm.contacts		  - Contacts for SA survey  
+	sm.data_type		  - Data type codes		mapping file
+	sm.footnote		  - Footnote codes		mapping file
+	sm.industry		  - Industry codes		mapping file
+	sm.period		  - Period codes		mapping file
+	sm.series		  - All series and their beginning and end dates
+	sm.state		  - State codes			mapping file
+	sm.supersector		  - Supersector codes		mapping file
+        sm.txt			  - General information
+	
+=================================================================================
+Section 3
+=================================================================================
+The definition of a time series, its relationship to and the interrelationship
+among series, data and mapping files is detailed below:
+
+A time series refers to a set of data observed over an extended period of time
+
+over consistent time intervals (i.e. monthly, quarterly, semi-annually, annually).  
+BLS time series data are typically produced at monthly intervals and represent data 
+ranging from a specific consumer item in a specific geographical area whose price 
+
+is gathered monthly to a category of worker in a specific industry whose employment
+rate is being recorded monthly, etc.
+
+The FTP files are organized such that data users are provided with the following
+set of files to use in their efforts to interpret data files:
+
+a)  a series file (only one series file per survey)
+b)  mapping files
+c)  data files
+
+The series file contains a set of codes which, together, compose a series 
+identification code that serves to uniquely identify a single time series.  
+Additionally, the series file also contains the following series-level information:
+
+a) the period and year corresponding to the first data observation 
+b) the period and year corresponding to the most recent data observation. 
+
+The mapping files are definition files that contain explanatory text descriptions
+that correspond to each of the various codes contained within each series
+identification code.
+
+The data file contains one line of data for each observation period pertaining to a
+specific time series.  Each line contains a reference to the following:
+
+a) a series identification code
+b) year in which data is observed
+c) period for which data is observed (M13, Q05, and S03 indicate annual averages)
+d) value
+e) footnote code (if available)
+=================================================================================
+Section 4
+=================================================================================
+File Structure and Format: The following represents the file format used to define 
+sm.series.  Note that the Field Numbers are for reference only; they do not exist 
+in the database.  Data files are in ASCII text format.  Data elements are separated 
+by tabs; the first record of each file contains the column headers for the data
+elements stored in each field.  Each record ends with a new line character. 
+
+Field #/Data Element	Length		Value(Example)		
+
+1.  series_id		  20		SMU01266207072200001
+
+2.  state_code		  2		01
+
+3.  area_code		  5		26620
+
+4.  supersector_code	  2		70		
+
+5.  industry_code	  8		70722000
+
+6.  data_type_code	  2		01
+
+7.  seasonal		  1		S				
+
+8.  benchmark_year	  4  		2002
+					
+9.  footnote_codes	10		It varies
+
+10. begin_year		  4		1990
+
+11. begin_period	  3		M01		
+				
+12. end_year		  4		2003		
+
+13. end_period		  3		M03		
+					
+The series_id (SMU01266207072200001) can be broken out into:
+
+Code					Value
+
+survey abbreviation	=		SM
+seasonal (code) 	=		U
+state_code		=		01
+area_code		=		26620
+supersector_code	=		70
+industry_code		=		70722000
+data_type_code		=		01
+==================================================================================
+Section 5
+==================================================================================
+File Structure and Format: The following represents the file format used to define
+each data file.  Note that the field numbers are for reference only; they do not 
+exist in the database.  Data files are in ASCII text format.  Data elements are 
+separated by tabs; the first record of each file contains the column headers for 
+the data elements stored in each field.  Each record ends with a new line character. 
+
+The sm.data file is partitioned into a number of separate files:  See Section 2
+
+The above-referenced data files have the following format:
+
+Field #/Data Element	Length		Value(Example)		
+
+1. series_id		  30		SMU01266207072200001
+
+2. year			   4		2002	
+
+3. period		   3		M01		
+
+4. value		  12      	1791.0	 	
+				 
+5. footnote_codes	  10		It varies
+				
+
+The series_id (SMU01266207072200001) can be broken out into:
+
+Code					Value
+
+survey abbreviation	=		SM
+seasonal (code) 	=		U
+state_code		=		01
+area_code		=		26620
+supersector_code	=		70
+industry_code		=		70722000
+data_type_code		=		01
+================================================================================
+Section 6
+================================================================================
+File Structure and Format:  The following represents the file format used to define
+each mapping file. Note that the field numbers are for reference only; they do not
+exist in the database.  Mapping files are in ASCII text format.  Data elements are
+separated by tabs; the first record of each file contains the column headers for the
+data elements stored in each field.  Each record ends with a new line character. 
+
+File Name:  sm.area
+
+Field #/Data Element		Length		Value(Example)
+
+1.  area_code			5		26620
+
+2.  area_name			75		Text
+
+
+File Name:  sm.data_type	Length		Value(Example)
+
+Field #/Data Element
+
+1.  data_type_code		2		01
+
+2.  data_type_text		75		Text
+
+
+File Name:  sm.footnote
+
+Field #/Data Element		Length		Value(Example)
+
+1. footnote_code		1		1
+
+2. footnote_text		100		Text
+
+
+File Name:  sm.industry
+	
+Field #/Data Element		Length		Value(Example)
+
+
+1.  industry_code		8		70722000
+
+2.  industry_name		150		Text
+
+
+File Name:  sm.period
+
+Field #/Data Element		Length		Value(Example)
+
+1.  period			3		M01
+
+2.  period_abbr			5		JAN
+
+3.  period_name			20		Text
+
+
+File Name:  sm.state
+
+
+Field #/Data Element		Length		Value(Example)
+
+1.  state_code			2		01
+
+2.  state_name			20		Text
+
+
+File Name:  sm.supersector
+
+Field #/Data Element		Length		Value(Example)
+
+1.  supersector_code		2		05
+
+2.  supersector_name		100		Text
+=========================================================================================
+Section 7
+=========================================================================================
+STATE AND AREA EMPLOYMENT, HOURS AND EARNINGS (SM) DATABASE ELEMENTS
+
+
+Data Element	 Length		Value(Example)			Description
+
+area_code	5		Ex:26620			Code identifying the geographic
+							area to which the data refer.
+
+area_name	75		Text			Name of the geographic area
+			 	Ex: Bakersfield, CA MSA	to which the data refer.
+				
+begin_period	3		M01-M13			Identifies first data observation
+				Ex: M06=June 		within the first year for which
+				(M=Monthly, M13=Annual	data is available for a given 
+				Avg)			time series.
+				
+begin_year	4		YYYY			Identifies first year for which 
+				Ex: 1990		data is available for a given
+							time series.
+
+benchmark_year	4		YYYY			Identifies latest year to which 
+				Ex: 2002		the series has been benchmarked.
+
+data_type_code	2		Ex: 1			Code identifying the 
+							datatype of the observation.
+
+data_type_text	75		Text			Datatype name of the observation.
+				Ex: Production workers
+				    	
+end_period	3		M01-M13			Identifies last data observation
+				Ex: M06=June		within the last year for which
+				(M=Monthly, M13=Annual	data is available for a given
+				Avg)			time series.
+				
+end_year	4		YYYY			Identifies last year for which 
+				Ex: 2003		data is available for a given
+							time series.
+							
+footnote_code	1		Ex:1			Identifies footnote for the data 
+							series.
+
+footnote_codes	10		It varies		Identifies footnotes for the data 
+							series.	
+							
+footnote_text	100		Text			Contains the text of the footnote.
+
+
+industry_code	8		70722000		NAICS code identifying industry.
+
+							
+industry_name	150		Text			Name of industry.
+				Ex: Department Stores
+				    
+period_abbr	5		Period name 		Abbreviation of period name.
+				abbreviation
+				Ex: JUN
+
+period		3		M01-M13			Identifies period for which
+				Ex: M06=June		data is observed. 
+				(M=Monthly, M13=Annual	
+				Avg)
+				
+period_name	20		Text			Full name of period to which
+				Ex:  June		the data observation refers.
+				
+
+seasonal	1		S=Seasonally		Code identifying whether the
+				  Adjusted		data are seasonally adjusted.
+				U=Unadjusted  		
+
+series_id	30		Code series identifier	Code identifying the specific 
+				Ex:SMS060680102100131	series.
+
+state_code	2		FIPS state code		Code identifying the state.
+
+state_name	20		Text			Name of the state.
+				Ex: Alabama	
+				
+supersector_code 2    		10			NAICS code identifying supersector.
+
+value		12		Data value		Data value for series.
+				Ex: 1791.0
+				
+year		4		YYYY			Identifies year of 
+				Ex: 2002		observation.
+
