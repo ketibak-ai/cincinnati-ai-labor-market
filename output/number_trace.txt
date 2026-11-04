@@ -145,5 +145,24 @@
   United States                                                      3.87   automation 49.59% | augmentation 50.41% | work use 41.32%
 
 ================================================================================================
+17. Re-based to 2024 — industry and labour force (September to September, not seasonally adjusted)
+================================================================================================
+  Total nonfarm                                                     +0.7%   (1,178.2 / 1,169.6 - 1) x 100    vs-2019 +4.7%
+  Federal government                                               -14.0%   (13.5 / 15.7 - 1) x 100    vs-2019 -5.6%
+  Transportation and warehousing                                    -4.8%   (59.3 / 62.3 - 1) x 100    vs-2019 +17.0%
+  Information                                                       -4.4%   (13.1 / 13.7 - 1) x 100    vs-2019 -3.0%
+  Credit intermediation (banking)                                   -4.1%   (23.5 / 24.5 - 1) x 100    vs-2019 -13.9%
+  Finance and insurance                                             -2.1%   (62.0 / 63.3 - 1) x 100    vs-2019 +3.5%
+  Professional/scientific/technical                                 +1.5%   (68.1 / 67.1 - 1) x 100    vs-2019 +6.7%
+  Manufacturing                                                     +1.7%   (123.3 / 121.2 - 1) x 100    vs-2019 +2.2%
+  Health care and social assistance                                 +4.4%   (171.6 / 164.4 - 1) x 100    vs-2019 +12.2%
+  Specialty trade contractors                                       +5.1%   (39.1 / 37.2 - 1) x 100    vs-2019 +17.8%
+  total nonfarm jobs added                                          8,600   (1,178.2 - 1,169.6) x 1,000
+  share of banking fall predating 2024                              73.7%   (27.3 - 24.5) / (27.3 - 23.5)
+  labour force change                                              -9,374   1,178,550 - 1,187,924   Sept 2024 to Sept 2026
+  employment change                                                -2,161   1,136,625 - 1,138,786
+  unemployment rate                                                  3.6%   from 4.1% — fell while BOTH employment and labour force fell
+
+================================================================================================
 End of trace. Every figure above is recomputed from data/ at run time.
 ================================================================================================

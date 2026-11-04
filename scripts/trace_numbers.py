@@ -250,6 +250,47 @@ for geo in ("Ohio", "Kentucky", "United States"):
          f"augmentation {vals.get('collaboration_bucket_augmentation_pct','?')}% | "
          f"work use {vals.get('use_case_work_pct','?')}%")
 
+head(17, "Re-based to 2024 — industry and labour force (September to September, not seasonally adjusted)")
+reb = load("cincinnati_rebased_2024.csv")
+rb = {r["industry"]: r for r in reb}
+BANK = "Credit Intermediation and Related Activities including Monetary Authorities - Central Bank"
+for name, label in (("Total Nonfarm", "Total nonfarm"),
+                    ("Federal Government", "Federal government"),
+                    ("Transportation and Warehousing", "Transportation and warehousing"),
+                    ("Information", "Information"),
+                    (BANK, "Credit intermediation (banking)"),
+                    ("Finance and Insurance", "Finance and insurance"),
+                    ("Professional, Scientific, and Technical Services", "Professional/scientific/technical"),
+                    ("Manufacturing", "Manufacturing"),
+                    ("Health Care and Social Assistance", "Health care and social assistance"),
+                    ("Specialty Trade Contractors", "Specialty trade contractors")):
+    r = rb.get(name)
+    if not r:
+        continue
+    b, e = num(r["sep_2024"]), num(r["sep_2026"])
+    line(label, f"{(e/b-1)*100:+.1f}%",
+         f"({e:,.1f} / {b:,.1f} - 1) x 100    vs-2019 {num(r['pct_change_from_2019']):+.1f}%"
+         if r["pct_change_from_2019"] else f"({e:,.1f} / {b:,.1f} - 1) x 100")
+
+tn = rb["Total Nonfarm"]
+b, e = num(tn["sep_2024"]), num(tn["sep_2026"])
+line("total nonfarm jobs added", f"{(e-b)*1000:,.0f}", f"({e:,.1f} - {b:,.1f}) x 1,000")
+bk = rb[BANK]
+pre = (num(bk["sep_2019"]) - num(bk["sep_2024"])) / (num(bk["sep_2019"]) - num(bk["sep_2026"])) * 100
+line("share of banking fall predating 2024", f"{pre:.1f}%",
+     f"({num(bk['sep_2019']):.1f} - {num(bk['sep_2024']):.1f}) / ({num(bk['sep_2019']):.1f} - {num(bk['sep_2026']):.1f})")
+
+laus = load("cincinnati_laus_history.csv")
+pick = {(r["year"], r["month"]): r for r in laus}
+a, z = pick.get(("2024", "9")), pick.get(("2026", "9"))
+if a and z:
+    line("labour force change", f"{num(z['labor_force'])-num(a['labor_force']):,.0f}",
+         f"{num(z['labor_force']):,.0f} - {num(a['labor_force']):,.0f}   Sept 2024 to Sept 2026")
+    line("employment change", f"{num(z['employment'])-num(a['employment']):,.0f}",
+         f"{num(z['employment']):,.0f} - {num(a['employment']):,.0f}")
+    line("unemployment rate", f"{num(z['unemployment_rate']):.1f}%",
+         f"from {num(a['unemployment_rate']):.1f}% — fell while BOTH employment and labour force fell")
+
 print()
 print("=" * 96)
 print("End of trace. Every figure above is recomputed from data/ at run time.")

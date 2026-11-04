@@ -4,9 +4,16 @@ An independent study of how AI adoption is affecting employment, occupational de
 workforce requirements in the Cincinnati OH–KY–IN metropolitan area. Every figure traces to a
 public source, and the analysis reproduces from the scripts in this repository.
 
-**Reference periods:** occupational employment and wages May 2025; industry employment and
-unemployment through September 2026 (preliminary); county wages 2025 annual averages; projections
-2022–2032; job postings collected 30 October 2026.
+**Analytical window: 2024 onward.** Historical comparisons are baselined to September 2024, not
+2019. A 2019 baseline runs through the pandemic collapse and recovery, so any "change since 2019"
+conflates that shock with the generative-AI period. Three inputs have no 2024 edition and are not
+re-based: occupational employment and wages (OEWS, single vintage May 2025), the ODJFS projections
+(fixed base year 2022, horizon 2032), and observed AI usage (Anthropic Economic Index, April–May
+2026). They are labelled single-vintage wherever they appear.
+
+**Reference periods:** industry employment and unemployment September 2024 – September 2026
+(preliminary); county employment and wages 2024–2025 annual averages; occupational employment and
+wages May 2025; projections 2022–2032; job postings collected 30 October 2026.
 
 ---
 
@@ -17,9 +24,12 @@ employment, the metro's generative-AI exposure score is 0.088 against a national
 0.005 standard deviations. Claims that the region is unusually threatened, or unusually safe, are
 not supported by its occupational mix.
 
-**The real vulnerability is the thinness of job creation.** Of 101,316 projected average annual
-openings, just 2,074 — 2.0% — come from growth. The other 98.0% exist only because workers leave.
-A technology that slows hiring is far more damaging in an economy with no growth cushion.
+**The real vulnerability is the thinness of job creation.** Cincinnati added 8,600 jobs between
+September 2024 and September 2026 — growth of 0.7% across two years on a base of 1.18 million —
+while the labour force shrank by about 9,400. Looking forward, of 101,316 projected average annual
+openings just 2,074 — 2.0% — come from growth; the other 98.0% exist only because workers leave.
+Observed and projected data agree: a technology that slows hiring is far more damaging in an
+economy with no growth cushion.
 
 **The region is under-represented in the occupations where AI work concentrates.** Computer and
 mathematical occupations carry a location quotient of 0.87. The largest advertisers of AI roles in
@@ -45,7 +55,10 @@ that AI is *not* what is driving current productivity gains.
 
 - That AI has caused measurable job losses in Greater Cincinnati
 - That P&G's 7,000-role reduction is an AI story
-- That the 13.9% fall in metro banking employment since 2019 reflects AI
+- That the fall in metro banking employment reflects AI (−13.9% from 2019 but only −4.1% from 2024,
+  so most of it predates generative AI)
+- That any sector decline since 2024 is an AI effect — federal employment, logistics and banking
+  each have visible non-AI causes, and professional services and management of companies have grown
 - That entry-level hiring has collapsed because of AI
 - Any current Cincinnati job-vacancy count — JOLTS has no metropolitan estimates
 - Any Northern-Kentucky-specific occupational exposure figure
@@ -75,7 +88,7 @@ Indiana job. Projections in this study are labelled Ohio-portion throughout.
 ```
 CALCULATIONS.md    How every published number was produced, with formulas
 scripts/           The pipeline, in run order
-data/              Derived analysis-ready datasets (CSV)
+data/              Derived analysis-ready datasets (CSV), incl. cincinnati_rebased_2024.csv
 raw/               Source extracts as downloaded (large files gitignored)
 output/            The reproducible workbook and the number trace
 ```
@@ -92,6 +105,7 @@ output/            The reproducible workbook and the number trace
 | `analyze_exposure.py` | Distributional analysis: bands, quadrants, wage gradient |
 | `build_workbook.py` | Assembles the 20-sheet Excel workbook with live formulas |
 | `verify_workbook.py` | Recomputes 51 summary figures in Python into a Verification sheet |
+| `rebase_2024.py` | Re-bases industry, unemployment and county series to 2024 and prints the trace |
 | `trace_numbers.py` | Re-derives every published figure, printing each formula |
 
 ```bash
@@ -102,6 +116,7 @@ python -I scripts/parse_ces_laus.py .
 python -I scripts/build_qcew_aei.py .
 python -I scripts/analyze_exposure.py .
 python -I scripts/build_workbook.py .
+python -I scripts/rebase_2024.py .
 python -I scripts/verify_workbook.py .
 python -I scripts/trace_numbers.py .
 ```

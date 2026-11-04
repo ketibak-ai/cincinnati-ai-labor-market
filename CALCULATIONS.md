@@ -392,23 +392,58 @@ The "nine times faster" claim is 1.73 / 0.19 = 9.1.
 
 ## 9. Industry and labour-force figures
 
-CES levels are published in thousands and multiplied by 1,000 for presentation. All comparisons
-are September to September because metro industry detail is not seasonally adjusted.
+**Baseline.** The study's analytical window begins in 2024. A 2019 baseline runs through the
+pandemic collapse and the recovery that followed, so a "change since 2019" is mostly a measure of
+that round trip. Generative AI reached broad enterprise deployment in 2023–24, so September 2024
+is the last clean pre-period. Both baselines are reported side by side wherever the choice changes
+the reading, because for two series it changes the sign.
+
+CES levels are published in thousands and multiplied by 1,000 for presentation. All comparisons are
+September to September. BLS publishes a seasonally adjusted metro series only for total nonfarm, so
+an adjusted industry panel does not exist; comparing like months cancels seasonality without needing
+adjustment. `scripts/rebase_2024.py` recomputes the whole panel and writes
+`data/cincinnati_rebased_2024.csv`.
 
 ```
+change vs 2024 = (Sept 2026 − Sept 2024) / Sept 2024
 change vs 2019 = (Sept 2026 − Sept 2019) / Sept 2019
 ```
 
-| Series | Sept 2026 | vs 2019 | vs 2025 |
-|---|---|---|---|
-| Total nonfarm | 1,178,200 | +4.7% | +0.4% |
-| Credit intermediation | 23,500 | −13.9% | −1.3% |
-| Employment services | 29,800 | −4.5% | −0.3% |
-| Health care and social assistance | 171,600 | +12.2% | +1.0% |
-| Information | 13,100 | −3.0% | −4.4% |
-| Transportation and warehousing | 59,300 | +17.0% | −3.7% |
-| Retail trade | 100,500 | −4.9% | −0.7% |
-| Air transportation | 5,200 | +52.9% | +0.0% |
+| Series | Sept 2024 | Sept 2026 | vs 2024 | vs 2019 |
+|---|---|---|---|---|
+| Total nonfarm | 1,169,600 | 1,178,200 | **+0.7%** | +4.7% |
+| Federal government | 15,700 | 13,500 | −14.0% | −5.6% |
+| Transportation and warehousing | 62,300 | 59,300 | −4.8% | **+17.0%** |
+| Information | 13,700 | 13,100 | −4.4% | −3.0% |
+| Credit intermediation¹ | 24,500 | 23,500 | −4.1% | **−13.9%** |
+| Finance and insurance | 63,300 | 62,000 | −2.1% | +3.5% |
+| Professional, scientific and technical | 67,100 | 68,100 | +1.5% | +6.7% |
+| Manufacturing | 121,200 | 123,300 | +1.7% | +2.2% |
+| Health care and social assistance | 164,400 | 171,600 | +4.4% | +12.2% |
+| Specialty trade contractors | 37,200 | 39,100 | +5.1% | +17.8% |
+
+Two series change sign. Transportation and warehousing reads as the metro's fastest-growing sector
+against 2019 and a shrinking one against 2024, because the pandemic logistics surge peaked and
+unwound inside the 2019 window. Credit intermediation reads as the steepest decline in the metro
+against 2019 and an ordinary one against 2024, because most of that fall had already happened
+before generative AI existed. The second case matters for this study specifically: the −13.9%
+figure has been cited as evidence of AI displacement in banking, and re-baselining shows that
+roughly seven-tenths of it predates the technology.
+
+```
+total nonfarm   (1,178,200 − 1,169,600) / 1,169,600 = +0.735%  → +0.7%, or 8,600 jobs
+banking 2024    (23,500 − 24,500) / 24,500          = −4.08%   → −4.1%
+banking 2019    (23,500 − 27,300) / 27,300          = −13.92%  → −13.9%
+share predating 2024 = (27,300 − 24,500) / (27,300 − 23,500) = 73.7%
+```
+
+¹ Full CES series name: "Credit Intermediation and Related Activities including Monetary
+Authorities - Central Bank". Shortened to "banking" in presentation only.
+
+**What is not re-based.** Three inputs have one vintage each and cannot be put on a 2024 footing:
+OEWS occupational employment and wages (May 2025), the ODJFS projections (base year 2022, horizon
+2032) and the Anthropic Economic Index (April and May 2026). Each is labelled single-vintage where
+it appears. No 2024 figure was constructed for them by interpolation or any other means.
 
 The staffing figure is measured from its own peak rather than from 2019, and the paper says so:
 
@@ -420,12 +455,19 @@ LAUS values are published levels; the rate is published too and reconciles to
 `unemployment / labour force` within rounding (3.56% rounds to the published 3.6%).
 
 ```
-employment change    1,136,625 − 1,141,504 = −4,879     Sept 2025 to Sept 2026
-labour force change  1,178,550 − 1,189,154 = −10,604
+                     Sept 2024    Sept 2026     change
+unemployment rate         4.1%         3.6%    −0.5 pp
+labour force         1,187,924    1,178,550     −9,374
+employment           1,138,786    1,136,625     −2,161
+unemployed              49,138       41,925     −7,213
 ```
 
-Both falling while the rate falls is the basis for the claim that the rate improved for the
-wrong reason.
+Both employment and the labour force fell while the rate fell. That is the basis for the claim
+that the rate improved for the wrong reason: the denominator shrank faster than the numerator.
+
+**A gap in the extract.** October 2025 is absent from the LAUS series as downloaded, so 2025 has
+eleven monthly observations and no annual average is computed for it. Every comparison in this
+study is September to September and is unaffected.
 
 ---
 
