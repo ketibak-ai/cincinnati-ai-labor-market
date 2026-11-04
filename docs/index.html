@@ -8,132 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
-<style>
-  :root{
-    --bg:#FBFBF8; --surface:#FFFFFF; --surface-2:#F2F1EC;
-    --ink:#14213D; --ink-soft:#4A5568; --ink-faint:#6A7179;
-    --line:#D9DCD6; --line-soft:#E8E7E1;
-    --accent:#1F5FA8; --accent-soft:#DCE8F7; --accent-ink:#1F5FA8;
-    --warn:#B5451B; --warn-soft:#FCE9DF; --warn-ink:#8C3A10;
-    --bar-muted:#C9CCC4;
-    --maxw:860px;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#0E1524; --surface:#16203A; --surface-2:#1B2742;
-      --ink:#EEF3FA; --ink-soft:#AFBDD4; --ink-faint:#8795AE;
-      --line:#2A3657; --line-soft:#223052;
-      --accent:#6BA3E8; --accent-soft:#1D2E53; --accent-ink:#8FB4E3;
-      --warn:#E2794A; --warn-soft:#3A2016; --warn-ink:#F0A383;
-      --bar-muted:#46516B;
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#0E1524; --surface:#16203A; --surface-2:#1B2742;
-    --ink:#EEF3FA; --ink-soft:#AFBDD4; --ink-faint:#8795AE;
-    --line:#2A3657; --line-soft:#223052;
-    --accent:#6BA3E8; --accent-soft:#1D2E53; --accent-ink:#8FB4E3;
-    --warn:#E2794A; --warn-soft:#3A2016; --warn-ink:#F0A383;
-    --bar-muted:#46516B;
-  }
-
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Arial,sans-serif;
-    font-size:17px; line-height:1.65;
-  }
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 16px}
-
-  /* ---------- masthead ---------- */
-  .masthead{background:var(--ink); color:#FBFBF8; padding:72px 0 56px; border-bottom:1px solid var(--line)}
-  :root[data-theme="dark"] .masthead,
-  .masthead{color:#FBFBF8}
-  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .masthead{background:#111B2E} }
-  .eyebrow{font-size:13px; letter-spacing:.18em; text-transform:uppercase; font-weight:600; color:#8FB4E3; margin:0 0 20px}
-  .masthead h1{
-    font-family:'Source Serif 4',Georgia,serif; font-weight:600;
-    font-size:clamp(32px,6.2vw,54px); line-height:1.08; margin:0 0 20px; color:#FBFBF8;
-  }
-  .standfirst{font-size:clamp(17px,2.4vw,21px); line-height:1.55; color:#BFD8D5; margin:0 0 32px; max-width:62ch}
-  .meta{display:flex; flex-wrap:wrap; gap:10px 28px; font-size:14px; color:#8FB4E3; border-top:1px solid #2E4470; padding-top:24px}
-  .meta b{color:#FBFBF8; font-weight:600}
-  .actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:28px}
-  .btn{
-    display:inline-block; padding:11px 20px; border-radius:8px; text-decoration:none;
-    font-size:15px; font-weight:600; border:1px solid #2E4470; color:#FBFBF8;
-  }
-  .btn-primary{background:#1F5FA8; border-color:#1F5FA8}
-  .btn:hover{opacity:.88}
-
-  /* ---------- structure ---------- */
-  section{padding:56px 0; border-bottom:1px solid var(--line-soft)}
-  section:last-of-type{border-bottom:0}
-  h2{
-    font-family:'Source Serif 4',Georgia,serif; font-weight:600;
-    font-size:clamp(25px,4.2vw,34px); line-height:1.2; margin:0 0 8px; letter-spacing:-.01em;
-  }
-  .kicker{font-size:13px; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:var(--accent-ink); margin:0 0 14px}
-  h3{font-size:19px; font-weight:600; margin:32px 0 10px}
-  p{margin:0 0 18px; max-width:68ch}
-  .lede{font-size:clamp(18px,2.4vw,20px); line-height:1.55}
-  a{color:var(--accent-ink)}
-  strong{font-weight:600}
-
-  /* ---------- stat row ---------- */
-  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; margin:28px 0 8px}
-  .stat{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:24px}
-  .stat .n{font-size:40px; font-weight:700; line-height:1; color:var(--accent-ink); font-variant-numeric:tabular-nums; letter-spacing:-.02em}
-  .stat .l{font-size:15px; font-weight:600; margin:12px 0 6px}
-  .stat .d{font-size:14px; color:var(--ink-soft); line-height:1.5; margin:0}
-
-  /* ---------- callouts ---------- */
-  .note{background:var(--surface-2); border-radius:14px; padding:22px 24px; margin:26px 0; border:1px solid var(--line-soft)}
-  .note p{margin:0; max-width:none}
-  .note.warn{background:var(--warn-soft); border-color:transparent}
-  .note.warn p{color:var(--warn-ink)}
-  .note .h{font-weight:600; display:block; margin-bottom:6px}
-
-  /* ---------- tables ---------- */
-  .scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:24px 0}
-  table{border-collapse:collapse; width:100%; font-size:15px; min-width:520px}
-  caption{text-align:left; font-size:13px; color:var(--ink-faint); padding-bottom:10px; line-height:1.45}
-  th,td{padding:11px 14px; text-align:left; border-bottom:1px solid var(--line-soft)}
-  thead th{background:var(--ink); color:#FBFBF8; font-weight:600; font-size:14px; border-bottom:0}
-  thead th:first-child{border-radius:8px 0 0 0}
-  thead th:last-child{border-radius:0 8px 0 0}
-  .num{text-align:right; font-variant-numeric:tabular-nums}
-  tbody tr:nth-child(even){background:var(--surface-2)}
-  tr.hl td{background:var(--accent-soft); font-weight:600}
-  tr.alert td{background:var(--warn-soft); color:var(--warn-ink)}
-  .pos{color:var(--accent-ink)} .neg{color:var(--warn)}
-
-  /* ---------- figure ---------- */
-  figure{margin:28px 0 24px}
-  figure svg{display:block; width:100%; height:auto}
-  figcaption{font-size:13px; color:var(--ink-faint); line-height:1.5; margin-top:12px}
-
-  /* ---------- claims list ---------- */
-  .claims{list-style:none; padding:0; margin:22px 0; display:grid; gap:12px}
-  .claims li{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--warn); border-radius:10px; padding:16px 18px; font-size:15px; line-height:1.55}
-  .claims b{display:block; margin-bottom:4px}
-
-  /* ---------- footer ---------- */
-  footer{background:var(--surface-2); padding:48px 0 64px; font-size:14px; color:var(--ink-soft)}
-  footer h2{font-size:20px; margin-bottom:16px}
-  footer ul{margin:0 0 20px; padding-left:20px}
-  footer li{margin-bottom:7px}
-  .byline-edit{font-size:13px; color:var(--ink-faint); border-top:1px solid var(--line); padding-top:18px; margin-top:26px}
-
-  @media (max-width:560px){
-    body{font-size:16px}
-    .masthead{padding:48px 0 40px}
-    section{padding:40px 0}
-    .stat{padding:20px}
-    .stat .n{font-size:34px}
-  }
-</style>
+<link rel="stylesheet" href="study.css">
 </head>
 <body>
 
@@ -414,70 +289,6 @@
 
 <section>
   <div class="wrap">
-    <p class="kicker">Regional application</p>
-    <h2>A regional scorecard that currently reads &ldquo;TBD&rdquo;</h2>
-    <p>Cincinnati AI Catalyst, the region&rsquo;s 501(c)(3) AI consortium, publishes an <a href="https://cincycatalyst.ai/blueprint">AI Blueprint</a> organised around twelve key elements, three of which &mdash; workforce development, the business community and research &mdash; this study bears on directly. A companion working draft proposes ten regional AI metrics. Every value in that draft currently reads <em>Baseline TBD</em>, and its single published benchmark is a national figure standing in for a regional one.</p>
-    <p>That is the gap this study can partly close. It is worth being exact about which parts, because the distance between what each metric asks for and what the evidence establishes is itself the finding.</p>
-
-    <div class="scroll">
-      <table>
-        <thead><tr><th>Draft metric</th><th>What this study supplies</th><th>What it does not</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><b>4.</b> Workforce AI readiness</td>
-            <td>The full exposure distribution across 1,101,030 metro jobs: 41.4% in occupations with no measured AI task overlap, 10.0% above 0.40, and exposure climbing to +0.703 SD in the top wage quintile</td>
-            <td>Either quantity the metric names. It asks for workers&rsquo; skills and training received; this measures the task content of jobs</td>
-          </tr>
-          <tr>
-            <td><b>5.</b> Business and nonprofit adoption</td>
-            <td>Documented deployment at named large employers, quantified where companies disclose it &mdash; Fifth Third generates roughly 30% of new code with AI</td>
-            <td>A rate. There is no denominator of regional firms, and no evidence at all on nonprofits or small business</td>
-          </tr>
-          <tr>
-            <td><b>9.</b> AI-driven economic growth</td>
-            <td>Which employers advertise AI roles here, a computing location quotient of 0.87, and 98.0% of projected openings arising from churn rather than growth</td>
-            <td>Business formation, investment or productivity. Posting counts are neither vacancies nor employment</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="note warn">
-      <p><span class="h">The substitution the framework most needs to avoid</span>Metric 4 asks what share of workers have demonstrated AI skills. This study measures occupational exposure. Exposure is a property of the job; skill is a property of the person holding it. A region can show high exposure and a well-trained workforce, or high exposure and no readiness whatsoever &mdash; these numbers cannot tell those cases apart. Reporting one as the other converts a measure of what AI <em>could</em> touch into a claim about what the workforce <em>can do</em>, and nothing in the data supports the crossing.</p>
-    </div>
-
-    <h3>A closer benchmark than a national average</h3>
-    <p>The draft benchmarks citizen AI adoption against a national survey figure while the regional baseline stays open. Observed-usage data can do better than that, because it is published by state &mdash; which matters for a metro that straddles two.</p>
-
-    <div class="scroll">
-      <table>
-        <thead><tr><th>Geography</th><th class="num">Use per capita, indexed</th><th class="num">Share of US AI use</th><th class="num">Automation-directed</th><th class="num">Augmentation-directed</th></tr></thead>
-        <tbody>
-          <tr><td>United States</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">49.6%</td><td class="num">50.4%</td></tr>
-          <tr><td>Ohio</td><td class="num">0.59</td><td class="num">2.02%</td><td class="num">50.8%</td><td class="num">49.2%</td></tr>
-          <tr class="alert"><td>Kentucky</td><td class="num">0.39</td><td class="num">0.51%</td><td class="num">53.0%</td><td class="num">47.0%</td></tr>
-          <tr><td>Indiana</td><td class="num">0.61</td><td class="num">1.23%</td><td class="num">50.0%</td><td class="num">50.0%</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p>The index compares each state&rsquo;s share of AI use with its share of population, so 1.00 is parity. Ohio sits at 0.59 and Kentucky at 0.39 &mdash; both well below the rate their populations would imply, and the Kentucky side of this metro furthest below. Both states also skew more automation-directed than the country does, Kentucky most of all.</p>
-
-    <div class="note">
-      <p><span class="h">What these four rows are not</span>They are state figures, and the metro is a slice of two states plus a corner of a third &mdash; no metropolitan estimate exists. They describe usage of one AI system, not AI generally. They count conversations, not people, so they cannot answer &ldquo;what share of adults use AI&rdquo; as asked. They are a sharper benchmark than a national number, and still not the measurement the metric calls for.</p>
-    </div>
-
-    <h3>Seven of the ten cannot be measured from public data at all</h3>
-    <p>Citizen literacy, awareness of regional initiatives, education-system readiness, government adoption, governance practice and equity of benefit have no administrative dataset behind them. Each needs an original survey instrument that nobody has fielded in this region. Saying so is more useful than filling the cells with national proxies, which is how a regional scorecard quietly becomes a national one.</p>
-
-    <div class="note warn">
-      <p><span class="h">A trap waiting for any county-level metric</span>The draft tracks adoption &ldquo;by county, including Northern Kentucky.&rdquo; The most convenient Ohio source for county occupational data is titled &ldquo;Cincinnati Metropolitan Statistical Area&rdquo; and excludes every Kentucky and Indiana job &mdash; 907,032 against the metro&rsquo;s 1,101,030. A framework built to measure whether benefits reach the whole region would, using that file, systematically omit the part of the region most likely to be left behind.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
     <p class="kicker">Method</p>
     <h2>Every figure reproduces from public data</h2>
     <p>Occupational employment is extracted from BLS flat files by deterministic series identifier, classified to SOC aggregation level, and restricted to detailed occupations &mdash; which cover 96.0% of published Cincinnati employment. Published exposure measures are joined on six-digit SOC, covering 82.9% of that employment for AIOE and 95.4% for observed exposure.</p>
@@ -508,10 +319,10 @@
       <li><a href="https://huggingface.co/datasets/Anthropic/EconomicIndex">Anthropic Economic Index</a>, release 26 June 2026 (CC-BY)</li>
       <li><a href="https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/">Audoly, Guerin &amp; Topa</a>, Federal Reserve Bank of New York, 14 May 2026</li>
       <li><a href="https://www.federalreserve.gov/econres/notes/feds-notes/ai-on-the-factory-floor-evidence-from-manufacturing-job-postings-20260930.html">Tito, M.D.</a>, FEDS Notes, Federal Reserve Board, 30 September 2026</li>
-      <li><a href="https://cincycatalyst.ai/blueprint">Cincinnati AI Catalyst, AI Blueprint for the Cincinnati Region</a> &mdash; twelve key elements, retrieved 4 November 2026</li>
-      <li>Cincinnati AI Catalyst, <a href="https://www.thinkdashboards.com/caic_analytics/index.html">draft Top&nbsp;10 Regional AI Metrics</a> &mdash; a working draft hosted outside the organisation&rsquo;s own site and not published at cincycatalyst.ai as of 4 November 2026; last modified 30 October 2026</li>
     </ul>
     <p>BLS and ODJFS data are US government works. Anthropic Economic Index data are released CC-BY. Fifth Third&rsquo;s annual report is not redistributed; read it from <a href="https://www.sec.gov/Archives/edgar/data/35527/000003552726000124/a2025annualreport.pdf">SEC EDGAR</a>.</p>
+
+    <p><b>Companion note</b> &mdash; <a href="caic-framework.html">Measuring Against the Regional AI Framework</a>, a derivative reading of these findings against Cincinnati AI Catalyst&rsquo;s draft regional metrics. It adds no new analysis.</p>
 
     <p class="byline-edit">Byline not set. To add your name and affiliation, edit the <code>&lt;p class="eyebrow"&gt;</code> line near the top of <code>docs/index.html</code> and this footer.</p>
   </div>
