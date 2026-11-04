@@ -422,13 +422,16 @@ change vs 2019 = (Sept 2026 − Sept 2019) / Sept 2019
 | Health care and social assistance | 164,400 | 171,600 | +4.4% | +12.2% |
 | Specialty trade contractors | 37,200 | 39,100 | +5.1% | +17.8% |
 
-Two series change sign. Transportation and warehousing reads as the metro's fastest-growing sector
-against 2019 and a shrinking one against 2024, because the pandemic logistics surge peaked and
-unwound inside the 2019 window. Credit intermediation reads as the steepest decline in the metro
-against 2019 and an ordinary one against 2024, because most of that fall had already happened
-before generative AI existed. The second case matters for this study specifically: the −13.9%
-figure has been cited as evidence of AI displacement in banking, and re-baselining shows that
-roughly seven-tenths of it predates the technology.
+Seven of the seventeen sectors in the published panel reverse direction between the two baselines:
+transportation and warehousing, trade and transportation, insurance carriers, financial activities,
+government, other services and employment services. Transportation swings furthest, reading as the
+metro's fastest-growing sector against 2019 and a shrinking one against 2024, because the pandemic
+logistics surge peaked and unwound inside the 2019 window.
+
+Credit intermediation does **not** change sign — it falls on both baselines — but its magnitude
+collapses from 13.9% to 4.1%. That case matters for this study specifically: the −13.9% figure has
+been cited as evidence of AI displacement in banking, and re-baselining shows that roughly
+seven-tenths of it predates the technology.
 
 ```
 total nonfarm   (1,178,200 − 1,169,600) / 1,169,600 = +0.735%  → +0.7%, or 8,600 jobs
