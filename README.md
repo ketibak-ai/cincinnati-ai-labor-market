@@ -51,6 +51,15 @@ that AI is *not* what is driving current productivity gains.
 
 ---
 
+## Origin
+
+This study began as an independent verification of an earlier draft paper and presentation.
+`AUDIT.md` records what that audit found: the draft's BLS occupational figures were exact, its
+metro employment total came from a superseded vintage, its Ohio projections were statewide
+figures used in a regional study and overstated openings by a factor of six, and its headline
+31.2% "AI exposure" figure measured occupational composition rather than exposure. What carried
+forward and what did not is listed there.
+
 ## What this study deliberately does not claim
 
 - That AI has caused measurable job losses in Greater Cincinnati
@@ -86,6 +95,7 @@ Indiana job. Projections in this study are labelled Ohio-portion throughout.
 ## Repository layout
 
 ```
+AUDIT.md           What the preliminary draft got right and wrong, checked line by line
 CALCULATIONS.md    How every published number was produced, with formulas
 scripts/           The pipeline, in run order
 data/              Derived analysis-ready datasets (CSV), incl. cincinnati_rebased_2024.csv
