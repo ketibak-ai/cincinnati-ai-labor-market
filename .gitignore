@@ -17,4 +17,4 @@ __pycache__/
 .DS_Store
 
 # Third-party institutional reports: read them from the publishers (linked in Sources)
-raw/local_institutions/*.pdf
+raw/local_institutions/
