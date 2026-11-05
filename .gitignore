@@ -18,3 +18,6 @@ __pycache__/
 
 # Third-party institutional reports: read them from the publishers (linked in Sources)
 raw/local_institutions/
+
+# Local slide preview harness, regenerated on demand
+.preview/
