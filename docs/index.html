@@ -327,6 +327,62 @@
 
 <section>
   <div class="wrap">
+    <p class="kicker">Origin</p>
+    <h2>This study started as an audit of someone else&rsquo;s draft</h2>
+    <p class="lede">A preliminary paper and presentation existed first. Checking it against primary sources is what produced this study, and three of its findings changed materially.</p>
+
+    <p>The draft&rsquo;s occupational data was sound. Every BLS figure in it &mdash; 125,530 office and administrative support jobs, an 11.40% share, 19,410 customer service representatives, 16,750 general office clerks, and all six occupational group shares &mdash; matched the published source exactly. Those carry forward here unchanged.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>Ohio Department of Job and Family Services long-term occupational projections, 2022&ndash;2032.</caption>
+        <thead><tr><th>Projected annual openings</th><th class="num">Draft, Ohio statewide</th><th class="num">Cincinnati</th><th class="num">Overstated by</th></tr></thead>
+        <tbody>
+          <tr class="alert"><td>All occupations</td><td class="num">636,978</td><td class="num"><strong>101,316</strong></td><td class="num">6.3&times;</td></tr>
+          <tr><td>Office and administrative support</td><td class="num">69,054</td><td class="num"><strong>11,053</strong></td><td class="num">6.2&times;</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note warn">
+      <p><span class="h">The regional file existed</span>The draft used Ohio statewide projections in a Cincinnati study and explained it as a data limitation &mdash; that no Cincinnati-specific count was available. ODJFS publishes one in the same series, and it is the file used here. A reader taking 636,978 as a local figure would overstate the region&rsquo;s annual hiring opportunity by more than half a million positions.</p>
+    </div>
+
+    <h3>A composition measure wearing an exposure label</h3>
+    <p>The draft reported that 31.2% of Cincinnati jobs are exposed to AI, arrived at by summing the employment shares of six occupational groups. The arithmetic is right, and the direction is defensible &mdash; those six groups do average 0.254 observed exposure against 0.070 for everything else. But selecting whole groups measures occupational composition, not exposure, and the ranking it implies does not survive contact with measurement.</p>
+
+    <div class="scroll">
+      <table>
+        <caption>Observed AI task exposure by major occupational group, employment-weighted, Cincinnati MSA.</caption>
+        <thead><tr><th>Group</th><th class="num">Observed exposure</th><th>Counted as exposed?</th></tr></thead>
+        <tbody>
+          <tr><td>Computer and mathematical</td><td class="num">0.348</td><td>yes</td></tr>
+          <tr><td>Office and administrative support</td><td class="num">0.328</td><td>yes</td></tr>
+          <tr><td>Business and financial operations</td><td class="num">0.299</td><td>yes</td></tr>
+          <tr class="alert"><td><strong>Sales and related</strong></td><td class="num"><strong>0.296</strong></td><td><strong>no</strong></td></tr>
+          <tr><td>Legal</td><td class="num">0.203</td><td>yes</td></tr>
+          <tr><td>Educational instruction and library</td><td class="num">0.181</td><td>no</td></tr>
+          <tr><td>Management</td><td class="num">0.130</td><td>yes</td></tr>
+          <tr><td>Healthcare practitioners and technical</td><td class="num">0.054</td><td>no</td></tr>
+          <tr class="alert"><td><strong>Architecture and engineering</strong></td><td class="num"><strong>0.044</strong></td><td><strong>yes</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Architecture and engineering is counted as exposed at 0.044 &mdash; below healthcare practitioners, which is not, and barely above construction. Sales, at 0.296, outranks three of the six groups the indicator includes and is left out of it. In jobs: the measure counts <strong>56,730 near-zero-exposure positions</strong> as exposed, misses <strong>20,810 genuinely high-exposure ones</strong>, and only 24.4% of what it labels exposed scores above 0.40.</p>
+
+    <div class="note">
+      <p><span class="h">Why the two measures disagree</span>Architecture and engineering scores <strong>+0.942 on AIOE</strong>, which asks what AI could in principle do, and <strong>0.044 on observed exposure</strong>, which asks what AI is actually used for. High potential, almost no observed use. A figure built from group membership cannot separate those, and the gap between them is the question worth asking. This study reports no single percentage of exposed jobs, because the distribution does not support one.</p>
+    </div>
+
+    <div class="actions" style="margin-top:22px">
+      <a class="btn btn-primary" style="color:#FBFBF8" href="https://github.com/ketibak-ai/cincinnati-ai-labor-market/blob/main/AUDIT.md">Read the full audit</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <p class="kicker">Method</p>
     <h2>Every figure reproduces from public data</h2>
     <p>Occupational employment is extracted from BLS flat files by deterministic series identifier, classified to SOC aggregation level, and restricted to detailed occupations &mdash; which cover 96.0% of published Cincinnati employment. Published exposure measures are joined on six-digit SOC, covering 82.9% of that employment for AIOE and 95.4% for observed exposure.</p>
