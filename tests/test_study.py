@@ -341,6 +341,64 @@ def test_national_benchmark_cross_check():
         "the share above 0.40 should stay near the national benchmark of under 10%")
 
 
+def test_redi_corroborates_computing_share():
+    """REDI Cincinnati independently reports ~3% of workers in computer and math.
+
+    REDI uses Lightcast data for 2022 Q2; this study uses BLS OEWS for May 2025.
+    Different vendor, different method, three years apart. If the study's figure
+    ever drifts far from REDI's, one of them has changed and the claim that the
+    two agree needs revisiting.
+    """
+    rows = load("cincinnati_occupation_exposure.csv")
+    comp = [r for r in rows
+            if r["area"] == "Cincinnati MSA" and r["soc_code"] == "15-0000"]
+    tot = [r for r in rows
+           if r["area"] == "Cincinnati MSA" and r["soc_level"] == "total"]
+    share = num(comp[0]["employment"]) / num(tot[0]["employment"]) * 100
+    close(share, 2.94, 0.05, "computing share of employment")
+    assert abs(share - 3.0) < 0.5, (
+        "the study puts computing at %.2f%% against REDI's 3%% -- the two no "
+        "longer corroborate each other" % share)
+
+
+def test_data_centre_modelled_jobs_exceed_onsite_staff():
+    """The Chamber's modelled job total is far above its own staffing table.
+
+    Both numbers come from the same Chamber report. The modelled direct figure is
+    the total divided by the stated 2.89 multiplier; the on-site figure is the
+    stated operational FTE per MW. The published claim is that these differ by
+    roughly thirty times at 250 MW, which is why the study treats a modelled total
+    as something other than a payroll.
+    """
+    rows = load("local_institutional_sources.csv")
+    by = {r["figure"]: r for r in rows}
+    total = num(by["modelled total jobs 250 MW scenario"]["value"])
+    mult = num(by["jobs multiplier NAICS 518210"]["value"])
+    per_mw = num(by["operational FTE per MW at 100+ MW"]["value"])
+    assert total == 3203, "the Chamber's published total is 3,203, got %s" % total
+    assert mult == 2.89, "the Chamber's published multiplier is 2.89, got %s" % mult
+    onsite = 250 * per_mw
+    close(onsite, 37.5, 0.1, "on-site FTE at 250 MW")
+    ratio = (total / mult) / onsite
+    assert 25 < ratio < 35, (
+        "the published claim is roughly thirty times, recomputed %.0f" % ratio)
+
+
+def test_local_sources_are_recorded_with_provenance():
+    """Every local institutional figure carries a source type and what it covers."""
+    rows = load("local_institutional_sources.csv")
+    assert len(rows) >= 25, "expected the full local source table, got %d" % len(rows)
+    for r in rows:
+        assert r["organisation"], "a row has no organisation"
+        assert r["source_type"] in ("primary", "secondary"), (
+            "%s: source_type must be primary or secondary, got %r"
+            % (r["figure"], r["source_type"]))
+        assert r["covers"], "%s: no geography recorded" % r["figure"]
+    chamber = [r for r in rows if "Chamber" in r["organisation"]]
+    assert all(r["source_type"] == "primary" for r in chamber), (
+        "Chamber figures were read from the reports themselves and are primary")
+
+
 # ----------------------------------------------------------------- runner ----
 
 def main():

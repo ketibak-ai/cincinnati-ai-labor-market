@@ -1,0 +1,812 @@
+Data Centers:
+
+A CINCINNATI REGIONAL
+PERSPECTIVE
+
+September 2026
+
+Produced by:
+Data Centers: A Cincinnati Regional Perspective I Table of Contents
+
+EXECUTIVE SUMMARY                                                    1
+
+MARKET CONDITIONS                                                    2
+
+Overview of existing facilities in the region
+
+ECONOMIC IMPACT                                                      3
+
+Analysis on jobs, earnings, and investment
+
+RESOURCE IMPACT                                                      5
+
+Review of infrastructure and environmental factors
+
+POLICY FRAMEWORK                                                     7
+
+Policy principles for data center growth
+
+APPENDIX                                                             14
+
+" Having strong digital infrastructure                " The Chamber is focused on creating a
+     enhances the Cincinnati region's                      growing, thriving region and we know
+     competitiveness for business attraction               the best decisions are informed by a clear
+     and expansion by providing the capacity               understanding of the numbers and what's
+     companies need to invest, innovate and                actually happening in our market. By
+     grow. Data centers are an important                   approaching data center investment with
+     component of that infrastructure and can              intentionality and smart policy, this report
+     help position the region to compete for               helps Cincinnati prepare for sustainable
+                        increasingly technology- and                         growth and long-term success."
+                        data-intensive projects."
+                                                                            Brendon Cull
+                       Kimm Lauterbach                                      President & CEO
+                       President & CEO                                      Cincinnati Regional Chamber
+                       REDI Cincinnati
+Executive Summary I Data Centers: A Cincinnati Regional Perspective
+
+EXECUTIVE SUMMARY
+
+Data centers as critical IT infrastructure have existed for decades. The Cincinnati region is
+home to multiple facilities which are more than ten years old. However, the prevalence,
+scale, and purpose of data centers has evolved over the years.
+
+There are an estimated 19 data centers operating or planned in the
+Cincinnati metropolitan area with an estimated total capacity of 565
+megawatts (MW).
+
+The state of Ohio is one of the world's largest data center markets - and growing.
+In Central Ohio, the world's first gigawatt-capable data center is currently underway as
+part of a Meta campus expansion, and reportedly the largest AI data center in the world
+was announced in Pike County about 100 miles from Cincinnati.
+
+Data center growth represents opportunities for the Cincinnati metro area: capital
+investment, infrastructure upgrades, jobs, tax revenue, and corporate partnerships. There
+are also proven challenges relative to utility demand, environmental factors, and land
+opportunity cost. "Data Centers: A Cincinnati Regional Perspective" offers a localized lens
+to a global wave of data center investment to inform local dialogue and decision-making.
+
+POLICY PRINCIPLES FOR DATA CENTER GROWTH
+
+1. Capitalize on data center growth as a strategic
+opportunity to expand our region's economy and
+business ecosystem.
+
+2. Capture the fiscal benefits data centers bring to  The Cincinnati Regional
+local communities.                                    Chamber supports
+                                                      a pro-growth, pro-
+3. Hold operators accountable for securing their      innovation approach to
+energy needs.                                         data center development
+                                                      that welcomes new
+4. Ensure data center operators don't pass on costs   investment as a driver
+to other ratepayers for their operations.             of regional economic
+                                                      growth, while protecting
+5. Resolve water needs early in project planning      the region's energy grid,
+to ensure the region maintains water as a             water resources, and
+competitive asset.                                    ratepayers.
+
+6. Encourage responsible site selection and land
+use decisions.
+
+7. Foster direct and open collaboration between
+data centers and host communities.
+
+8. Implement performance-based incentives that
+ensure accountability and project delivery.
+
+Source: Cincinnati Enquirer, "OpenAI to build world's biggest AI data center in Ohio. What we know", Aug. 5, 2026.
+
+1
+Market Conditions I Data Centers: A Cincinnati Regional Perspective
+
+CINCINNATI REGION DATA CENTERS
+
+   17Existing Facilities         THE TWO LARGEST
+   2 Planned Facilities          FACILITIES ARE PLANNED
+                                 HYPERSCALERS
+
+   565+
+
+   Estimated Capacity (MW)
+   Columbus, OH: 3,150+
+
+   508+                                             DOWNTOWN
+
+   Acres of Land
+   Columbus, OH: 5,000+
+
+         Estimated
+      Capacity (MW)
+
+              <<55 MW
+              55­-99MW
+              110­-119 MW
+              2200++ MW
+
+                  Operational
+                  for 10+ years
+
+   In Perspective...
+
+   There are three general types of data centers: Enterprise - a single company
+
+   handling its own data needs (ex: a bank's data center); Co-location - a data center
+
+   owner rents shared space to multiple tenants; or Hyperscale - facilities designed
+
+   to handle massive computing needs and often associated with large technology
+
+   companies such as AWS, Google, Microsoft, etc. Major U.S. data center markets,
+
+   like Columbus, Ohio           are dominated by   m aroesntleya"rhlyypaellrsccoalloec"adtaiotancoernetnertse.rEpxrii<sste5inMgW
+   data centers in the           Cincinnati region
+
+   facilities, less resource-intense operations than nearby markets.             5­9 MW
+
+                                                                                                             10­19 MW
+20+ MW Sources: Datacentermap.com, July, 2026; Katie Millard, NBC4, July, 2026; Cushman & Wakefield, "Americas Data Center H2 2025
+
+Update". Locations approximate. Estimated capacity based on published megawatts and industry standards.
+
+2
+Economic Impact I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS as Employers
+
+$165,593                          Data centers employ workers through
+                                  construction, permanent operations, and ongoing
+Avg. Earnings per Industry Job    maintenance. Based on the size and type of existing
+(NAICS 518210)                    facilities in the Cincinnati region, each facility likely
+                                  employs two to ten full-time workers. Common
+472                               occupations held by data center employees and/
+                                  or their direct vendors include: facility managers,
+Data Center-Related Job Postings  computer network architects, industrial and
+(July `25 - July `26)             electrical engineers, electricians, pipefitters, iron
+                                  workers, security personnel, and HVAC technicians.
+
+   In Perspective...              Data center construction differs from other
+                                  industrial development in its scale and specialized
+   Estimated construction         construction skills. Construction workforce size for a
+   jobs per project:              standard hyperscale facility (250 MW) is comparable
+                                  to large, multi-billion investments like the Brent
+   500 - 1,500                    Spence Bridge project.
+
+   Typical Hyperscale Build       Once operational, employment count varies by type
+                                  and size of facility. Jobs per megawatt (MW) decrease
+   700                            as facility size increases (due to higher automation
+                                  and general economies of scale).
+   Brent Spence Bridge
+   Corridor Project               Over the last twelve months, 472 job postings in
+                                  the Cincinnati region included data center-related
+   1,000 - 1,500                  skills or qualifications. Top occupations include
+                                  Miscellaneous Computer Occupations, Engineers,
+   Cleveland-Cliffs               Construction Managers, and Project Management
+   Middletown Works Project       Specialists. For context, there were 9,025 similar
+                                  postings in the Arlington, VA metro area (the largest
+                                  U.S. data center market) during that same time.
+
+Estimated Operational Labor by Facility Size
+
+FACILITY TYPE    CAPACITY         OPERATIONAL  AVERAGE FTE*        Labor Intensity
+                   RANGE          FTE* PER MW   PER FACILITY
+Enterprise
+Regional        5 - 20 MW               0.34         2-7
+Hyperscale     20 - 50 MW               0.24         5 - 12
+                                        0.15          15+
+                100+ MW
+
+Sources: Lightcast, 2026.3; https://brentspencebridgecorridor.com/; https://www.clevelandcliffs.com/news/news-releases/
+detail/702/cleveland-cliffs-announces-1-billion-middletown-works; Estimated hyperscale build construction jobs derived from
+recently announced Ohio projects. Estimated Labor by Facility Size adapted from "Data Center Employment Forecast Analysis",
+Hamm Institute for American Energy, Oklahoma State University, 2025. *FTE: full-time equivalent.
+
+3
+Economic Impact I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS as Economic Development
+
+The U.S. data center and high-tech market is booming, accounting for an estimated 80%
+of growth in private domestic demand in the first half of 2025. Economic impact models,
+which calculate outcomes based on benchmark industry behavior, can help predict how
+new data center activity in the Cincinnati area might impact the region.
+
+Modeled Total Impact of Annual Operations for a 10 MW data center scenario in the
+Cincinnati Region*
+
+128                           $12.1M                       $311,632
+ Jobs                            Earnings                      Local Taxes
+
+Modeled Total Impact of Annual Operations for a 250 MW data center scenario in the
+Cincinnati Region*
+
+3,203           $301.4M                                    $7.8M
+     Jobs             Earnings
+                                                            Local Taxes
+
+Impact Scenario Multipliers by Industry
+
+Every job directly added to the Cincinnati region in the "Computing Infrastructure
+Providers, Data Processing, Web Hosting, and Related Services" industry creates 1.89 other
+jobs through direct, indirect, and induced effects (i.e. supply chain must grow to meet
+increased demand). Every $1 in earnings to data center workers creates $0.91 in other
+earnings. These values called "multipliers" exist across all industries and can be used to
+compare how initial investments may cause ripple effects through the regional economy.
+
+2.89            2.30                  1.88                 Jobs Multiplier    Earnings Multiplier
+        1.91            1.69                  1.53
+                                                                   1.45 1.46                  1.68
+                                                                                      1.41
+
+    Data        Pharmaceutical         Machine Tool        Warehousing            Crop
+ Centers        Manufacturing         Manufacturing        and Storage        Production
+
+(NAICS 518210)        (NAICS 518210)       (NAICS 518210)     (NAICS 518210)   (NAICS 518210)
+
+* Total impact includes direct, indirect, and induced impacts; excludes construction. Assumes 70% utilization rate
+Sources: Lightcast, 2026.3. Economic impact model sales input estimate based on Colliers, "2026 Data Center Marketplace"
+general colocation price of $162 per kW per month for secondary markets, net of electrical charges. Electric industry impact
+modeled separately. See the Appendix for more information.
+Local taxes include all taxes on production and imports not captured at the state or federal level.
+
+4
+Resource Impact I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS as Utility Consumers
+
+3.5 - 4.5 TWh                     U.S. power demand from data centers is climbing
+                                  rapidly; estimated at 82.3 GW - a 28% increase from
+Estimated Annual Electric         2025. That figure is forecasted to double by 2030 to
+Consumption* by Data Centers in   167 GW. In the aggregate, the data center impact is
+the Cincinnati Region             real and growing; though each individual facility is
+Columbus, OH: 19.3 - 24.8 TWh     unique in its power needs and approach.
+
+1.5 TWh                           In the Cincinnati region specifically, total estimated
+                                  annual electric usage by all operational data
+Estimated Annual Electric         centers is less than 5 Terawatt-hour (TWh). While
+Consumption for a 250 MW Data     small relative to other markets (Columbus' data
+Center Scenario**                 center electric use is 5x Cincinnati's), it is still an
+                                  industry of meaningful impact. A theoretical 250
+     In Perspective...            MW hyperscale facility could consume as much
+                                  electricity in one year as more than twenty
+        1.5 TWh annual electric   average industrial users.
+        use per year roughly
+        equates to:               Strategies to mitigate strain on the grid from
+                                  data centers include energy-efficient equipment,
+       156,789 households         sourcing of renewables, on-site storage, and on-site
+       Avg. Midwest households'   generation (often referred to "behind the meter").
+       annual electric usage      Behind-the-meter systems generate power on the
+       21 industrial users        customer side of the electric utility's meter rather
+       Avg. Ohio industrial user  than relying exclusively on the public grid.
+       annual electric usage
+                                  The rapid pace and scale of electricity demand
+                                  often raises concerns around rates. National rate
+                                  projections vary based on market and other factors.
+                                  Looking to Northern Virginia, the largest and most
+                                  established data center market in the U.S., Brookings
+                                  analyzed utility disconnections against data center
+                                  growth from 2017 to 2024 and found that as data
+                                  center metered load (MW) increased, residential
+                                  disconnection rates (service interruptions or stops)
+                                  also rose, which Brookings suggests demonstrates
+                                  financial burden on households. The state has since
+                                  taken steps at addressing electricity prices - lessons
+                                  from which the Cincinnati region, as a modest data
+                                  center market, is well-positioned to explore early.
+                                  This is also why the Chamber's policy principles
+                                  include "Ensure data center operators don't pass on
+                                  costs to other ratepayers for their operations."
+
+Sources: S&P Global; https://www.datacenterknowledge.com/energy-power-supply/why-data-centers-produce-their-own-power;
+Brookings, "Confronting and addressing rising energy bills linked to data centers", March 13, 2026.
+Household-equivalent is calculated using U.S. EIA 2015 Residential Energy Consumption Survey. Average industrial user
+equivalent is calculated using PUCO's Utility Rate Survey estimate of average usage for Industrial users.
+*Range assumes 70% - 90% capacity utilization rate on regional MW estimates.
+***Assumes Power Usage Effectiveness (PUE) of 1.13, Water Usage Effectiveness(WUE) of 1.19, and utilization rate of 70%.
+
+5
+Resource Impact I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS as Utility Consumers
+
+68 million                           Storing, processing, and safely managing complex
+gallons/year                         data systems can be water-intensive. In 2023, U.S.
+                                     data centers consumed an estimated 17 billion
+Estimated annual direct water        gallons of water directly and 211 billion gallons
+usage for a 250 MW data center       of water indirectly through the power needed
+scenario*                            to run the facilities. The level of demand varies
+                                     greatly based on facility type, size, and technology.
+The majority of a data center's      For example, utilizing liquid cooling rather than
+direct on-site water use is for      traditional evaporative cooling methods can reduce
+cooling hot servers. Generally,      on-site water use by up to 95%. Location also
+methods for cooling include:         matters. Ohio's cool climate, relative to southern or
+                                     western data center markets (ex: Texas, Phoenix,
+Air Cooling - distribution systems   Atlanta, etc.), and its fresh water supply can reduce
+circulate cool air (energy-          climate-related interventions.
+intensive, uses less water)
+Evaporative Cooling - the            Once water is used by a data center, some is
+evaporation of water cools the air   recirculated back into the system while some is
+(water-intensive, uses less energy)  consumed (i.e. evaporates). Specific water-use
+Liquid Cooling - liquid absorbs      efficiency ranges based on a facility's technology,
+heat directly from equipment         water source, and power source.
+(uses less water than evaporative
+cooling and less energy than air     In addition to cooling, data centers indirectly use
+cooling)                             water through their electric and gas demand. The
+Hybrid Cooling - a combination       indirect water usage of a data center depends
+of methods and technologies;         greatly on the source of electricity (i.e. traditional or
+often based on type of               renewable) and, again, on the technologies applied
+equipment being cooled and           at that specific facility.
+seasonal temperature changes
+                                     Additional impacts include noise pollution, air
+     In Perspective...               pollution, and land opportunity cost (i.e. what else
+                                     could have located on that site). Unlike economic
+        68 million gallons per year  and utility impact, these effects are more difficult to
+        roughly equates to:          estimate - at the aggregate and individual facilities.
+                                     For example, data center noise is often cited by
+       910 households                residents as a nuisance and harm, but there lacks
+                                     verified research on noise impact. Communities
+        Cincinnati households'       need reliable and verifiable data to make informed
+        annual water usage           decisions. Cincinnati can learn from regions that
+                                     have already developed policies and practices
+                                     around emerging challenges, adapting those
+                                     approaches to Cincinnati as new findings emerge.
+
+*Assumes Power Usage Effectiveness (PUE) of 1.13, Water Usage Effectiveness(WUE) of 1.19, and utilization rate of 70%.
+Sources: Lawrence Berkeley National Laboratory, "2024 United States Data Center Energy Usage Report"; The Ohio Chamber
+of Commerce Research Foundation, "Economic Impact Study of Data Centers in Ohio". Household-equivalent water use is
+calculated using Greater Cincinnati Water Works' 2026 example of 6,230 gallons per month for a single-family residential
+household.
+
+6
+Policy Framework I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS as Policy
+
+The Cincinnati Regional Chamber supports a pro-growth, pro-innovation approach to data
+center development that welcomes new investment as a driver of regional economic growth,
+while protecting the region's energy grid, water resources, and ratepayers. We favor site
+selection that balances land availability with its associated tradeoffs. Where incentives are
+necessary to remain competitive, we support structures that are performance-based, outcome-
+driven, and accountable to the communities they affect. We believe communities should
+approach investment opportunities not from a position of broad opposition but focused on the
+following principles that allow for growth in our region when considering data centers.
+
+Growth Principles:
+
+1. Capitalize on data center growth              5. Resolve water needs early in project
+as a strategic opportunity to expand             planning to ensure the region maintains
+our region's economy and business                water as a competitive asset.
+ecosystem.
+                                                 The Chamber supports ensuring water
+The Chamber supports data center                 impacts are addressed on the front end of
+investment as part of a pro-business, pro-       project development, with solutions that
+innovation environment, recognizing its          protect surrounding communities and
+role in attracting capital and supporting        existing water infrastructure.
+long-term economic activity and jobs in
+the region.                                      6. Encourage responsible site selection
+                                                 and land use decisions.
+2. Capture the fiscal benefits data centers
+bring to local communities.                      The Chamber supports weighing the
+                                                 opportunity cost of land and existing
+The Chamber supports policies that               structures in site selection, prioritizing
+ensure data center investment generates          adaptive reuse of vacant commercial
+durable tax revenue, strengthening the           buildings where feasible, and right-sizing
+infrastructure and services that sustain         facilities to the available inventory and the
+broader communities where they locate.           surrounding community's character.
+
+3. Hold operators accountable for                7. Foster direct and open collaboration
+securing their energy needs.                     between data centers and host
+                                                 communities.
+The Chamber supports policies that
+require operators to work with utilities to      The Chamber supports data centers
+secure their energy supply and ensure            working directly and openly with host
+their operations do not compromise grid          communities to deliver mutually beneficial
+reliability or stability for other users in the  outcomes, backed by clearly defined
+region.                                          performance metrics and accountability
+                                                 mechanisms.
+4. Ensure data center operators don't
+pass on costs to other ratepayers for their      8. Implement performance-based
+operations.                                      incentives that ensure accountability and
+                                                 project delivery.
+The Chamber supports policies that
+require operators to cover the costs their       Where incentives are necessary to attract
+operations impose, so small business             investment, the Chamber supports
+and residential ratepayers are not left          structures that are growth-aligned, tied to
+subsidizing private infrastructure.              measurable outcomes, and include claw
+                                                 back provisions for non-performance.
+
+7
+Policy Framework I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS in Action
+
+Below are several examples of localities that have worked alongside data center
+developers to benefit their communities.
+
+Note: Policy and regulatory frameworks differ in these states and don't always mirror the
+landscape in Ohio and Kentucky. These case studies illustrate how other states are working within
+their own policy frameworks to structure deals in ways that best serve them.
+
+PROPERTY TAX RELIEF CASE STUDY
+Columbia County, GA -- Google is building two data centers in Columbia County, Georgia,
+and county officials have been working on crafting a plan to ensure the community
+benefits. Prior to finalizing the development agreement, the Columbia County Board
+of Commissioners and the Columbia County Chamber of Commerce worked with the
+community and data center developers to set priorities by hosting public meetings and
+in-person visits with nearby property owners to hear concerns around taxes, quality of life,
+and utility costs.1 In August 2026, Columbia County's Economic Development Authority
+approved a memorandum of understanding with Kinetic Infrastructure Solutions, a
+subsidiary of Alphabet Inc., that includes a financial commitment of $17 billion.2 County
+Commission Chairman Doug Duncan said the goal of attracting data centers is for a
+portion of the project's revenue to offset resident property taxes; property taxes currently
+make up 40% of the county's total budget.3 Achieving this required a change in state law,
+and in May 2026, Georgia enacted House Bill 439, enabling counties to fund property tax
+relief using data-center revenue.4 The measure must still clear a local referendum, which
+Columbia County voters will decide in November 2026. Google separately committed to
+cover 100% of the project's energy costs.5
+
+Loudoun County, Culpeper County, and Prince William County, VA -- A 2026 report
+prepared by Mangum Economics for the Northern Virgina Technology Council modeled
+what residential property tax rates would need to be to offset the loss of data center
+tax revenue and fund county operations.6 Without that revenue, Culpeper's rate would
+need to rise 34%, Prince William's 29%, and Loudoun's would need to nearly double
+(+91%), adding roughly ~$5,800/year to the median homeowner's property tax bill in
+Loudoun County.7 Regionally, the data center industry paid an estimated $1.3 billion in
+direct property taxes in 2024, supporting more than $2 billion in total local government
+revenue.8 This is an example of the value data centers and the tax revenue they generate
+can bring in and help offset what would otherwise be a larger tax burden on residents.
+
+1 https://www.axios.com/sponsored/how-a-data-center-could-change-columbia-county
+2 https://www.wrdw.com/2026/08/26/columbia-county-advances-17-billion-data-center-deal/
+3 https://www.wrdw.com/2026/07/25/no-wells-noise-limits-columbia-county-outlines-rules-google-data-centers/
+4 https://www.columbiacountydatacenter.com/
+5 https://www.columbiacountyga.gov/m/newsflash/home/detail/111
+6 https://cdn-aorpci9.actonsoftware.com/acton/cdna/45522/f-91c286fd-c362-4e8b-b0b9-adc6333b9ffb/1/3/2026%20
+NVTC%20Data%20Center%20Report.pdf
+7 https://progresschamber.org/insights/data-centers-cut-property-taxes-virginia-homeowners/
+8 https://cdn-aorpci9.actonsoftware.com/acton/cdna/45522/f-91c286fd-c362-4e8b-b0b9-adc6333b9ffb/1/3/2026%20
+NVTC%20Data%20Center%20Report.pdf
+
+8
+Policy Framework I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS in Action
+
+Property tax relief takeaway: Columbia County and Northern Virginia show two ways
+data center revenue can directly reduce what residents pay in property taxes, rather than
+just offsetting any new costs those projects create. Columbia County had to change state
+law first, and the plan still needs voter approval. This is proof that this kind of relief usually
+takes both legislative groundwork and local buy-in, not just a deal between a county and
+a developer. Northern Virginia's numbers show the flip side: what residents would lose if
+that revenue disappeared, with some counties facing property tax increases that would
+nearly double homeowners' bills. Both showcase that data center tax revenue is large
+enough to meaningfully lower what residents pay. Capturing that value takes deliberate
+policy design. Localities could instead balance the budget through spending cuts, but
+that approach comes with its own tradeoffs. That's why our framework calls for directing a
+defined share of data center revenue toward real, visible relief for existing residents.
+
+EDUCATION FUNDING CASE STUDY
+
+Marysville, OH -- Marysville, a Columbus-area suburb, has used tax abatement
+agreements paired with Payment in Lieu of Taxes (PILOT) provisions to preserve
+education funding from major data center investment while remaining competitive for
+site selection. 9 Marysville City Council approved a 15-year, 100% property tax abatement
+on new construction for a $1 billion, roughly 600-acre data center project.10 In exchange,
+the developer agreed to make PILOT payments to the Marysville Exempted Village
+School District, the City of Marysville, and the Ohio Hi-Point Career Center, structured so
+local taxing entities still receive approximately 50% of the revenue that could have been
+collected absent the abatement.11 Land underlying the project remains fully taxable
+throughout the abatement period, with land taxes alone projected to generate roughly
+$18 million over 15 years for the schools and city. 12 The agreement also includes a revenue-
+sharing trigger, once the project's payroll surpasses $2 million, the city splits the resulting
+income tax revenue with the school district. 13 A separate AWS data center campus nearby
+(also in Marysville) illustrates an even more direct approach, in this agreement AWS
+committed to $15 million in annual payments to Marysville Schools over 15 years, alongside
+a 30-year, 100% property tax exemption on the assessed value of the data centers.14
+Together, these two agreements show how municipalities can structure abatements to
+preserve, and in some cases provide dedicated, school funding even while offering the tax
+incentives development requires, offsetting concerns that data centers erode the local tax
+base that schools depend on.
+
+Sidney, OH -- In 2025, Sidney City Council approved a 30-year, 100% property tax
+abatement for an Amazon data center. 15 Amazon Data Services' project qualified under
+
+9 https://marysvilleohio.org/772/Data-Center-FAQs
+10 https://www.msn.com/en-us/news/us/marysville-approves-15-year-tax-abatement-for-new-1b-data-center/ar-AA1VIS5q
+11 https://www.10tv.com/article/news/local/boomtown-ohio/marysville-weighs-data-center-impact/530-467eb56b-2095-
+4bf8-94da-86cfa0b9f019
+12 https://www.10tv.com/article/news/local/boomtown-ohio/marysville-weighs-data-center-impact/530-467eb56b-2095-
+4bf8-94da-86cfa0b9f019
+13 https://www.10tv.com/article/news/local/boomtown-ohio/marysville-weighs-data-center-impact/530-467eb56b-2095-
+4bf8-94da-86cfa0b9f019
+14 https://www.datacenterdynamics.com/en/news/aws-gets-go-ahead-for-data-center-campus-in-marysville-ohio/
+15 https://www.urbanacitizen.com/2025/10/28/sidney-approves-data-center-tax-abatement/
+
+9
+Policy Framework I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS in Action
+
+Ohio's megaproject provision that allows property tax abatements for up to 30 years for
+investments over $1 billion or annual payroll over $75 million.16 In return, Amazon has
+agreed to provide the city a payment in lieu of taxes (PILOT) totaling $50 million ­ $46
+million paid over 14 years plus a $4 million upfront payment. 17The payments are split
+evenly between the City of Sidney and local schools.18 Separately, Sidney Local Schools and
+the Upper Valley Career Tech Center will also receive 75% of the municipal income taxes
+generated by new Amazon employees.19 Under the city's own accounting, the income
+tax-sharing agreement compensates schools annually for the lesser of the property taxes
+they would have collected absent the abatement, or 75% of the city's income tax revenue
+from new jobs at the site, an estimated $2.3 million total over the abatement period. 20 The
+agreement was not without local opposition, two council members voted against the tax-
+sharing agreement, and residents raised concerns in public comment about long-term
+costs versus benefits once construction ends.21 22
+
+Education funding takeaway: Marysville and Sidney each illustrate a distinct approach
+to how localities can protect education funding while pursuing data center investment.
+Their locally negotiated agreements use tools such as PILOT payments, taxable carve-
+outs, and income tax-sharing arrangements. Neither approach is a direct template for our
+region. Rather, they illustrate how municipalities and affected stakeholders can develop
+solutions that reflect local circumstances and priorities.
+
+Their experiences reinforce two principles in our framework: fostering direct and open
+collaboration between data centers and host communities and capturing the fiscal
+benefits data centers bring to those communities. By engaging affected school districts
+and other local stakeholders as part of the development process, communities can
+negotiate arrangements that reflect local priorities and preserve meaningful fiscal
+benefits from data center investment, while maintaining flexibility over the economic
+development tools and abatement structures they choose to use.
+
+GEOGRAPHIC SITE SELECTION CASE STUDY
+
+Piketon, Ohio -- The Department of Energy (DOE) and SoftBank's SB Energy are
+converting the former Portsmouth Gaseous Diffusion Plant, a Cold War-era uranium
+enrichment site that has been undergoing environmental remediation, into a 10-gigawatt
+data center campus. 23 The project was announced as a public-private partnership
+between SoftBank, AEP Ohio, and the federal government, with SoftBank's CEO
+estimating the deal could channel as much as $500 billion in total investment into the
+
+16 https://www.urbanacitizen.com/2025/10/28/sidney-approves-data-center-tax-abatement/
+17 https://www.daytondailynews.com/local/state-local-data-center-tax-breaks-total-billions-for-trillion-dollar-tech-
+companies/article_61697bd7-06a5-56ae-8d62-ee63177111f4.html
+18 https://www.sidneyoh.com/526/Proposed-Data-Center-FAQ
+19 https://www.daytondailynews.com/local/state-local-data-center-tax-breaks-total-billions-for-trillion-dollar-tech-
+companies/article_61697bd7-06a5-56ae-8d62-ee63177111f4.html
+20 https://www.urbanacitizen.com/2025/10/28/sidney-approves-data-center-tax-abatement/
+21 https://www.sidneydailynews.com/2025/10/28/council-approves-data-center-tax-abatement/
+22 https://www.sidneydailynews.com/2025/11/11/citizens-voice-data-center-concerns-to-sidney-council/
+23 https://www.ohiotechnews.com/ai-complex-coming-to-ohio-historic-energy-computing-deal/
+
+10
+Policy Framework I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS in Action
+
+county. 24 OpenAI has since signed a 20-year lease to anchor the campus, and Nvidia has
+committed $105 billion in financing support along with a direct $1.5 billion investment
+in SB Energy. 25 Pike County has experienced decades of economic contraction since
+the original enrichment operations wound down, and DOE says the redevelopment
+will accelerate the site's ongoing environmental cleanup while repurposing the land for
+advanced computing.26 JobsOhio projects the deal could generate an estimated $1.5
+trillion in broader economic impact over 20 years, the deal also includes $40 million in
+direct funding for local schools.27
+
+Paducah, Kentucky -- A parallel project from the Department of Energy is underway at
+the former Paducah Gaseous Diffusion Plant, another Cold War-era uranium enrichment
+site in cleanup since operations ended in 2013.28 The development is entirely privately
+funded, representing roughly $100 billion in investment and expected to create
+approximately 8,000 construction jobs and 600 permanent jobs. 29 The plan pairs a large
+AI data center campus with new natural gas generation and battery storage to meet
+the electricity demands, with Brookfield Asset Management developing and operating
+the campus and NextEra Energy building the power infrastructure. 30Officials have
+described it as following the same redevelopment model set at Piketon, with initial phase
+construction possible within a few years and full build-out targeted for the early 2030s.31
+
+Site-selection takeaway: Piketon and Paducah illustrate a distinct version of "adaptive
+reuse", pairing hyperscale data center demand with large, federally owned industrial sites
+that already have substantial power infrastructure, transmission access, and a built-in
+economic-redevelopment case, rather than greenfield or in-community sites. These sites
+show where data centers are a clear opportunity for the states: brownfield and legacy
+industrial land with power and infrastructure already in place. Where sites like these exist,
+Ohio and Kentucky should work proactively to seize opportunities.
+
+Cincinnati has no obvious comparable federal legacy site, and this model may not
+translate to urban areas, so it isn't a direct template for our region. It is a useful contrast:
+site characteristics like power capacity, existing infrastructure, remediation status, and
+community economic need clearly drive where developers land. That reinforces why our
+framework's site-selection principle - weighing the opportunity cost of land, prioritizing
+adaptive reuse, and right-sizing development to fit community character - matters for the
+sites Cincinnati will actually have under consideration.
+
+24 https://www.ohiotechnews.com/ai-complex-coming-to-ohio-historic-energy-computing-deal/
+25 https://rebusinessonline.com/openai-signs-20-year-lease-at-nvidia-backed-data-center-development-in-pike-county-
+ohio/
+26 https://www.ohiotechnews.com/ai-complex-coming-to-ohio-historic-energy-computing-deal/
+27 https://www.ohiotechnews.com/ai-complex-coming-to-ohio-historic-energy-computing-deal/
+28 https://kentuckylantern.com/2026/07/29/hyperscale-data-center-natural-gas-fired-project-planned-for-paducahs-
+former-nuclear-plant/
+29 https://kentuckylantern.com/2026/07/29/hyperscale-data-center-natural-gas-fired-project-planned-for-paducahs-
+former-nuclear-plant/
+30 https://kentuckylantern.com/2026/07/29/hyperscale-data-center-natural-gas-fired-project-planned-for-paducahs-
+former-nuclear-plant/
+31 https://local12.com/news/nation-world/trump-administration-announces-100-billion-ai-data-center-project-in-western-
+kentucky?-privately-funded=
+
+11
+Policy Framework I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS in Action
+
+UTILITY RATE PROTECTION CASE STUDY
+New Albany, OH -- New Albany is home to more than 40 data centers, and one AI data
+center is taking a different approach to power. Rather than drawing from Ohio's electric
+grid, the site will be served by a dedicated 350-megawatt microgrid that combines on-site
+generation with 430 megawatt-hours of battery storage.32 This facility will require 35 to 40
+full-time personnel to keep it staffed around the clock. 33 The approach reflects a broader
+pattern emerging in New Albany, where AEP Ohio has said it cannot keep pace with
+data centers' electricity demands. Ohio law bars AEP from building new power plants,
+leading several developers, including Meta and EdgeConneX, to pursue their own on-site
+generation rather than draw on the shared grid or absorb AEP's new data-center rate
+structure, which requires data centers to pay for 85% of their energy needs monthly. 34
+
+OVERVIEW OF STATE AND PEER ORGANIZATIONS POLICY APPROACHES:
+Commonwealth of Kentucky
+
+In 2024, the Kentucky General Assembly passed House Bill 8, creating a sale and use tax
+exemption for qualified data center projects covering the purchase of equipment, which
+can last up to 50 years for projects meeting the highest investment tier. The original
+exemption was narrowly targeted and applied only to consolidated local governments
+with a population of at least 500,000, in practice, just Louisville/Jefferson County, and
+required a minimum capital investment of $450 million or $150 million for the project
+organizer.35
+
+The exemption is administered by Kentucky's Cabinet for Economic Development
+and covers data center equipment and software broadly including servers, routers,
+and systems related to electricity, cooling, water usage, and security. It excludes site
+development, shell building construction, electricity purchases, and office equipment
+related to administration. 36
+Greater Cleveland Partnership
+The Greater Cleveland Partnership (GCP), Cleveland's chamber of commerce, has taken a
+formal public position in favor of a "smart-growth" approach to data center development,
+publishing its stance in May 2026. GCP argues that data centers are essential
+infrastructure needed to support the region's growth through an AI-driven economic
+transformation, and that a smart-growth approach, rather than restriction, is the best way
+to capture investment while protecting communities.
+
+Central to GCP's position is opposition to local bans and moratoriums, which the
+organization argues don't protect communities but instead pushes investment to other
+
+32 https://www.businesswire.com/news/home/20260730184063/en/Veolia-Expands-in-Energy-for-Data-Centers-in-the-
+U.S.-Selected-to-Operate-a-350-MW-Grid-Independent-Microgrid
+33 https://www.businesswire.com/news/home/20260730184063/en/Veolia-Expands-in-Energy-for-Data-Centers-in-the-
+U.S.-Selected-to-Operate-a-350-MW-Grid-Independent-Microgrid
+34 https://www.nbc4i.com/intel-in-ohio/new-albany-data-centers-hope-to-provide-their-own-electricity/
+35 https://www.stites.com/resources/client-alerts/kentucky-tax-incentives-for-qualified-data-centers/
+36 https://kypolicy.org/kentucky-data-center-tax-breaks/
+
+12
+Policy Framework I Data Centers: A Cincinnati Regional Perspective
+
+DATA CENTERS in Action
+
+jurisdictions, forfeiting any ability to shape the development, capture economic benefit, or
+secure growth-related infrastructure. Rather than proposing specific technical standards,
+incentive structures, or environmental limits, GCP's policy lays out a set of smart-growth
+principles it believes should guide local and state policy.
+
+GCP's smart-growth principles call for operators to bear the full incremental costs their
+projects create including grid upgrades and interconnection so residential and small-
+business ratepayers aren't left to subsidize them, paired with reliable, resilient system
+design and energy solutions that support grid stability as AI workloads drive rapid
+demand swings. The framework also emphasizes environmental stewardship through
+water-saving cooling and heat-reuse strategies, prioritizes Ohio-based suppliers and
+workforce to strengthen the state's economy, and encourages siting decisions that weigh
+community impact and favor adaptive reuse of existing structures where feasible. Finally,
+GCP calls for tangible community benefits such as local hiring, skilled-trades training, and
+infrastructure investment paired with transparent reporting, and holds that any public
+incentives should be performance-based with clawbacks for non-performance, arguing
+that a collaborative, cross-sector smart-growth approach better serves communities than
+outright bans or moratoriums.37
+
+Ohio Chamber of Commerce
+
+The Ohio Chamber of Commerce, through its research arm the Ohio Chamber
+Foundation, has taken a strongly pro-growth position on data centers, releasing an
+"Economic Impact Study of Data Centers in Ohio" that frames the industry as a core driver
+of the state's economic future. The Chamber argues that Ohio's more than $40 billion in
+private data center investment is reshaping the state's economy beyond its traditional
+manufacturing and agriculture base, elevating Columbus into the top tier of North
+American data center hubs and positioning Ohio as an aspiring "Silicon Heartland."
+
+The study's headline findings anchor the Chamber's advocacy: in 2024 alone, data center
+activity supported over 95,000 jobs and generated $26.4 billion in total economic output
+statewide, with projections showing the industry growing to support roughly 132,500
+jobs and contribute nearly $20.2 billion annually to state GDP by 2030. The Chamber also
+points to the state's sales tax exemption program, Ohio's primary data center incentive, as
+a fiscal success, citing a 2.1-to-1 return on investment in the study's modeling.
+
+Rather than treating the incentive debate as settled, the Chamber frames its findings as
+the basis for a forward-looking policy agenda. It calls for incentive agreements to continue
+emphasizing local benefits, workforce development, and transparent performance
+tracking; for cross-sector collaboration to address the mismatch between rapid data
+center construction timelines (18­36 months) and much slower electric grid upgrade
+timelines (5­10 years), including bridge strategies like natural gas generation, expanded
+behind-the-meter power, and fast-tracked approval for sites like brownfields; and for
+sustained investment in workforce training tied to the industry's technical needs.38
+
+37 https://greatercle.com/blog/gcp-news/a-smart-growth-approach-for-data-centers
+38 https://ohiochamberfoundation.com/projects/the-economic-impact-study-of-data-centers-in-ohio/
+
+13
+Appendix I Data Centers: A Cincinnati Regional Perspective
+
+DEFINITIONS
+
+Capacity: Generally measured in megawatt (MW), describes the size of a data center
+based on the electrical power needed to operate
+Cincinnati Region: Refers to the 15-county tri-state metropolitan statistical area (MSA) as
+defined by the U.S. Census Bureau
+Economic Impact: Jobs, earnings, and local taxes were calculated with the Lightcast
+economic impact model. Lightcast uses Bureau of Economic Analysis (BEA), Bureau of
+Labor Statistics (BLS), and Census data to estimate these variables. Rather than relying
+solely on the model's industry assumptions by NAICS code, we customized the spending
+input to account for increased investment from the utility industry. The components of an
+economic impact study include:
+
+   Direct: economic activity being modeled (addition of new jobs, additional spending,
+   etc.)
+   Indirect: the impact of direct activity on the supply chain (the ripple effect through
+   industries)
+   Induced: broader impact of new household spending from wage-earners of the direct
+   and indirect effects
+   Multiplier: "a way of measuring how important one industry is to other industries in
+   the region. So if an industry has a multiplier of 2.5, for every positive or negative change
+   on that industry, the total effect on the regional economy will be 2.5 times the original
+   change." (source: Lightcast)
+Facility Types:
+   Co-location: data centers operated by an owner who rents shared space to multiple
+   tenants
+   Enterprise: data centers which handle a single company's own data
+   Hyperscale: data centers designed to handle massive computing needs and often
+   associated with large technology companies such as AWS, Google, Microsoft, etc.
+
+METHODOLOGY NOTES
+
+Data centers operate as critical infrastructure. For security purposes, facility data - such as exact address or capacity - are often
+confidential.
+
+This report is for educational purposes only. No actual proposed or planned data centers were used to analyze potential impact
+figures.
+
+The North American Industry Classification System (NAICS) is the standard used by federal statistical agencies in classifying
+business establishments. Data centers are classified under NAICS 518210 - Computing Infrastructure Providers, Data Processing,
+Web Hosting, and Related Services. Data centers vary greatly depending on their size and scale; and they differ from less
+phsyical intesnsive technology businesses that fall within this NAICS definition; therefore, industry-level data is used with
+caution throughout this report and noted accordingly.
+
+Job positngs data, sourced from Ligthcast, includes all postings from non-temp agencies which include skills and qualifications
+directly associated with data centers (examples: "Data Center Hardware", "Data Center Infrastructure Management (CIM)",
+"Aruba Data Center Network Specialist (ADCNS)", etc.)
+
+14
+The Cincinnati Regional Chamber is the premier business and civic
+organization dedicated to growing the vibrancy and economic prosperity of
+the Cincinnati region. To achieve its vision that Cincinnati is a growing, thriving
+region where everyone belongs, the Chamber seeks to grow our economy,
+grow our population, and grow our cultural vibrancy -- with the foundation
+of a strong business community -- to foster a welcoming environment for
+all. The Chamber's membership offerings, signature leadership programs,
+government and regional advocacy efforts, community events such as BLINK
+and Oktoberfest as well as key partnerships with organizations like Cincinnati
+Experience, Cincinnati Business Excellerator and the Workforce Innovation
+Center lead the way in making that vision a reality.
+For more information, visit cincinnatichamber.com.
+
+The Cincinnati Chamber's Center for Research & Data is an initiative to deliver
+data-driven analysis regarding vital regional indicators and outcomes. The
+Center helps regional leaders, community partners, and policymakers make
+informed decisions around priorities like talent attraction, inclusive economic
+growth, and community-wide goals. We provide actionable insights to support
+the mission and vision of the Cincinnati Chamber.
+
+ © Cincinnati Regional Chamber 2026
+
+ 15
+

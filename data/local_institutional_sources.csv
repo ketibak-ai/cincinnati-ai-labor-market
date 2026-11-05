@@ -1,0 +1,30 @@
+organisation,publication,published,figure,value,unit,covers,source_type,note
+Cincinnati Regional Chamber,State of the Region 2026,2026-10-15,mentions of artificial intelligence,0,count,full report text,primary,"Flagship annual regional economic report; zero mentions of AI, automation, displacement, reskilling or upskilling"
+Cincinnati Regional Chamber,State of the Region 2026,2026-10-15,jobs added over the past decade,90000,jobs,15-county MSA,primary,"Stated as ""more than 90,000""; study's CES series gives +87,700 Sept 2016-Sept 2026"
+Cincinnati Regional Chamber,State of the Region 2026,2026-10-15,regional economy,162,billion USD,15-county MSA,primary,Largest among metros including Ohio or Kentucky
+Cincinnati Regional Chamber,State of the Region 2026,2026-10-15,median household income,81489,USD,15-county MSA,primary,
+Cincinnati Regional Chamber,State of the Region 2026,2026-10-15,Black-White median household income gap,36339,USD,15-county MSA,primary,
+Cincinnati Regional Chamber,State of the Region 2026,2026-10-15,rank on population GDP and job growth,bottom half,rank,19 peer metros,primary,Corroborates the study's thin-growth finding
+Cincinnati Regional Chamber,State of the Region 2026,2026-10-15,transportation and warehousing employment,67000,jobs,15-county MSA,primary,Concentration 28% above national; study's CES figure is 59300 for Sept 2026
+Cincinnati Regional Chamber,State of the Region 2026,2026-10-15,H1B share from computer systems design,29,percent,15-county MSA,primary,Top filers Tata Consultancy Services Cincinnati Children's and Cognizant
+Cincinnati Regional Chamber,Cincinnati Region Labor Market Analysis,2024-05-01,mentions of artificial intelligence,0,count,full report text,primary,
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,modelled total jobs 250 MW scenario,3203,jobs,15-county MSA,primary,"Lightcast model; excludes construction; includes indirect and induced"
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,modelled total jobs 10 MW scenario,128,jobs,15-county MSA,primary,
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,jobs multiplier NAICS 518210,2.89,ratio,15-county MSA,primary,Each direct job modelled as creating 1.89 others
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,operational FTE per MW at 100+ MW,0.15,FTE per MW,facility,primary,"Implies 37.5 on-site staff at 250 MW; adapted from Hamm Institute Oklahoma State 2025"
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,operational FTE per MW at 20-50 MW,0.24,FTE per MW,facility,primary,
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,operational FTE per MW at 5-20 MW,0.34,FTE per MW,facility,primary,
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,typical staff per existing regional facility,2-10,FTE,facility,primary,"Report's own characterisation of existing Cincinnati facilities"
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,data-centre-related job postings,472,postings,15-county MSA,primary,July 2025 to July 2026; Lightcast
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,data-centre-related job postings Arlington VA,9025,postings,Arlington VA metro,primary,Same period; largest US data centre market
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,existing regional data centre capacity,565,MW,15-county MSA,primary,19 facilities operating or planned; Columbus exceeds 3000 MW
+Cincinnati Regional Chamber,Data Centers: A Cincinnati Regional Perspective,2026-10-12,mentions of AI relating to employment,0,count,full report text,primary,"Six mentions of AI, all concerning power demand and facility siting"
+REDI Cincinnati,Economic Vibrancy Comparison: Innovation,,share of workers in computer and math occupations,3,percent,Cincinnati region,secondary,"2022 Q2; study's BLS OEWS May 2025 figure is 2.94% with LQ 0.87"
+REDI Cincinnati,Economic Vibrancy Comparison: Innovation,,tech sector share of employment,2,percent,Cincinnati region,secondary,Ranked 27th of 40 peer metros
+REDI Cincinnati,Economic Vibrancy Comparison: Innovation,,tech employment growth,16,percent,Cincinnati region,secondary,2017-2022
+REDI Cincinnati,Economic Vibrancy Comparison: Innovation,,software development employment growth,55,percent,Cincinnati region,secondary,2017-2022
+REDI Cincinnati,Economic Vibrancy Comparison: Innovation,,patents per 10000 residents,7,patents,Cincinnati region,secondary,2020; top 10 of 40 peer metros
+RUDI,Greater Cincinnati AI Readiness Index,,published findings,0,count,Cincinnati region,secondary,Announced as in development; no results methodology or sample published as of 5 November 2026
+Alpaugh Family Economics Center (UC),Jobs Outlook 2028,,AI-specific analysis,0,count,Cincinnati region,secondary,Projection report; no AI edition found
+City of Cincinnati,,,published AI workforce policy or study,0,count,City of Cincinnati,secondary,No official policy or study located as of 5 November 2026
+Tata Consultancy Services and University of Cincinnati,My First AI Job,,programme,1,programme,University of Cincinnati,secondary,Entry-level AI careers programme for final-year students; press release returned HTTP 403 and was not verified directly
