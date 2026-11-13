@@ -315,4 +315,5 @@ results are most interesting.
 
 | Date | Change | Reason | Made before or after seeing data? |
 |---|---|---|---|
-| | | | |
+| 13 Nov 2026 | **Add H2b**: occupation-based entry-door test using ACS 1-year PUMS for the PUMAs that make up CBSA 17140. Outcome: employment of ages 22–25 relative to 35–54 in occupations in the top tercile of exposure (same four measures, national 2022 OEWS employment weights) vs the bottom tercile; pre-period 2018–2019 pooled, post-period 2023–2025 pooled (2020–2022 excluded); same peers. Secondary to H1 because ACS measures employment, not hires, and metro samples are small; reported with replicate-weight standard errors. | QWI has industries, not occupations; ACS adds the occupational dimension that the Brynjolfsson–Chandar–Chen design uses. | **Before.** No ACS value had been seen. |
+| 13 Nov 2026 | Noted, no change to hypotheses: after the commit of this file, web searches for the design memo surfaced statewide data-center job figures (Weldon Cooper Center via news: about 22,300 short-term and 4,500 permanent Ohio jobs as of 2024; a study of 1,584 data centers reported at about 2.7 non-construction local jobs per MW of eventual capacity) and that the Chamber's 565 MW counts 17 existing and 2 planned facilities. | Disclosure. H8's thresholds were fixed before these were seen. | After the commit; H8 unchanged. |

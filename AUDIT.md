@@ -1,4 +1,27 @@
-# Audit of the preliminary draft
+# Audit log — Cincinnati AI Labor Market
+
+This file has two parts. **Part I** records every change from 1.0 to 2.0 and why (in progress
+on the `v2.0` branch). **Part II** is 1.0's audit of the preliminary draft, unchanged.
+
+---
+
+# Part I — Changes from 1.0 to 2.0 (in progress)
+
+### Corrections to 1.0 found during the 2.0 design phase (13 November 2026)
+
+| # | 1.0 said (where) | Correction | Evidence |
+|---|---|---|---|
+| C1 | "The region's nineteen facilities hold roughly 565 MW" (`archive/v1.0/report.txt:1509`); recorded as existing capacity (`data/local_institutional_sources.csv:20`) | 565+ MW is the Chamber's estimate for **17 existing and 2 planned** facilities, the two planned hyperscalers being the largest. It mixes operating and announced capacity and does not state the MW basis. | Chamber, *Data Centers: A Cincinnati Regional Perspective*, 12 Oct 2026, "Cincinnati Region Data Centers" panel (`raw/local_institutions/chamber_data_centers_2026.txt:53-55, 103-110`) |
+| C2 | "Neither the task force nor a training lab appears in the approved FY2026–2027 budget" (`archive/v1.0/report.txt:1462`; `data/local_institutional_sources.csv:31`) | The approved FY2026–2027 budget includes "MidWest Con – AI Investment – $50,000"; the approved FY2027 update includes "Plans Examination Artificial Intelligence Enhancement", $300,000 (capital). At the 4 May 2026 meeting a council member said "the ask was more than $200,000, we were only able to get you $200,000", indicating an earlier allocation not yet located. | City of Cincinnati Approved FY2026–2027 Biennial Budget, Vol. I, pp. 31, 140; Approved FY2027 Budget Update, Capital Exhibit 3; CitiCable recording, archive.org item 34260501-eco, ≈1:14:38 |
+| C3 | Fifth Third "has announced no reductions at all" (`README.md:48-50`; `docs/index.html:303`) | Since 1.0's sources, Fifth Third completed its Comerica acquisition (1 Feb 2026) and merger-related layoffs have been reported in Texas (WARN, 184 jobs) and Michigan. Merger-attributed, not AI-attributed; none reported in Cincinnati. | Banking Dive and other reporting; Texas WARN notice to be retrieved |
+| C4 | Kroger AI attribution "Partly" (`archive/v1.0/report.txt:1008`; `data/ai_adoption_employers.csv:2`) | Coded "technology named, AI not named" on the memo text as reported, pending the full memo. | Fortune, 14 Oct 2026 (quoting Business Insider); Fast Company |
+| C5 | "Thirteen checks" (`README.md:147`; `VERIFICATION.md:64`); test label "Cincinnati observed exposure" for the LM-AIOE value (`tests/test_study.py:116-117`) | The suite runs 16 checks; the label should read language-model AIOE. No number changes. | `python tests/test_study.py` output, 13 Nov 2026 |
+
+The full list of 2.0 changes, with the reason for each, is completed when 2.0 is finished.
+
+---
+
+# Part II — Audit of the preliminary draft (1.0, unchanged)
 
 The study in this repository began as an independent verification of an earlier draft research
 paper and presentation on AI and the Cincinnati labour market. This document records what that

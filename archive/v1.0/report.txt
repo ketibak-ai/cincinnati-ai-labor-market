@@ -1,0 +1,2047 @@
+
+
+# AI and the Greater Cincinnati Labor Market
+
+2026-10-30 · @Keti
+
+Greater Cincinnati's occupational mix is almost exactly as exposed to AI as the nation's — the gap is 0.005 of a standard deviation — so the region's distinctive risk is not unusual exposure but an unusually thin cushion: 98% of its projected job openings come from workers leaving rather than from growth, and it is under-represented in the computing occupations where AI-related hiring concentrates.
+
+## Executive summary
+
+Seven findings carry this study.
+
+1. Cincinnati's AI exposure is average, not elevated. Weighting every occupation by its May 2025 employment, the metro's generative-AI exposure score is 0.088 against a national 0.093 — a gap of 0.005 standard deviations. Claims that the region is unusually threatened, or unusually safe, are not supported by its occupational mix.
+
+2. The region's real vulnerability is the thinness of its job creation, not its exposure. Ohio projects the Cincinnati area to add 20,737 jobs across the decade to 2032, a rise of 2.3%. Of 101,316 projected average annual openings, just 2,074 — 2.0% — come from growth. The other 98.0% exist only because workers retire or move on. A labour market that thin has little capacity to absorb displaced workers.
+
+3. Cincinnati is under-represented in exactly the occupations where AI work concentrates. Computer and mathematical occupations hold 32,340 jobs at a location quotient of 0.87, meaning the metro has 13% less of this work than its size implies. Office and administrative support, at 125,530 jobs, is the single largest occupational group.
+
+4. Measured AI use in the two states runs well below the national average. Ohio's Anthropic AI Usage Index was 0.59 in May 2026 and Kentucky's 0.39, against a United States average of 1.0. Both states also skew slightly more toward delegating work to AI than collaborating with it. These are state figures and cannot be read as Cincinnati figures.
+
+5. One large AI-attributed job cut has landed, and its attribution is weaker than the headlines. Kroger, headquartered in Cincinnati, said on 12 October 2026 that it would cut about 3,000 corporate roles over three years — roughly 37% of its 8,200 corporate staff. The CEO's memo cites "more layers, more handoffs and more overhead than we need" and never states how many roles AI replaces. Procter & Gamble's larger reduction of up to 7,000 non-manufacturing roles was attributed to cost, tariffs and consumer uncertainty, not to AI.
+
+6. AI hiring demand is real, small, and routed through outside firms. Cincinnati AI-skill postings grew 159% in the year to September 2026, the fourth-fastest of the 50 largest-posting metros, but from a low base: 619 postings added, implying roughly 1,000 in total. The largest advertisers are Deloitte, Kelly Services, PwC, Eliassen Group and Accenture. Among major regional employers only GE Aerospace appears near the top.
+
+7. Generative-AI exposure is concentrated in better-paid work, which inverts the older automation story. Exposure is negative across the bottom three wage quintiles and strongly positive in the top two. The jobs most exposed to language models in Cincinnati are accountants, human-resources specialists, market research analysts and financial managers — not production workers.
+
+## Scope and geography
+
+Four different geographies carry the name "Cincinnati" in official data, and they differ by almost 200,000 jobs. Mixing them is the most common way regional AI analysis goes wrong.
+|  
+
+Geography | 
+
+What it covers | 
+
+Employment | 
+
+Source |
+|  
+
+Cincinnati OH-KY-IN MSA | 
+
+The full metropolitan area across three states | 
+
+1,101,030 | 
+
+[LINK https://www.bls.gov/oes/current/oes_17140.htm] BLS OEWS, May 2025 |
+|  
+
+Cincinnati MSA, covered employment | 
+
+Same area, jobs insured for unemployment | 
+
+1,096,580 | 
+
+[LINK https://data.bls.gov/cew/data/api/2025/a/area/C1714.csv] BLS QCEW, 2025 annual |
+|  
+
+Core seven counties | 
+
+Hamilton, Butler, Clermont, Warren (OH); Boone, Kenton, Campbell (KY) | 
+
+1,056,205 | 
+
+BLS QCEW, 2025 annual |
+|  
+
+ODJFS "Cincinnati MSA" | 
+
+Ohio counties only — no Kentucky, no Indiana | 
+
+907,032 (2022 base) | 
+
+[LINK https://ohiolmi.com/_docs/PROJ/MSA/LTOP_Cincinnati2032.xlsx] ODJFS projections |
+
+The fourth row is a trap. Ohio's Bureau of Labor Market Information publishes a file titled "Cincinnati Metropolitan Statistical Area" and states on its own projections page that, for employment projections, the Cincinnati MSA and the Southwest Ohio JobsOhio region are identical. The Southwest Ohio region is an Ohio-only construct. Every occupational projection in that file therefore excludes Northern Kentucky and the Indiana counties, while carrying a title that says otherwise.
+
+This study uses the full MSA wherever BLS publishes it — for occupational employment and wages, industry employment and unemployment. It uses the seven core counties where the Ohio and Kentucky portions must be reported separately, because county data are the only place that separation is possible. Projections are labelled Ohio-portion throughout.
+
+Three further boundaries matter. The federal occupational survey, OEWS, does not publish a Kentucky-portion cut of the metro, so no occupational or wage figure in this study can be split by state. The Anthropic Economic Index publishes AI usage for states, not metros, so Ohio and Kentucky figures appear as state figures and are never presented as Cincinnati's. And the Job Openings and Labor Turnover Survey has no metropolitan estimates at all, which is why this study never reports a Cincinnati vacancy count.
+
+Period covered. The analytical window begins in 2024. Industry employment and unemployment are measured from September 2024 to September 2026, the latter preliminary; county employment and wages are 2024 and 2025 annual averages. Three inputs have a single vintage and cannot be placed on that footing: occupational employment and wages are May 2025, the most recent OEWS reference period; projections span 2022 to 2032 and were published in June 2025; observed AI usage is April and May 2026. Each is labelled single-vintage where it appears. Job postings were collected on 30 October 2026.
+
+## The regional economy as of September 2026
+
+Cincinnati's unemployment rate fell to 3.6% in September 2026 from 4.1% in September 2024, and that improvement came for the wrong reason. Over those two years employment fell by 2,161 and the labour force fell by 9,374. The rate dropped because people left the labour force faster than jobs disappeared.
+
+A note on the baseline. This study measures change from September 2024 rather than from 2019. A 2019 baseline runs through the pandemic collapse and the recovery that reversed it, so a "change since 2019" is largely a measurement of that round trip rather than of anything that has happened since. Generative AI reached broad enterprise deployment during 2023 and 2024, which makes September 2024 the last clean pre-period available in monthly data. Where the choice of baseline changes the reading, both are reported side by side, because for two sectors it changes the sign. Three inputs cannot be re-based and are labelled single-vintage wherever they appear: occupational employment and wages (OEWS, May 2025), the Ohio long-term projections (base year 2022) and observed AI usage (Anthropic Economic Index, April and May 2026). No 2024 value was constructed for any of them.
+|  
+
+September | 
+
+Labour force | 
+
+Employed | 
+
+Unemployed | 
+
+Rate |
+|  
+
+2019 | 
+
+1,150,407 | 
+
+1,109,401 | 
+
+41,006 | 
+
+3.6% |
+|  
+
+2022 | 
+
+1,152,772 | 
+
+1,113,782 | 
+
+38,990 | 
+
+3.4% |
+|  
+
+2024 | 
+
+1,187,924 | 
+
+1,138,786 | 
+
+49,138 | 
+
+4.1% |
+|  
+
+2025 | 
+
+1,189,154 | 
+
+1,141,504 | 
+
+47,650 | 
+
+4.0% |
+|  
+
+2026 | 
+
+1,178,550 | 
+
+1,136,625 | 
+
+41,925 | 
+
+3.6% |
+
+Source: [LINK https://download.bls.gov/pub/time.series/la/la.data.42.Ohio] BLS Local Area Unemployment Statistics, Cincinnati OH-KY-IN MSA, not seasonally adjusted. September 2026 is preliminary.
+
+Measured from the study's 2024 baseline, the rate has fallen from 4.1% to 3.6% — and it fell for the wrong reason. Between September 2024 and September 2026 the labour force contracted by 9,374 while employment fell by 2,161. The denominator shrank roughly four times faster than the numerator. A rate that improves because people stop looking for work is not evidence of a strengthening market.
+
+Payroll employment tells the same story more plainly. Total nonfarm employment reached 1,178,200 in September 2026, which is 8,600 jobs above September 2024 — growth of 0.7% across two full years on a base of 1.18 million. Against September 2019 the same endpoint reads +4.7%, but that window contains the pandemic collapse and the recovery that reversed it, so it measures a round trip rather than growth.
+
+Two details deserve attention before any discussion of AI. First, the household and payroll surveys disagree in level but agree in direction: both show a regional economy that stopped adding workers during 2026. Second, the unemployment rate is a poor instrument for detecting AI effects, because a worker displaced from a clerical job into a lower-paid service job appears in these figures as continuously employed.
+
+## Industry trends since 2024
+
+The sector most directly associated with white-collar automation has been shrinking in Cincinnati for years. Credit intermediation — retail and commercial banking, including the back-office processing that generative AI is expected to touch — employed 23,500 people in September 2026, down from 27,300 in September 2019 and from 24,500 in September 2024. The seven-year figure is a 13.9% decline; the two-year figure is 4.1%. Put differently, 73.7% of the fall had already happened before September 2024, which is to say before generative AI was deployed at any scale. The 13.9% number circulates as evidence of AI displacement in banking. Roughly seven-tenths of it predates the technology.
+
+[CHART: BLS Current Employment Statistics, Cincinnati OH-KY-IN MSA, September to September, not seasonally adjusted; both baselines shown]
+
+Four observations follow from this chart.
+
+Growth is concentrated in work that is hard to deliver remotely or digitally, and it holds on both baselines: health care and social assistance (up 4.4% since 2024 and 12.2% since 2019) and construction (up 4.3% and 15.9%). Goods movement is the exception, growing strongly over the longer window and shrinking over the shorter one. Air transportation, too small to plot sensibly, is up 4.0% since 2024 and grew 52.9% from 3,400 to 5,200 jobs since 2019 on the strength of the CVG cargo hub.
+
+Staffing deserves a correction on the new baseline. Employment services payrolls peaked at 39,700 in September 2022 and stood at 29,800 in September 2026, a fall of 24.9%. Read from 2024, however, the sector is up 0.7%: effectively the entire decline happened between 2022 and 2024. Temporary and contract staffing is a standard leading indicator, because firms cut contingent labour before permanent headcount, which is why it is worth tracking monthly. But on this study's window it is flat, and presenting the 24.9% figure as a current warning sign would misdate a contraction that has already finished.
+
+Changing the baseline reverses the direction of seven of the seventeen sectors plotted. Transportation and warehousing swings furthest: it reads as the metro's fastest-growing sector against 2019, up 17.0%, and as a shrinking one against 2024, down 4.8%, because the pandemic logistics surge peaked and unwound inside the longer window. Insurance carriers, financial activities, trade and transportation, government, other services and employment services all reverse as well. Banking is a different case and does not reverse: it falls on both baselines, but the magnitude collapses from 13.9% to 4.1%. Federal government has fallen 14.0% since 2024, the largest two-year decline of any sector here, for reasons that have nothing to do with this study's subject. Reading the two baselines side by side is the point of the exercise: it separates what the pandemic did from what has happened since, and nothing in the pattern that remains looks like a clean AI signal — information and finance are down, but professional, scientific and technical services and management of companies have both grown.
+
+Information is the sector that declines on both horizons and accelerates on the shorter one, down 3.0% since 2019 and 4.4% since 2024. It is also Cincinnati's smallest private supersector at 13,100 jobs, which limits how much any change there can move the regional total. Credit intermediation, retail trade and federal government also fall on both baselines, but each decelerates rather than accelerates.
+
+## The occupational structure behind Cincinnati's exposure
+
+A region's AI exposure is not a property of the region. It is the employment-weighted average of the exposure of the jobs people actually hold. Cincinnati's occupational mix is therefore the foundation of everything that follows.
+
+The location quotient column compares the metro's share of an occupation with the national share. A value of 1.00 means the region has exactly its expected share; 1.24 means 24% more.
+|  
+
+SOC | 
+
+Occupational group | 
+
+Employment | 
+
+LQ | 
+
+Median wage |
+|  
+
+43-0000 | 
+
+Office and administrative support | 
+
+125,530 | 
+
+1.00 | 
+
+$47,400 |
+|  
+
+53-0000 | 
+
+Transportation and material moving | 
+
+107,750 | 
+
+1.11 | 
+
+$44,200 |
+|  
+
+35-0000 | 
+
+Food preparation and serving | 
+
+105,450 | 
+
+1.09 | 
+
+$32,230 |
+|  
+
+41-0000 | 
+
+Sales and related | 
+
+93,240 | 
+
+0.98 | 
+
+$37,260 |
+|  
+
+11-0000 | 
+
+Management | 
+
+83,560 | 
+
+1.06 | 
+
+$116,460 |
+|  
+
+29-0000 | 
+
+Healthcare practitioners and technical | 
+
+78,460 | 
+
+1.13 | 
+
+$81,890 |
+|  
+
+51-0000 | 
+
+Production | 
+
+75,240 | 
+
+1.24 | 
+
+$47,780 |
+|  
+
+13-0000 | 
+
+Business and financial operations | 
+
+73,140 | 
+
+0.98 | 
+
+$78,810 |
+|  
+
+25-0000 | 
+
+Educational instruction and library | 
+
+58,690 | 
+
+0.91 | 
+
+$59,130 |
+|  
+
+49-0000 | 
+
+Installation, maintenance and repair | 
+
+44,090 | 
+
+1.02 | 
+
+$61,340 |
+|  
+
+31-0000 | 
+
+Healthcare support | 
+
+42,410 | 
+
+0.76 | 
+
+$38,580 |
+|  
+
+47-0000 | 
+
+Construction and extraction | 
+
+38,220 | 
+
+0.84 | 
+
+$62,470 |
+|  
+
+15-0000 | 
+
+Computer and mathematical | 
+
+32,340 | 
+
+0.87 | 
+
+$101,210 |
+|  
+
+37-0000 | 
+
+Building and grounds cleaning | 
+
+29,410 | 
+
+0.91 | 
+
+$37,140 |
+|  
+
+17-0000 | 
+
+Architecture and engineering | 
+
+23,290 | 
+
+1.26 | 
+
+$99,790 |
+|  
+
+33-0000 | 
+
+Protective service | 
+
+23,030 | 
+
+0.86 | 
+
+$48,040 |
+|  
+
+39-0000 | 
+
+Personal care and service | 
+
+21,770 | 
+
+0.94 | 
+
+$32,070 |
+|  
+
+21-0000 | 
+
+Community and social service | 
+
+16,160 | 
+
+0.86 | 
+
+$57,260 |
+|  
+
+27-0000 | 
+
+Arts, design, entertainment, sports, media | 
+
+12,820 | 
+
+0.89 | 
+
+$54,960 |
+|  
+
+19-0000 | 
+
+Life, physical and social science | 
+
+9,620 | 
+
+0.92 | 
+
+$80,900 |
+|  
+
+23-0000 | 
+
+Legal | 
+
+6,240 | 
+
+0.68 | 
+
+$98,540 |
+|  
+
+45-0000 | 
+
+Farming, fishing and forestry | 
+
+570 | 
+
+0.18 | 
+
+$42,270 |
+
+Source: [LINK https://www.bls.gov/oes/current/oes_17140.htm] BLS Occupational Employment and Wage Statistics, May 2025, Cincinnati OH-KY-IN MSA. Total employment 1,101,030; median annual wage $50,170; mean $67,370.
+
+Three features of this table drive the analysis.
+
+Office and administrative support is the largest group in the region, at 125,530 jobs and 11.4% of all employment, with a location quotient of exactly 1.00. This is the occupational family where clerical automation has been concentrated for thirty years and where language models now have the greatest measured task overlap.
+
+Cincinnati is a manufacturing and engineering region, not a computing one. Production carries a location quotient of 1.24 and architecture and engineering 1.26 — the two highest in the table, reflecting GE Aerospace and the region's industrial base. Computer and mathematical occupations sit at 0.87, meaning the metro has 13% fewer such jobs than its size implies. Legal, at 0.68, is lower still.
+
+The wage distribution is wide and bottom-heavy. The median Cincinnati job pays $50,170, while the mean is $67,370. The tenth percentile earns $29,780 and the ninetieth $119,580. Four of the five largest occupational groups pay below the metro median.
+
+## Exposure, use and displacement are three different questions
+
+Most regional AI reporting collapses five distinct claims into one. They have different evidence, different measures, and different answers.
+|  
+
+Claim | 
+
+Question it answers | 
+
+Measure used here | 
+
+What it cannot tell you |
+|  
+
+AI exposure | 
+
+Could AI perform tasks this occupation involves? | 
+
+AIOE and its language-model variant (Felten, Raj & Seamans) | 
+
+Whether any employer has adopted anything |
+|  
+
+Task automation | 
+
+Is AI actually doing those tasks today? | 
+
+Observed exposure from the Anthropic Economic Index | 
+
+Whether the worker was replaced or freed up |
+|  
+
+Workforce augmentation | 
+
+Is AI making existing workers more productive? | 
+
+Collaboration split; employer disclosures | 
+
+How productivity gains are shared |
+|  
+
+Job displacement | 
+
+Have workers lost jobs because of AI? | 
+
+Employer announcements with explicit attribution | 
+
+Anything about unannounced attrition |
+|  
+
+New job creation | 
+
+Is AI generating new roles here? | 
+
+AI-skill job postings | 
+
+Whether postings become filled jobs |
+
+Exposure is a property of tasks, measured without reference to any firm. The AIOE index scores each occupation by how closely its required abilities match what AI applications can do. It is standardised across occupations, so a score of zero is the average occupation and the units are standard deviations. A high score means AI could in principle touch the work. It is a statement about technology, not about employers.
+
+Observed exposure is different in kind. The Anthropic Economic Index measures the share of an occupation's O*NET tasks that actually appear in real AI conversations. An occupation can score high on theoretical exposure and zero on observed exposure, which means the capability exists and nobody is using it for that work yet.
+
+Displacement requires an employer to have eliminated roles and said why. This study treats an employer's own attribution as the evidence and records where media framing runs ahead of it. By that standard, exactly one Cincinnati employer has announced AI-linked cuts, and its own memo gives a different primary reason.
+
+The distinction matters because the three measures disagree. Nationally, the New York Fed found that job postings in highly exposed occupations were already declining before ChatGPT was released, with no clear break afterwards, and concluded there is "little indication of a distinct AI-driven decline in labor demand". Exposure was high; displacement was not visible.
+
+One more distinction is worth stating plainly. An occupation shrinking is not the same as a worker losing a job. Ohio projects Cincinnati cashier employment to fall 13.8% by 2032, but almost all of that reduction happens through workers leaving and not being replaced.
+
+## How exposed is Greater Cincinnati?
+
+Weighting every detailed occupation by its May 2025 employment produces a single exposure score for each geography. Cincinnati's is indistinguishable from the nation's.
+|  
+
+Geography | 
+
+AIOE (all AI) | 
+
+AIOE language models | 
+
+AIOE image generation | 
+
+Observed exposure |
+|  
+
+Cincinnati MSA | 
+
+0.0320 | 
+
+0.0884 | 
+
+-0.1570 | 
+
+0.1267 |
+|  
+
+Ohio | 
+
+0.0104 | 
+
+0.0656 | 
+
+-0.1699 | 
+
+0.1230 |
+|  
+
+Kentucky | 
+
+-0.0633 | 
+
+-0.0033 | 
+
+-0.2527 | 
+
+0.1182 |
+|  
+
+United States | 
+
+0.0325 | 
+
+0.0931 | 
+
+-0.1606 | 
+
+0.1305 |
+|  
+
+Cincinnati minus US | 
+
+-0.0004 | 
+
+-0.0047 | 
+
++0.0036 | 
+
+-0.0038 |
+
+AIOE columns are standard deviations across occupations, so zero is the average occupation. Observed exposure is the share of an occupation's tasks seen in real AI usage, on a 0 to 1 scale. Employment weights are OEWS May 2025 detailed occupations.
+
+On every measure Cincinnati sits within five thousandths of a standard deviation of the national average, and slightly below it on both generative-AI measures. Ohio as a whole is modestly less exposed than the nation, and Kentucky clearly less so, at -0.063 on the general index. Kentucky's lower score reflects its heavier concentration in production, logistics and food service.
+
+This is the study's first substantive correction to the common regional narrative. Cincinnati is neither a city whose jobs are unusually threatened by AI nor one unusually insulated from it. Its occupational mix is close to the American average.
+
+The aggregate, however, conceals the distribution that matters.
+|  
+
+Observed AI task overlap | 
+
+Occupations | 
+
+Employment | 
+
+Share | 
+
+Median wage |
+|  
+
+None measured (0.00) | 
+
+297 | 
+
+417,870 | 
+
+41.4% | 
+
+$50,964 |
+|  
+
+Low (0.00 to 0.10) | 
+
+131 | 
+
+230,970 | 
+
+22.9% | 
+
+$73,333 |
+|  
+
+Moderate (0.10 to 0.25) | 
+
+87 | 
+
+127,660 | 
+
+12.7% | 
+
+$83,964 |
+|  
+
+High (0.25 to 0.40) | 
+
+47 | 
+
+131,160 | 
+
+13.0% | 
+
+$69,113 |
+|  
+
+Very high (above 0.40) | 
+
+30 | 
+
+100,830 | 
+
+10.0% | 
+
+$59,383 |
+|  
+
+Total covered | 
+
+592 | 
+
+1,008,490 | 
+
+100% | 
+
+ |
+
+Two national benchmarks make these figures interpretable. The New York Fed reports that roughly 40% of US workers are in occupations with zero measured exposure and fewer than 10% are in occupations scoring 0.40 or above. Cincinnati's equivalents are 41.4% and 10.0%. The region tracks the nation closely on both.
+
+The occupations in that top band are not what the public debate expects. Ranked by observed exposure among occupations with at least 1,000 Cincinnati jobs, the leaders are customer service representatives (0.70, 19,410 jobs), medical records specialists (0.67), market research analysts (0.65, 7,080 jobs), wholesale and manufacturing sales representatives (0.63, 12,360 jobs) and financial and investment analysts (0.57). Office clerks (0.45, 16,750 jobs) and executive secretaries (0.45, 9,670 jobs) follow close behind.
+
+These are desk jobs that involve reading, writing, summarising and responding. Production workers, drivers, cleaners, cooks and construction trades — together well over 300,000 Cincinnati jobs — sit at or near zero.
+
+## Exposure across the wage distribution
+
+Generative AI does not threaten Cincinnati's low-wage work. It points at the region's better-paid desk jobs. This reverses the pattern of every previous automation wave, which hollowed out the middle and the bottom.
+
+[CHART: BLS OEWS May 2025 Cincinnati MSA employment and wages; AIOE language-model index (Felten, Raj & Seamans 2023); observed exposure from the Anthropic Economic Index]
+
+Sorting all 638 detailed occupations by median wage and cutting them into five quintiles of roughly 211,000 jobs each gives a clean gradient. Potential exposure to language models is negative across the bottom three quintiles — jobs paying under about $62,000 — and turns sharply positive above that, reaching 0.703 standard deviations in the top quintile.
+
+Actual use tells a subtly different story. Observed AI task overlap also rises with pay, but it peaks in the fourth quintile at 0.194 and then falls back to 0.134 at the top. The jobs where AI is most used today are not the highest-paid ones; they are the professional jobs just below.
+
+The gap between the two panels in the top quintile is the most policy-relevant feature of this chart. Occupations paying above $83,000 have the highest theoretical exposure and below-average observed use. Either adoption there is still early, or the tasks these roles are paid for — judgement, accountability, client relationships — resist delegation in ways the exposure index does not capture.
+
+The practical implication runs against the common assumption. In Cincinnati, a worker earning $35,000 in food service, cleaning or warehousing faces very little measured AI exposure. A worker earning $75,000 in accounting, human resources or marketing analysis faces a great deal.
+
+## Where exposure meets actual use
+
+Crossing potential exposure with observed use separates occupations where AI is already in the work from those where the capability exists but nothing has happened yet. Each axis is split at the national median across occupations.
+
+One caveat governs how this table should be read. Because 54% of US occupations have observed exposure of exactly zero, the national median on that axis is 0.000. "Some use" therefore means any measured AI task overlap at all, not heavy use. The split is between occupations AI has touched and occupations it has not.
+|  
+
+Quadrant | 
+
+Occupations | 
+
+Employment | 
+
+Share | 
+
+Median wage |
+|  
+
+High exposure, some use | 
+
+208 | 
+
+460,970 | 
+
+52.9% | 
+
+$72,095 |
+|  
+
+High exposure, no measured use | 
+
+78 | 
+
+47,150 | 
+
+5.4% | 
+
+$66,261 |
+|  
+
+Low exposure, some use | 
+
+44 | 
+
+79,080 | 
+
+9.1% | 
+
+$51,467 |
+|  
+
+Low exposure, no measured use | 
+
+190 | 
+
+284,830 | 
+
+32.7% | 
+
+$50,721 |
+
+Covers 872,030 Cincinnati jobs where both measures exist. Thresholds: national median language-model AIOE -0.1205, national median observed exposure 0.000.
+
+A majority of Cincinnati employment — 460,970 jobs, or 52.9% of the covered total — sits in occupations that are both theoretically exposed and already touched by real AI use. These jobs pay a median of $72,095, well above the metro median of $50,170. This is the population that workforce policy should be planning for.
+
+The ten largest such occupations show how ordinary this group is: general and operations managers (29,330 jobs), retail salespersons (28,670), registered nurses (28,520), cashiers (19,580), customer service representatives (19,410), office clerks (16,750), wholesale sales representatives (12,360), accountants and auditors (10,050), executive secretaries (9,670) and first-line supervisors of office staff (9,420).
+
+That list should temper alarm as much as it raises it. Registered nurses and retail salespersons appear because some of their documented tasks — writing notes, answering product questions — overlap with AI use. Neither occupation is plausibly at risk of elimination. Task overlap is not role substitution.
+
+The smallest quadrant is the most interesting for forecasting. Some 47,150 Cincinnati jobs are highly exposed with no measured AI use at all — first-line supervisors of production workers (5,930), preschool teachers (4,390), human resources managers (1,920), speech-language pathologists (1,690) and cost estimators (1,630). These are the roles where change has not started but the capability is present. If adoption broadens, this is where new effects should appear first.
+
+At the other end, 284,830 jobs — roughly a third of covered employment, at a median wage of $50,721 — are in occupations with neither meaningful exposure nor any measured use. Cincinnati's large transportation, food service, cleaning and construction workforces dominate this group. Their risk over the next decade comes from other forces entirely.
+
+## What job postings show about AI hiring demand
+
+AI-skill postings in Cincinnati are growing fast from a very small base, and most of them are placed by firms headquartered elsewhere.
+
+The Bipartisan Policy Center's Skills Data Dashboard, built on Lightcast postings data and updated 9 October 2026, ranks Cincinnati fourth of the 50 largest-posting metros for growth in AI-skill postings over the year to September 2026.
+|  
+
+Rank | 
+
+Metro | 
+
+AI postings growth | 
+
+AI postings added | 
+
+Other postings |
+|  
+
+2 | 
+
+Denver-Aurora-Centennial, CO | 
+
++199% | 
+
+2,926 | 
+
++2% |
+|  
+
+3 | 
+
+Pittsburgh, PA | 
+
++187% | 
+
+1,421 | 
+
++24% |
+|  
+
+4 | 
+
+Cincinnati, OH-KY-IN | 
+
++159% | 
+
+619 | 
+
++6% |
+|  
+
+7 | 
+
+Cleveland, OH | 
+
++129% | 
+
+498 | 
+
++4% |
+|  
+
+27 | 
+
+Columbus, OH | 
+
++88% | 
+
+978 | 
+
++10% |
+|  
+
+41 | 
+
+Louisville, KY-IN | 
+
++72% | 
+
+146 | 
+
++2% |
+
+The growth rate is genuine and the base is small. If 619 postings represent 159% growth, the prior-year base was about 389 and the current level about 1,008 — our calculation, not a published figure, since the dashboard does not publish metro totals. Against a metro with roughly 1.1 million jobs, that is a rounding error in absolute terms and a real signal in directional terms. Both statements are true and the second is usually reported without the first.
+
+To check this against observable postings, we ran a keyword census of the National Labor Exchange through the US Department of Labor's CareerOneStop Job Finder on 30 October 2026, for Cincinnati within 25 miles.
+|  
+
+Search term | 
+
+Postings |
+|  
+
+"artificial intelligence" | 
+
+177 |
+|  
+
+"data analytics" | 
+
+170 |
+|  
+
+"machine learning" | 
+
+95 |
+|  
+
+"data scientist" | 
+
+79 |
+|  
+
+"generative AI" | 
+
+64 |
+|  
+
+"large language model" | 
+
+17 |
+|  
+
+"robotic process automation" | 
+
+6 |
+|  
+
+"prompt engineering" | 
+
+4 |
+|  
+
+nurse (non-AI benchmark) | 
+
+906 |
+
+These counts are indicative, not authoritative, and three limits must travel with them. The search does full-text matching and returns visible false positives — nine wireless retail sales associate advertisements appeared under "artificial intelligence". The platform caps its display at 10,000, so no reliable denominator of total postings can be taken from it. And the National Labor Exchange aggregates employer and state job-bank feeds rather than censusing every posting.
+
+With those caveats, the ordering is informative. More Cincinnati postings mention nursing than every AI term combined. Postings naming the specific techniques of current AI practice — large language models, prompt engineering, robotic process automation — number in the single and double digits.
+
+Who is advertising matters more than how many. The largest advertisers of AI-related roles in the metro are not its major employers.
+|  
+
+Advertiser | 
+
+"artificial intelligence" | 
+
+"data analytics" | 
+
+Type |
+|  
+
+Deloitte | 
+
+57 | 
+
+25 | 
+
+Consulting |
+|  
+
+Kelly Services | 
+
+40 | 
+
+ | 
+
+Staffing |
+|  
+
+PwC | 
+
+14 | 
+
+10 | 
+
+Consulting |
+|  
+
+Eliassen Group | 
+
+13 | 
+
+ | 
+
+Staffing |
+|  
+
+Accenture | 
+
+11 | 
+
+35 | 
+
+Consulting |
+|  
+
+EY | 
+
+ | 
+
+30 | 
+
+Consulting |
+|  
+
+GE Aerospace | 
+
+ | 
+
+8 | 
+
+Regional employer |
+
+Of the top advertisers across both searches, only GE Aerospace is a Cincinnati-headquartered employer. The rest are national consultancies and staffing agencies selling AI implementation capacity into the region or placing contract workers with local clients.
+
+This is the single most important finding about Cincinnati's AI labour demand. The region is buying AI capability more than building it. That pattern creates billable work for firms based in New York, Chicago and London, and comparatively few permanent AI roles inside Cincinnati companies. It is also consistent with the metro's computer and mathematical location quotient of 0.87.
+
+One caution on the employer counts: staffing firms re-post roles and several agencies may advertise the same end-client vacancy, so these should be read as upper bounds on distinct openings.
+
+## AI adoption among major regional employers
+
+AI deployment in Greater Cincinnati is real, documented and in several cases quantified. Attributed job displacement is far narrower than the deployment, and the gap between the two is where most public commentary goes wrong.
+
+The test applied here is simple: did the employer eliminate roles, and did the employer say AI was the reason?
+|  
+
+Employer | 
+
+AI deployed | 
+
+Workforce action | 
+
+Employer attributed it to AI? |
+|  
+
+[LINK https://ir.kroger.com/news/news-details/2026/Kroger-Details-AI-Strategy-Built-on-Decades-Retail-Expertise-at-GroceryShop-2026/default.aspx] Kroger | 
+
+Forecasting, personalisation, generative AI, shopping assistant, RFID and computer vision | 
+
+~3,000 corporate roles over 3 years | 
+
+Partly. The memo cites organisational layers, not AI headcount |
+|  
+
+[LINK https://www.sec.gov/Archives/edgar/data/35527/000003552726000124/a2025annualreport.pdf] Fifth Third Bancorp | 
+
+Enterprise-wide tools; 30% of new code AI-generated | 
+
+None announced | 
+
+No. CEO says AI is not driving current productivity gains |
+|  
+
+[LINK https://www.nbcnews.com/business/business-news/procter-gamble-cut-7000-jobs-part-broader-restructuring-rcna211263] Procter & Gamble | 
+
+"Digitization and automation"; generative-AI research roles | 
+
+Up to 7,000 non-manufacturing roles | 
+
+No. Cost, tariffs and consumer uncertainty |
+|  
+
+[LINK https://bipartisanpolicy.org/issue-brief/aerospace-manufacturing-workforce/] GE Aerospace | 
+
+AI process testing at the Evendale STAC facility | 
+
+Net hiring; $115m regional investment | 
+
+n/a — framed as process improvement |
+|  
+
+[LINK https://scienceblog.cincinnatichildrens.org/translating-ai-digital-health-into-impact/] Cincinnati Children's | 
+
+Imaging support, referral alerts, ambient documentation trials | 
+
+None announced | 
+
+n/a — framed as clinical augmentation |
+|  
+
+[LINK https://www.uc.edu/news/articles/2026/01/university-of-cincinnati-gets-11m-for-ai-physician-training.html] UC / UC Health | 
+
+$1.1m ambient-AI physician training grant; employer AI workshops | 
+
+None announced | 
+
+n/a — training and education |
+
+### Kroger: the one AI-linked reduction, and what its memo actually says
+
+On 12 October 2026 Kroger told staff it would eliminate about 3,000 corporate roles over three years and not backfill them. That is roughly 37% of its 8,200 corporate employees, and it follows about 1,000 corporate cuts in June 2025. Kroger is headquartered in Cincinnati, so a substantial share of these roles is almost certainly local, though the company has not disclosed the geographic split.
+
+The attribution is weaker than the coverage implies. CEO Greg Foran's memo describes "more layers, more handoffs and more overhead than we need" and does not state how many roles AI replaces. Three weeks earlier, Kroger's own AI strategy release said the aim was to match AI to risk and repeatability rather than to automate everything, and that human connection "will never be replaced by AI". The company is simultaneously providing AI literacy training to more than 400,000 associates.
+
+The honest reading is that AI is an enabling condition and a narrative frame for a delayering programme whose primary driver is cost. That is a meaningful event for Cincinnati's white-collar labour market either way. It is not proof that AI eliminated 3,000 jobs.
+
+### Fifth Third: the most quantified deployment, with no job cuts
+
+Fifth Third's FY2025 annual report gives the most specific AI metrics disclosed by any major Cincinnati employer. In the fourth quarter of 2025, roughly 30% of new code was AI-generated and more than 80% of IT unit tests were AI-executed, with the change-failure rate down more than 20% year over year. All colleagues have access to AI tools and 56% used them daily.
+
+No workforce reduction is attributed to any of this. More striking, CEO Tim Spence argues the opposite of the prevailing narrative: his commercial clients indicate that recent productivity gains are not driven by AI but by post-pandemic investment in older automation technology. He treats the large AI gains as still ahead.
+
+This matters for Cincinnati because banking employment in the metro has fallen 13.9% since 2019 but only 4.1% since 2024 — a decline that largely predates generative AI and that the region's largest bank does not attribute to it.
+
+### Procter & Gamble: the largest reduction, not an AI story
+
+P&G's programme to cut up to 7,000 non-manufacturing roles, about 15% of that workforce, is the largest white-collar reduction announced by a Cincinnati-headquartered company. It was announced in June 2025 and attributed to costs, tariffs and consumer uncertainty. Layoff trackers record that none of these cuts were publicly blamed on AI. The company's own framing is "digitization and automation".
+
+It is routinely cited in AI-displacement commentary anyway. On the evidence available, that citation is unsupported.
+
+### Where AI is clearly additive
+
+GE Aerospace is directing more than $115 million to the Cincinnati region in 2026 within a $1 billion US manufacturing programme, and tests new AI processes at its Evendale Services Technology Acceleration Center before company-wide deployment. Its regional posture is hiring, not reducing.
+
+In healthcare, AI appears consistently as augmentation: imaging support, referral eligibility alerts and ambient documentation aimed at reducing clerical burden on clinicians. Cincinnati Children's participates in a new imaging research centre with UC, UC Health, GE HealthCare and JobsOhio. No regional health system has announced AI-related job reductions, and healthcare remains the metro's largest source of employment growth.
+
+## Projections, annual openings and replacement demand
+
+The most consequential number in this study is not an exposure score. It is 2.0%.
+
+Ohio projects the Cincinnati area to hold 927,769 jobs in 2032, up 20,737 from 907,032 in 2022 — growth of 2.3% across a decade, or roughly 0.23% a year. These figures cover the Ohio portion only.
+|  
+
+Source of projected annual openings | 
+
+Openings | 
+
+Share |
+|  
+
+Growth (new positions) | 
+
+2,074 | 
+
+2.0% |
+|  
+
+Exits (workers leaving the labour force) | 
+
+43,731 | 
+
+43.2% |
+|  
+
+Transfers (workers moving to another occupation) | 
+
+55,511 | 
+
+54.8% |
+|  
+
+Total average annual openings | 
+
+101,316 | 
+
+100% |
+
+Source: [LINK https://ohiolmi.com/_docs/PROJ/MSA/LTOP_Cincinnati2032.xlsx] ODJFS Bureau of Labor Market Information, June 2025, projection period 2022-2032, Ohio portion of the Cincinnati MSA.
+
+These are projected average annual openings, not current vacancies. The distinction is routinely lost in regional reporting, and conflating the two overstates immediate hiring demand by a wide margin.
+
+98.0% of Cincinnati's projected job openings exist only because someone leaves. The regional economy is not generating new positions at any meaningful rate; it is recycling existing ones. This is the condition that makes AI consequential here even though exposure is average.
+
+The reason is arithmetic. In a labour market where openings come from growth, a technology that slows hiring reduces the rate of expansion. In one where 98% of openings come from churn, the same slowdown attacks the only door into employment that exists. Entry-level hiring in a replacement-driven market is not a share of growth; it is the market.
+
+### Which occupations Ohio expects to shrink
+
+The projected declines land almost entirely on clerical and customer-facing work, and they correlate strikingly with AI exposure.
+|  
+
+Occupation | 
+
+Change 2022-32 | 
+
+Percent | 
+
+LM-AIOE | 
+
+Observed |
+|  
+
+Cashiers | 
+
+-2,581 | 
+
+-13.8% | 
+
+-0.11 | 
+
+0.08 |
+|  
+
+Secretaries and administrative assistants | 
+
+-1,184 | 
+
+-11.4% | 
+
+1.25 | 
+
+0.45 |
+|  
+
+Customer service representatives | 
+
+-1,151 | 
+
+-6.6% | 
+
+1.08 | 
+
+0.70 |
+|  
+
+Retail salespersons | 
+
+-830 | 
+
+-4.4% | 
+
+0.36 | 
+
+0.32 |
+|  
+
+Office clerks, general | 
+
+-819 | 
+
+-6.4% | 
+
+0.91 | 
+
+0.45 |
+|  
+
+Shipping, receiving and inventory clerks | 
+
+-610 | 
+
+-9.5% | 
+
+-0.74 | 
+
+0.00 |
+|  
+
+Bookkeeping and accounting clerks | 
+
+-538 | 
+
+-5.5% | 
+
+0.82 | 
+
+0.31 |
+|  
+
+First-line supervisors of office staff | 
+
+-421 | 
+
+-5.4% | 
+
+1.13 | 
+
+0.19 |
+|  
+
+Executive secretaries | 
+
+-380 | 
+
+-20.7% | 
+
+1.11 | 
+
+0.23 |
+|  
+
+Data entry keyers | 
+
+-291 | 
+
+-25.0% | 
+
+0.17 | 
+
+0.67 |
+|  
+
+Tellers | 
+
+-289 | 
+
+-11.3% | 
+
+0.43 | 
+
+0.02 |
+|  
+
+Interviewers, except eligibility and loan | 
+
+-187 | 
+
+-13.3% | 
+
+1.45 | 
+
+0.39 |
+
+The correlation is suggestive and must not be read as causal. These projections were produced in June 2025 from a 2022 employment base, and Ohio's methodology does not model AI adoption at all. The declines reflect long-running trends in clerical automation, retail self-service and branch banking that began decades before generative AI.
+
+That is the point rather than an objection. The occupations generative AI is best placed to affect were already contracting in Cincinnati for independent reasons. AI arrives as an accelerant on an existing trend, not as a new shock to a stable structure. The same conclusion emerged nationally from the New York Fed's posting analysis.
+
+### Openings are not concentrated in exposed work
+
+Splitting the 483 matched occupations into three equal groups by exposure and summing their projected openings shows a flat distribution: 32.1% of annual openings fall in the most exposed third, 36.0% in the middle and 31.9% in the least exposed. Across all three groups, growth accounts for between 0.5% and 2.3% of openings.
+
+A worker displaced from an exposed occupation will not find that the opportunities have moved to safer ground. They are spread evenly, and almost all of them are someone else's vacated job.
+
+## Entry-level workers, recent graduates and experienced workers
+
+No dataset measures AI's effect on entry-level hiring in Cincinnati specifically. OEWS publishes no experience breakdown, and the Job Openings and Labor Turnover Survey produces no metropolitan estimates. What follows combines national evidence with regional structure, and the boundary between the two is marked throughout.
+
+The national evidence does not support an AI-driven collapse in entry-level hiring. The New York Fed compared junior and senior postings within highly exposed occupations against a 2022 Q3 baseline. If AI were disproportionately cutting entry-level demand, that gap would widen after 2022. It fluctuates without trend. The authors conclude that hiring has slowed since 2022, that AI "may be contributing" but "is not the main driver", and that attributing the entry-level slowdown to AI alone is difficult.
+
+They also report a finding that cuts against the displacement narrative directly: in the New York Fed's Second District survey, firms say they are retraining workers in AI-exposed occupations more often than reducing hiring.
+
+Cincinnati's structure nonetheless makes young workers more vulnerable than that national picture suggests, for reasons that have little to do with AI exposure scores.
+
+The occupations Ohio projects to shrink fastest in the region are the classic entry points to white-collar careers: secretaries and administrative assistants (-11.4%), office clerks (-6.4%), customer service representatives (-6.6%), bookkeeping clerks (-5.5%), tellers (-11.3%) and data entry keyers (-25.0%). These roles have historically been where a worker without a degree, or a graduate without experience, entered an office and learned an industry. Four of the six carry language-model exposure scores above 0.8.
+
+Second, with 98.0% of projected openings coming from churn, there is almost no growth-driven hiring to absorb new entrants. A graduate competes for positions vacated by someone else rather than for newly created ones.
+
+Third, the contingent labour market has already contracted sharply. Cincinnati employment services payrolls fell from 39,700 in September 2022 to 29,800 in September 2026, a decline of 24.9%. Temporary and contract placements are a common first rung, and that rung has thinned considerably.
+
+Experienced workers face a different risk. The exposure gradient rises with pay, concentrating in the fourth and fifth wage quintiles — accountants, human resources specialists, management analysts, financial managers, marketing specialists. These are mid-career and senior roles held by people with substantial tenure and firm-specific knowledge. For them the plausible near-term effect is task change rather than job loss: the Fifth Third disclosures describe exactly this, with engineers' output changing while headcount does not.
+
+The asymmetry is worth stating plainly. Experienced professionals in exposed occupations are most likely to see their work reshaped around AI tools. Entry-level workers in those same occupations are most likely to see the job simply not advertised. The first group gets augmentation. The second gets absence.
+
+This is a hypothesis consistent with the regional structure, not a measured Cincinnati finding. Testing it would require posting-level data with experience requirements for the metro, which is identified in the limitations section as the most valuable missing input.
+
+## Ohio and Northern Kentucky compared
+
+Northern Kentucky added jobs nine times faster than the Ohio side of the region in 2025, from a smaller base and at lower pay.
+|  
+
+County | 
+
+State | 
+
+Employment 2025 | 
+
+Change on 2024 | 
+
+Average annual pay |
+|  
+
+Hamilton | 
+
+OH | 
+
+514,266 | 
+
+-0.3% | 
+
+$78,931 |
+|  
+
+Butler | 
+
+OH | 
+
+163,638 | 
+
++0.3% | 
+
+$67,229 |
+|  
+
+Warren | 
+
+OH | 
+
+102,347 | 
+
++1.6% | 
+
+$69,686 |
+|  
+
+Clermont | 
+
+OH | 
+
+63,011 | 
+
++1.4% | 
+
+$59,965 |
+|  
+
+Ohio four-county | 
+
+ | 
+
+843,262 | 
+
++0.19% | 
+
+$74,121 |
+|  
+
+Boone | 
+
+KY | 
+
+105,521 | 
+
++2.5% | 
+
+$60,495 |
+|  
+
+Kenton | 
+
+KY | 
+
+75,385 | 
+
++1.0% | 
+
+$72,992 |
+|  
+
+Campbell | 
+
+KY | 
+
+32,037 | 
+
++1.0% | 
+
+$58,130 |
+|  
+
+Northern Kentucky three-county | 
+
+ | 
+
+212,943 | 
+
++1.73% | 
+
+$64,564 |
+|  
+
+Core seven counties | 
+
+ | 
+
+1,056,205 | 
+
++0.50% | 
+
+$72,199 |
+
+Source: [LINK https://data.bls.gov/cew/data/api/2025/a/area/39061.csv] BLS Quarterly Census of Employment and Wages, 2025 annual averages, all ownerships. Covers employment insured for unemployment compensation, which excludes most self-employment.
+
+Three observations follow.
+
+Hamilton County, which holds 61% of Ohio-side employment, lost jobs in 2025. Its decline of roughly 1,400 positions is what holds Ohio-side growth to 0.19%. Hamilton also pays the region's highest average wage at $78,931, so it concentrates both the white-collar employment and the exposure.
+
+Boone County is the region's growth engine, up 2.5% in a single year, driven by the CVG airport logistics cluster. Metro air transportation employment is up 4.0% since September 2024 and 52.9% since 2019. It is also work with very low measured AI exposure.
+
+The Kentucky side is cheaper and growing, and less exposed. Average pay in Northern Kentucky is 13% below the Ohio side. At state level, Kentucky's employment-weighted AI exposure is -0.063 against Ohio's +0.010 and the nation's +0.033, reflecting its heavier concentration in logistics, production and food service.
+
+### A caution on the Kentucky figures
+
+The state-level comparisons above should not be transferred to Northern Kentucky without care. Boone, Kenton and Campbell counties are economically part of the Cincinnati metro and look little like eastern or western Kentucky. A state exposure score built largely from the rest of Kentucky is a poor proxy for the three counties across the river.
+
+Two gaps remain on the Kentucky side and neither could be closed from published sources. The federal occupational survey publishes no Kentucky-portion cut of the Cincinnati MSA, so no occupational or wage figure in this study can be split by state. And Ohio's occupational projections exclude Northern Kentucky entirely, while the Kentucky equivalents are produced on a different cycle and basis, so the two cannot simply be added. Sub-state Kentucky projections were not obtained for this study and are identified as a research gap.
+
+## What the region's own institutions have published
+
+Everything to this point is built from federal and state statistical data. That is a strength for measurement and a weakness for local knowledge, so this section checks the study against what Cincinnati's own organisations have said: the Regional Chamber, REDI Cincinnati, the University of Cincinnati and the City.
+
+The first finding is an absence. The Cincinnati Regional Chamber's State of the Region 2026, produced by its Center for Research & Data and published on 15 October 2026, contains no occurrence of "artificial intelligence", "automation", "displacement", "reskilling" or "upskilling". Neither does the Chamber's Cincinnati Region Labor Market Analysis of May 2024. The one Chamber publication that does discuss AI, the data-centre report of 12 October 2026, mentions it six times, and every mention concerns electricity demand or facility siting rather than employment.
+
+The gap is narrower than that first appears, because a great deal is happening on AI in Cincinnati. The City convened a regional AI task force led by Mayor Aftab Pureval, County Clerk of Courts Pavan Parikh and the City's director of performance and data analytics, chaired by Rob Richardson of Disruption Now, with Cincinnati Children's, Procter & Gamble and the University of Cincinnati among its members; in May 2026 it presented drafted policy recommendations and pilot proposals to the Economic and Cultural Opportunity Committee. The City proclaimed 8 June 2026 AI Day. JobsOhio and the Enterprise Technology Association awarded roughly 1,209 free AI certificates in Cincinnati during 2026 and more than 2,000 statewide. Ohio's June 2026 sector-partnership awards of more than $5 million included a Hamilton County partnership covering manufacturing, advanced mobility, AI and engineering. The Cincinnati AI Catalyst has proposed a ten-metric regional framework whose values all read Baseline TBD, and RUDI has announced a Greater Cincinnati AI Readiness Index that publishes no findings, methodology or sample.
+
+So the region is acting on AI, funding training for it and proclaiming days for it. What no Cincinnati institution has published is an analysis of what AI is doing to regional employment. That specific absence is the condition this study was written into, and it is worth stating precisely rather than confusing it with inactivity.
+
+One public number does circulate as a measurement of the City's AI readiness, and it is worth examining because the failure it illustrates is the one this study exists to avoid. Cincinnati has been reported as scoring a D-minus on AI readiness. That grade was given verbally at the May 2026 committee meeting by the task force chair, after Councilman Seth Walsh asked him on the spot to grade the city from A to F on its willingness to embrace AI. There is no index, no survey and no methodology behind it, the question asked about willingness rather than preparedness, and the person grading the city was the person asking it for at least $200,000. Council took no funding vote at that meeting, and neither the task force nor a training lab appears in the approved FY2026–2027 budget. None of this makes the grade wrong. It makes it an opinion that is now being cited as a measurement.
+
+One further exchange at that meeting is worth recording, because it states the premise this study tests. Vice Mayor Jan-Michele Lemon Kearny said: "This is really important because it creates jobs, and we know we're going to lose some jobs to AI. We want that net gain of jobs." No figure for Cincinnati job losses to AI was presented at the meeting, and this study finds none in the data either. The belief is reasonable and may prove correct. It is not at present a measured fact, and the distance between those two things is the subject of this paper.
+
+### An independent source reaches the same conclusion
+
+REDI Cincinnati benchmarks the region against 39 peer metropolitan areas and reports that "only 3 percent of Cincinnati workers are employed in computer and math positions", placing the region 27th of 40 on technology-sector employment share. Those figures come from Lightcast data for the second quarter of 2022.
+
+This study, using BLS Occupational Employment and Wage Statistics for May 2025, puts the same quantity at 2.94% — 32,340 of 1,101,030 jobs, a location quotient of 0.87. A different data vendor, a different method and a three-year gap produce the same answer. The finding that Cincinnati is under-represented in the occupations where AI work concentrates therefore does not rest on this study's methodological choices.
+
+The Chamber corroborates the wider picture as well. It places the region in the bottom half of its nineteen peer metros for population growth, GDP growth and job growth, which is the same thin-growth condition this study measures from the federal series. It reports "more than 90,000" jobs added over the past decade; the equivalent figure computed here from BLS Current Employment Statistics is 87,700 between September 2016 and September 2026.
+
+### One local number that needs care
+
+The Chamber's data-centre report models a 250 MW facility as supporting 3,203 jobs a year in the region. That figure has begun to circulate locally as evidence of what AI infrastructure will do for employment. It should be read beside the staffing table published two pages earlier in the same report.
+|  
+
+Facility | 
+
+Modelled total jobs | 
+
+Implied direct | 
+
+On-site staff, per the same report |
+|  
+
+10 MW data centre | 
+
+128 | 
+
+44 | 
+
+3 |
+|  
+
+250 MW hyperscale | 
+
+3,203 | 
+
+1,108 | 
+
+38 |
+
+The report states that a facility above 100 MW runs at 0.15 operational full-time equivalents per megawatt, which is 38 people at 250 MW, and describes the region's existing facilities as each employing "two to ten full-time workers". Dividing the modelled total by the report's own stated jobs multiplier of 2.89 implies 1,108 direct jobs — roughly thirty times the on-site figure. The gap arises because the Lightcast economic impact model converts projected revenue into employment at the average labour intensity of NAICS 518210, an industry code that also contains far more labour-intensive businesses.
+
+The Chamber identifies that limitation itself. Its methodology notes state that industry-level data for this code "is used with caution" because data centres "differ from less physically intensive technology businesses" within it, that no actual proposed or planned facility was used in the modelling, and that the report is "for educational purposes only". The caveats are present in the document; the headline number is what travels without them. The distinction is the same one this study draws between projected annual openings and current vacancies: a modelled total is not a payroll.
+
+The same report carries a measured figure pointing the other way, and it corroborates the hiring-demand finding above. Over the twelve months to July 2026 the Cincinnati region recorded 472 job postings requiring data-centre skills, against 9,025 in the Arlington, Virginia metropolitan area, the largest United States data-centre market. The region's nineteen facilities hold roughly 565 MW of capacity, while Columbus alone exceeds 3,000 MW.
+
+One point of agreement is worth noting for the geography warning earlier in this study: the Chamber defines the Cincinnati region as the fifteen-county tri-state metropolitan statistical area, which is the same geography as the occupational figures used here.
+
+## What the evidence supports, and what it does not
+
+### Measured AI use in the two states runs below the national average
+
+The Anthropic Economic Index measures where AI is actually used, by state. These are state figures and do not describe Cincinnati.
+|  
+
+Measure, May 2026 | 
+
+Ohio | 
+
+Kentucky | 
+
+United States |
+|  
+
+AI Usage Index (1.0 = proportional to working-age population) | 
+
+0.59 | 
+
+0.39 | 
+
+1.00 |
+|  
+
+Share of conversations that are work-related | 
+
+40.0% | 
+
+40.0% | 
+
+41.3% |
+|  
+
+Automation (delegating a task) | 
+
+50.8% | 
+
+53.0% | 
+
+49.6% |
+|  
+
+Augmentation (collaborating on a task) | 
+
+49.2% | 
+
+47.0% | 
+
+50.4% |
+
+The United States column shows 1.00 because state indices are computed within the United States, so the national average is 1.00 by construction; it is a definitional anchor, not a published figure. (The index Anthropic publishes for the United States itself, 3.87, measures the country against the world and is not comparable with the state values.) Read against that anchor, Ohio generates 59% of the AI usage its working-age population would imply and Kentucky 39%. Both states skew slightly more toward delegating work to AI than the nation does, though the differences are small. Computer and mathematical occupations account for 21.6% of Ohio's AI usage, the largest single share, followed by arts and media at 13.1% and sales at 12.0%.
+
+The practical reading is that adoption in this part of the country lags, which buys time and also risks the region arriving late.
+
+### Claims this study supports
+- 
+
+Cincinnati's occupational mix carries essentially national-average AI exposure, slightly below average on generative-AI measures.
+- 
+
+Exposure is concentrated in higher-paid professional and clerical work, not in low-wage service or production work.
+- 
+
+The clerical occupations most exposed to language models were already projected to decline before generative AI, for independent reasons.
+- 
+
+The region generates almost no net new jobs; 98.0% of projected openings come from workers leaving.
+- 
+
+AI-skill job postings are growing fast from a very small base and are dominated by national consultancies and staffing firms.
+- 
+
+Measured AI usage in Ohio and Kentucky is well below the national average.
+- 
+
+Kroger has announced roughly 3,000 corporate role eliminations with partial AI attribution.
+- 
+
+Fifth Third has quantified substantial AI deployment with no associated workforce reduction.
+
+### Claims this study cannot support
+- 
+
+That AI has caused measurable job losses in Greater Cincinnati. Beyond Kroger's announcement, no employer has attributed reductions to AI, and no regional dataset isolates AI-caused separations.
+- 
+
+That Procter & Gamble's 7,000 role reduction is an AI story. The company attributes it to cost, tariffs and consumer uncertainty.
+- 
+
+That the fall in Cincinnati banking employment reflects AI. It is −13.9% from 2019 but only −4.1% from 2024, so 73.7% of it predates generative AI, and the region's largest bank explicitly attributes current productivity gains to older automation.
+- 
+
+That entry-level hiring has collapsed because of AI. National posting evidence shows no AI-specific break in junior hiring, and no Cincinnati-specific test is possible with available data.
+- 
+
+Any current Cincinnati job-vacancy count. JOLTS has no metropolitan estimates, and posting counts are not vacancies.
+- 
+
+Any Northern-Kentucky-specific occupational exposure figure. The federal occupational survey does not publish that geography.
+- 
+
+That exposure scores predict displacement. They measure task overlap. The relationship between overlap and employment outcomes is exactly what remains unestablished.
+
+### The honest summary
+
+Greater Cincinnati in late 2026 shows extensive, documented and in places quantified AI deployment, concentrated in software engineering, customer service, forecasting and clinical documentation. It shows one partially AI-attributed corporate reduction. It shows no measurable aggregate employment effect that can be separated from a labour market that was already slowing, already shedding clerical roles, and already generating almost no new positions.
+
+The risk worth planning for is not that AI arrives and destroys Cincinnati jobs. It is that AI slows hiring in a regional economy that has no growth cushion, and that the region continues buying AI capability from elsewhere rather than building the occupations that supply it.
+
+## Implications
+
+The findings point to a different agenda than the one AI-anxiety usually produces. Cincinnati's problem is not exceptional exposure. It is a thin labour market that is buying AI capability rather than building it.
+
+### For workforce development organisations
+
+Target the exposed middle, not the low-wage bottom. The jobs with the highest measured AI overlap pay $60,000 to $85,000: customer service representatives, administrative assistants, office clerks, bookkeepers, market research analysts, HR specialists. Retraining programmes aimed at minimum-wage service work are aimed at the part of the distribution with the least measured exposure.
+
+Treat the clerical pipeline as the urgent case. Secretaries, office clerks, data entry keyers, tellers and interviewers are all projected to decline, all carry high language-model exposure, and all have historically been entry points into office careers. If those roles thin, the region loses a rung rather than a job category.
+
+Watch employment services payrolls as the leading indicator. They fell 24.9% from their 2022 peak. That series will move before occupational employment does.
+
+### For employers
+
+The regional evidence favours augmentation over replacement. Fifth Third generates 30% of new code with AI and has announced no reductions. Kroger is training 400,000 associates while cutting corporate layers. The employers quantifying the largest gains are not the ones announcing the largest cuts.
+
+Be precise about attribution. Kroger's experience shows how quickly a delayering programme becomes "AI job cuts" in public reporting, with consequences for recruitment and public trust that outlast the restructuring.
+
+### For policymakers and economic development
+
+The central structural fact is that Cincinnati's computer and mathematical location quotient is 0.87 while its AI-role advertising is dominated by Deloitte, Accenture, EY, PwC and staffing agencies. Demand for AI work in the region is being met by firms headquartered elsewhere. Capturing more of that work locally is an economic development question, not a workforce training question, and it is the one with the larger long-term stake.
+
+The 2.0% growth share of openings should reframe priorities. In an economy where 98% of openings are replacements, policies that raise labour-force participation and retain existing workers do more than programmes premised on absorbing displaced workers into growing sectors. There are no growing sectors at the scale required.
+
+Fix the measurement gap. Ohio's projections are labelled "Cincinnati MSA" while covering only Ohio counties, and they exclude a third of the metro's workforce. A bi-state projection product for the Cincinnati MSA, produced jointly by Ohio and Kentucky, would materially improve regional planning.
+
+### For universities and training institutions
+
+The exposure gradient has a direct curricular implication. The most exposed Cincinnati occupations are those that accounting, finance, marketing, human resources and business analytics programmes feed. Those are the programmes where AI fluency now has the highest return, and where graduates will compete for a shrinking number of entry-level positions.
+
+The University of Cincinnati's existing work — the $1.1m ambient-AI physician training grant and the Lindner College's employer workshops, including for Fifth Third — is the right model. The regional gap is scale, not direction.
+
+### What would change this assessment
+
+Three developments would warrant revisiting these conclusions quickly: a second Cincinnati employer attributing reductions explicitly to AI; Ohio's next projections round incorporating AI assumptions; or employment services payrolls falling below 28,000, which would suggest contingent white-collar demand is deteriorating faster than the occupational data show.
+
+## Methodology
+
+Every figure in this study is reproducible from public sources. The accompanying workbook contains the extracted data, the derived tables and a verification sheet.
+
+### Occupational employment
+
+OEWS data were taken from the BLS time-series flat file oe.data.0.Current rather than the published tables, because the flat file permits exact filtering and reproducible extraction. Series identifiers are deterministic, built as survey code OE, seasonality U, area type, seven-digit area, six-digit industry, six-digit occupation and two-digit data type. Cross-industry series only (industry 000000) were retained, for four areas: Cincinnati MSA 0017140, Ohio 3900000, Kentucky 2100000 and National 0000000.
+
+SOC aggregation levels were classified by code structure: major groups end 0000, minor groups 000, broad occupations 0, and anything else is a detailed occupation. An early version of this analysis misclassified broad occupations as detailed, which double-counted national employment by roughly 58%. The corrected classification yields detailed-occupation sums of 96.0% of published total employment for Cincinnati, 95.4% for Ohio, 94.9% for Kentucky and 95.7% nationally — the expected shortfall from occupations suppressed for disclosure.
+
+All employment-weighted statistics use detailed occupations only. Including aggregates would count the same jobs several times.
+
+### Exposure measures
+
+Three published measures were joined on six-digit SOC code.
+- 
+
+AIOE and its language-modeling and image-generation variants, from Felten, Raj and Seamans. These score occupations by how closely the abilities they require match what AI applications can do. They are standardised across occupations to mean 0 and standard deviation 1, so units are standard deviations and the sign is relative to the average occupation.
+- 
+
+Observed exposure, from the Anthropic Economic Index, giving the share of an occupation's O*NET tasks that appear in real AI usage, on a 0 to 1 scale.
+
+AIOE is keyed to 2010 SOC codes while OEWS May 2025 uses 2018 SOC, so some occupations do not match. Match rates are reported as a share of detailed-occupation employment, not as a share of occupations, because unmatched occupations are systematically smaller.
+|  
+
+Area | 
+
+Detailed occupations | 
+
+Employment | 
+
+AIOE match | 
+
+Observed match |
+|  
+
+Cincinnati MSA | 
+
+638 | 
+
+1,056,940 | 
+
+82.9% | 
+
+95.4% |
+|  
+
+Ohio | 
+
+758 | 
+
+5,294,860 | 
+
+82.7% | 
+
+95.4% |
+|  
+
+Kentucky | 
+
+681 | 
+
+1,898,000 | 
+
+85.0% | 
+
+95.5% |
+|  
+
+National | 
+
+823 | 
+
+148,807,680 | 
+
+82.7% | 
+
+94.4% |
+
+Roughly one in six jobs is therefore absent from the AIOE-based results. Those results should be read as covering 83% of Cincinnati employment, not all of it.
+
+### Calculations
+
+Employment-weighted exposure. For each area, the reported score is the sum across detailed occupations of employment multiplied by exposure, divided by the sum of employment over occupations where the measure exists. Occupations with no score are excluded from both numerator and denominator rather than treated as zero, which would bias scores toward zero.
+
+Thresholds. All bands are set on the national unweighted distribution of occupations, so that a band means the same thing in every geography compared. Language-model AIOE quartile cut points are -0.9230, -0.1205 and +0.9571 across 673 scored occupations. The quadrant analysis splits at the national medians of -0.1205 for language-model AIOE and 0.000 for observed exposure.
+
+The observed-exposure median is zero because 410 of 755 nationally scored occupations — 54.3% — have no measured AI task overlap at all. Quartiles are therefore meaningless on that axis, and fixed bands are used instead.
+
+Wage quintiles. Detailed occupations were sorted by median annual wage and assigned to quintiles by cumulative employment share, so each quintile contains about one fifth of covered employment (207,880 to 214,210 jobs) rather than one fifth of occupations.
+
+Implied AI posting totals. The Bipartisan Policy Center publishes growth rates and postings added, not totals. Base = added ÷ growth rate; current = base + added. For Cincinnati, 619 ÷ 1.59 = 389, and 389 + 619 = 1,008. This assumes the published rate and count describe the same universe and period, and is labelled a calculation wherever it appears.
+
+### Industry and county data
+
+Industry employment comes from the BLS state and metro flat file filtered to area 17140, giving 52 series back to 1990. Metro industry detail is not seasonally adjusted, so all comparisons use the same month across years. County employment and wages come from the QCEW open data API, one file per county FIPS, using aggregation level 70 for county totals and 74 for private NAICS sectors.
+
+### Job postings
+
+Posting counts were collected on 30 October 2026 from the CareerOneStop Job Finder, which aggregates the National Labor Exchange. Quoted phrases were used to improve precision, and results were inspected: the quoted searches returned largely relevant roles, while the unquoted search returned obvious false positives. The platform caps results display at 10,000, confirmed by comparing a 25-mile radius, which returned exactly 10,000, against a 5-mile radius, which returned 8,782. No share-of-postings statistic is therefore computed from this source.
+
+### What was checked against primary sources
+
+Employer figures were taken from filings and company releases where available rather than from press coverage. Fifth Third's AI metrics come from the FY2025 annual report; secondary coverage reported daily AI usage as "nearly 60%" where the filing states 56%, and the filing figure is used. Kroger's AI strategy is taken from the company's own September 2026 release and its workforce reduction from October 2026 reporting of the CEO memo, with the difference in framing noted in the text.
+
+## Limitations and further research
+
+### Limitations of this study
+
+Exposure indices are not outcome measures. AIOE scores the match between occupational abilities and AI capability. Observed exposure scores task overlap in real usage. Neither establishes that employment, wages or hiring change. The relationship between overlap and labour-market outcomes is the open question, and nothing here resolves it.
+
+Coverage is incomplete. AIOE matches 82.9% of Cincinnati detailed-occupation employment. The unmatched sixth is not random; it is concentrated in occupations whose SOC codes changed between the 2010 and 2018 classifications.
+
+Observed exposure reflects one AI system. The Anthropic Economic Index measures Claude usage. It is the best available revealed-use measure at occupational detail, but it is a sample of one provider's traffic, and its occupational mix need not match that of all AI use.
+
+State AI usage is not metro AI usage. Ohio's 0.59 usage index is a state figure. Cincinnati, as Ohio's third-largest metro with an above-average professional workforce, could plausibly sit above the state average. Nothing published allows that to be tested.
+
+Projections predate generative AI and do not model it. Ohio's 2022-2032 projections were built on a 2022 base and contain no AI assumptions. They cover the Ohio portion only.
+
+Posting counts are not vacancies, and the keyword census is indicative only. Full-text matching produced visible false positives, the platform caps its display, and staffing-firm postings can double-count a single opening.
+
+Employer evidence is self-reported and uneven. Companies disclose AI deployment when it flatters them and attribute reductions to whatever is least damaging. Fifth Third's metrics are unusually specific; most employers publish nothing comparable. Absence of evidence of displacement is not evidence of absence.
+
+Several national benchmarks use different AI-skill definitions. The 8% economy-wide figure from the Federal Reserve, the 2.6% from the Stanford AI Index and the Lightcast-based metro growth rates are not mutually comparable. They are reported separately and never combined.
+
+### What further research would require
+
+Metro posting microdata with experience requirements. This is the single most valuable missing input. Lightcast or a comparable licensed source, cut to the Cincinnati MSA with seniority tags, would permit a direct test of whether entry-level hiring in exposed occupations has weakened locally — the New York Fed's national analysis replicated for one region.
+
+Bi-state occupational projections. Ohio and Kentucky produce projections on different cycles and bases, and Ohio's metro file excludes Northern Kentucky. A joint product covering the full MSA would remove the largest structural gap in regional planning data.
+
+Employer survey with AI attribution. A confidential survey of the region's 50 largest employers, asking specifically whether AI changed headcount plans, would convert anecdote into measurement. The New York Fed's Second District survey offers a template.
+
+Longitudinal worker tracking. Occupational employment counts cannot distinguish a clerical worker who retired from one who moved into lower-paid work. Linked administrative data would settle whether displacement is occurring quietly.
+
+A repeat of this analysis against the next OEWS release. The May 2026 reference period, published in spring 2027, will be the first to capture a full year of broad generative-AI deployment. Comparing exposure-weighted employment change between May 2025 and May 2026 would give the first genuine regional test.
+
+## Sources
+
+All sources were retrieved on 30 October 2026.
+
+### Government data
+|  
+
+Source | 
+
+Agency | 
+
+Geography | 
+
+Period |
+|  
+
+[LINK https://download.bls.gov/pub/time.series/oe/] Occupational Employment and Wage Statistics | 
+
+BLS | 
+
+Cincinnati MSA, Ohio, Kentucky, National | 
+
+May 2025 |
+|  
+
+[LINK https://data.bls.gov/cew/data/api/2025/a/area/39061.csv] Quarterly Census of Employment and Wages | 
+
+BLS | 
+
+7 core counties, Cincinnati MSA | 
+
+2024-2025 annual |
+|  
+
+[LINK https://download.bls.gov/pub/time.series/sm/] State and Metro Area Employment | 
+
+BLS | 
+
+Cincinnati MSA | 
+
+Monthly, 1990 to Sept 2026 |
+|  
+
+[LINK https://download.bls.gov/pub/time.series/la/] Local Area Unemployment Statistics | 
+
+BLS | 
+
+Cincinnati MSA | 
+
+Monthly, 1990 to Sept 2026 |
+|  
+
+[LINK https://www.bls.gov/eag/eag.oh_cincinnati_msa.htm] Cincinnati MSA Economy at a Glance | 
+
+BLS | 
+
+Cincinnati MSA | 
+
+To Sept 2026 |
+|  
+
+[LINK https://ohiolmi.com/_docs/PROJ/MSA/LTOP_Cincinnati2032.xlsx] Long-term occupational projections | 
+
+ODJFS Bureau of LMI | 
+
+Ohio portion only | 
+
+2022-2032, published June 2025 |
+|  
+
+[LINK https://ohiolmi.com/Home/Projections/ProjectionsHome] Employment Projections home | 
+
+ODJFS | 
+
+Ohio and 8 MSAs | 
+
+Accessed Oct 2026 |
+|  
+
+[LINK https://www.careeronestop.org/Toolkit/Jobs/find-jobs.aspx] CareerOneStop Job Finder | 
+
+US DOL / National Labor Exchange | 
+
+Cincinnati, 25-mile radius | 
+
+30 Oct 2026 |
+
+### Research and measurement
+|  
+
+Source | 
+
+Authors | 
+
+Use |
+|  
+
+[LINK https://github.com/AIOE-Data/AIOE] AIOE dataset | 
+
+Felten, Raj & Seamans, Strategic Management Journal 42(12):2195-2217 (2021) | 
+
+Occupational AI exposure |
+|  
+
+Language Modeling and Image Generation AIOE | 
+
+Felten, Raj & Seamans (2023) | 
+
+Generative-AI-specific exposure |
+|  
+
+[LINK https://huggingface.co/datasets/Anthropic/EconomicIndex] Anthropic Economic Index | 
+
+Anthropic, release 26 June 2026 (CC-BY) | 
+
+Observed task exposure; state AI usage, April-May 2026 |
+|  
+
+[LINK https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/] Do Job Postings Show Early Labor-Market Effects of AI? | 
+
+Audoly, Guerin & Topa, NY Fed, 14 May 2026 | 
+
+National exposure and entry-level benchmarks |
+|  
+
+[LINK https://www.federalreserve.gov/econres/notes/feds-notes/ai-on-the-factory-floor-evidence-from-manufacturing-job-postings-20260930.html] AI on the Factory Floor | 
+
+Tito, FEDS Notes, 30 Sept 2026 | 
+
+Manufacturing AI-skill posting benchmarks |
+|  
+
+[LINK https://bipartisanpolicy.org/skills-data-dashboard/] Skills Data Dashboard | 
+
+Bipartisan Policy Center, using Lightcast; updated 9 Oct 2026 | 
+
+Metro AI posting growth |
+
+### Regional institutions
+|  
+
+Source | 
+
+Authors | 
+
+Use |
+|  
+
+[LINK https://cincinnatichamber.com/civic-strategy-policy/research-data/] State of the Region 2026 | 
+
+Cincinnati Regional Chamber, Center for Research & Data, 15 Oct 2026 | 
+
+Peer-metro growth ranking; decade job growth; absence of AI coverage |
+|  
+
+[LINK https://cincinnatichamber.com/civic-strategy-policy/research-data/] Data Centers: A Cincinnati Regional Perspective | 
+
+Cincinnati Regional Chamber, 12 Oct 2026 | 
+
+Modelled job impact, operational staffing, data-centre postings |
+|  
+
+[LINK https://cincinnatichamber.com/civic-strategy-policy/research-data/] Cincinnati Region Labor Market Analysis | 
+
+Cincinnati Regional Chamber, May 2024 | 
+
+Checked for AI coverage |
+|  
+
+[LINK https://redicincinnati.com/economic-vibrancy-comparison-report-innovation/] Economic Vibrancy Comparison: Innovation | 
+
+REDI Cincinnati, Lightcast data 2022 Q2 | 
+
+Independent check on the computing-occupation share |
+|  
+
+[LINK https://learnrudi.com/greater-cincinnati/] Greater Cincinnati AI Readiness Index | 
+
+RUDI | 
+
+Announced; no findings published as of 5 Nov 2026 |
+
+The Chamber's reports are not redistributed in the repository. They are available from the Chamber's research page, and the figures taken from them are recorded with their provenance in data/local_institutional_sources.csv.
+
+### Employers
+|  
+
+Source | 
+
+Organisation | 
+
+Date |
+|  
+
+[LINK https://www.sec.gov/Archives/edgar/data/35527/000003552726000124/a2025annualreport.pdf] FY2025 Annual Report and Form 10-K | 
+
+Fifth Third Bancorp | 
+
+FY2025 |
+|  
+
+[LINK https://ir.kroger.com/news/news-details/2026/Kroger-Details-AI-Strategy-Built-on-Decades-Retail-Expertise-at-GroceryShop-2026/default.aspx] AI strategy at GroceryShop 2026 | 
+
+The Kroger Co. | 
+
+22 Sept 2026 |
+|  
+
+[LINK https://www.foxbusiness.com/retail/kroger-cut-3000-corporate-jobs-ai-expansion] Corporate role reductions | 
+
+Reporting of Kroger CEO memo | 
+
+12-13 Oct 2026 |
+|  
+
+[LINK https://www.nbcnews.com/business/business-news/procter-gamble-cut-7000-jobs-part-broader-restructuring-rcna211263] Restructuring announcement | 
+
+Procter & Gamble | 
+
+5 June 2025 |
+|  
+
+[LINK https://bipartisanpolicy.org/issue-brief/aerospace-manufacturing-workforce/] Gaining Altitude: AI Adoption and Work in Aerospace Manufacturing | 
+
+Bipartisan Policy Center, on GE Aerospace | 
+
+2026 |
+|  
+
+[LINK https://scienceblog.cincinnatichildrens.org/translating-ai-digital-health-into-impact/] Translating AI Digital Health Into Impact | 
+
+Cincinnati Children's | 
+
+2026 |
+|  
+
+[LINK https://www.uc.edu/news/articles/2026/01/university-of-cincinnati-gets-11m-for-ai-physician-training.html] Ambient AI physician training grant | 
+
+University of Cincinnati | 
+
+January 2026 |
+|  
+
+[LINK https://www.business.uc.edu/about/ai.html] AI at Lindner College of Business | 
+
+University of Cincinnati | 
+
+2026 |
+
+### Note on evidence tiers
+
+SEC filings and company releases are treated as primary. Reporting of internal memos is treated as secondary and labelled as such. The Bipartisan Policy Center dashboard was reached through a third-party reproduction of its metro table after the dashboard itself returned an access error, and is treated as secondary throughout.
