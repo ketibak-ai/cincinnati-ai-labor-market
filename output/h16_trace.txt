@@ -1,0 +1,17 @@
+Rows: 19 | read and grade 1-2: 13 | employers with such a row: 10
+
+Read, grade 1-2, by kind and stage (rows):
+kind       stage               
+agent      pilot_or_development    1
+           production              1
+assistant  production              6
+other_ai   announced               2
+           production              3
+
+Employers with read, grade 1-2 evidence of an AGENT in PRODUCTION: ['CBTS'] -> 1
+Pre-registered sentence allowed (needs 3 or more): False
+Employers with an agent announced or in development (read, grade 1-2): ['Kroger']
+Employers with an assistant or other AI in production (read, grade 1-2): ['Bon Secours Mercy Health', 'Cincinnati Financial', 'Fifth Third Bancorp', 'Kroger', 'Procter & Gamble', 'The Christ Hospital Health Network', 'TriHealth', 'University of Cincinnati']
+Leads not read (never counted): ['Bon Secours Mercy Health', "Cincinnati Children's", 'Cintas', 'Fifth Third Bancorp', 'GE Aerospace']
+No statement found: ['UC Health', 'St. Elizabeth Healthcare', 'Hamilton County, Ohio', 'Miami University', 'U.S. Bank (regional operations)', 'DHL (CVG hub)', 'American Financial Group', 'CVG Airport', 'Western & Southern', 'E.W. Scripps']
+Rows with a statement about jobs: 5 of 13

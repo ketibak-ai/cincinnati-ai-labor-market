@@ -37,3 +37,6 @@ raw/census/
 raw/acs/
 raw/patents/
 raw/herd/
+
+# Raw platform responses and saved web pages for the awareness lens (not redistributed)
+raw/awareness/

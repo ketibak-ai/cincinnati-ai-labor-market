@@ -1,0 +1,25 @@
+granted patents 2019-2023: 1671223 | AI (86): 364412 | AI (93): 327952
+AI patents (86) with a US inventor: 225133
+       short  ai_patents_2019_23  ai_patents_2019_23_p93  ai_patents_per_100k  ai_patents_per_100k_p93
+      Austin                9853                    8995                375.9                    343.2
+     Raleigh                5382                    4961                337.3                    310.9
+      Denver                3771                    3398                122.0                    109.9
+  Pittsburgh                2568                    2425                106.0                    100.1
+     Detroit                4158                    3671                 94.7                     83.6
+ Minneapolis                3415                    3046                 90.1                     80.4
+   Milwaukee                1343                    1250                 85.3                     79.4
+     Atlanta                5214                    4762                 80.4                     73.5
+   Baltimore                2161                    1995                 75.6                     69.8
+   Charlotte                2042                    1898                 69.5                     64.6
+   Cleveland                1216                    1121                 56.1                     51.8
+   St. Louis                1517                    1390                 53.9                     49.4
+ Kansas City                1173                    1080                 51.7                     47.6
+    Columbus                1055                     961                 47.1                     42.9
+       Tampa                1530                    1377                 44.8                     40.3
+  Cincinnati                1025                     903                 44.3                     39.0
+Indianapolis                 877                     764                 39.8                     34.6
+      Dayton                 303                     265                 36.7                     32.1
+   Nashville                 629                     580                 28.6                     26.4
+  Louisville                 343                     281                 24.5                     20.0
+ai_patents_per_100k Cincinnati 44.3 rank 16 of 20; P1 median 69.5 | bottom half: True
+ai_patents_per_100k_p93 Cincinnati 39.0 rank 16 of 20; P1 median 64.6 | bottom half: True
