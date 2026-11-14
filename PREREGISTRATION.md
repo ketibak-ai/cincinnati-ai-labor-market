@@ -311,9 +311,143 @@ results are most interesting.
 
 ---
 
+## 8. Extension for 2.1: awareness and participation, and the agent register
+
+**Added 14 November 2026** on the local branch `v2.1`, under the 2.1 prompt (`PROMPT_2.1.md`).
+The project is named "Cincinnati AI Labor Market 2.1" from this point; "2.0" above refers to
+the unpublished design stage. Sections 1–7 are unchanged and still govern H1–H11.
+
+### 8.0 What had been seen before this section was written
+
+Web searches on 14 November 2026, made while writing the 2.1 prompt, returned these values.
+They are disclosed so the reader can judge which tests they could have shaped.
+
+- **Cincinnati only.** A community group's newsletters list monthly meetings through 2026 and
+  state membership of "over 1,400", then "over 1,700", then "over 2,000" (spring 2026).
+  Attendance claims for an annual June event: "nearly 1,500" (2024, one news item), "1,100
+  over 3 days" (2025, a recap), "over 1,000 attendees, 175 speakers, 150 volunteers" (year
+  unclear). A statewide summit: "375+ attendees" (2024) and "300+" projected (2025).
+- **Existence only.** That named groups, chapters and events exist in Cincinnati, Columbus,
+  Dayton and Louisville; the number of months with Internet Archive snapshots for five sites
+  (16, 14, 11, 8, 1) and none for a sixth.
+- **Agent register.** Product and programme names in search snippets (one Cincinnati vendor's
+  agent product; small local agent vendors). The eight rows of `data/ai_adoption_employers.csv`
+  were known from 1.0.
+- **Not seen:** any event count for any metro; any peer-metro membership or attendance figure;
+  any Google Trends value; any count of postings naming AI tools; any state or metro adoption
+  rate beyond those in section 0.
+
+Consequence: every statement about Cincinnati's **level** of activity is descriptive. The
+confirmatory test (H12) is **comparative**, and no comparison value had been seen.
+
+### 8.1 Research questions added
+
+- **RQ7 Awareness and participation.** How much public AI convening is there in Greater
+  Cincinnati compared with peer metros, how regular and how broad is it, are employers part of
+  it, and is it related to firms' adoption of AI?
+- **RQ8 Agents at work.** In which business functions do the region's large employers state
+  that AI agents are in production, at what scale, and what do they say it does to jobs?
+
+### 8.2 Definitions fixed in advance
+
+- **Terms.** *Awareness and participation* is never called adoption. *AI agent* = a system
+  that carries out a multi-step task by itself using tools or other software, with human
+  review of the result at most. *AI assistant* = drafts or suggests while a person performs
+  each step. Coding follows what the source describes, not the label the company uses.
+- **Event (inclusion rule).** (a) AI is the stated main subject; (b) open to people outside the
+  host organization; (c) held in person in the metro, or virtual or hybrid and run by an
+  organizer based in the metro. Company-internal training is excluded. A multi-day conference
+  is one event. An event enters the census only with a live or archived dated page behind it.
+- **Window.** 1 December 2023 – 30 November 2026, reported as three 12-month years ending
+  30 November.
+- **Per-capita base.** Residents aged 18–64, Census Vintage 2025 county characteristics,
+  summed to each CBSA.
+- **Like-for-like measures (all 19 P1 metros plus Cincinnati, collected on one day each):**
+  - **L1 Platform listings.** Count of events returned on Eventbrite, Luma and Meetup for the
+    metro's principal city, dated within the 60 days after the collection day, matching any of
+    `AI`, `artificial intelligence`, `generative AI`, `machine learning`, `LLM`, `ChatGPT`,
+    `agents`, de-duplicated and screened by the inclusion rule. Per 100,000.
+  - **L2 Chapter meetings.** Meetings held in the last 12 months by local chapters of national
+    AI community organizations that run a standard format, where each chapter publishes a
+    dated event list. A metro with no chapter scores zero and is flagged. Count, and per
+    100,000.
+  - **L3 Search interest.** Google Trends interest by media market (DMA) over the last 12
+    months for the topics `ChatGPT`, `Claude`, `Microsoft Copilot` and `Gemini` and the
+    searches `AI course`, `AI training` and `AI jobs`; the metro's score is the mean across the
+    seven terms of its DMA value. Labelled a private platform's sampled index.
+- **Full census subset.** All P1 metros in Ohio (Cleveland, Columbus, Dayton) and the nearest
+  P1 metro in each of Indiana, Kentucky and Pennsylvania (Indianapolis, Louisville,
+  Pittsburgh). Subject to the author's decision at the 2.1 check-in. Dayton is reported in its
+  own row because its labor market adjoins Cincinnati's.
+- **Census measures A1–A9** as defined in `PROMPT_2.1.md`, Step 3. Back-years are rebuilt only
+  from records fixed at the time (newsletter issues, archived snapshots, dated news). A
+  metro-year enters a trend comparison only if at least one recurring series can be rebuilt
+  for it; otherwise it is reported as not recoverable.
+- **Agent register scope.** (1) Public companies headquartered in CBSA 17140; (2) the 25
+  largest employers in the metro from the most recent published regional ranking, named in the
+  methods; (3) AI vendors and service firms based in the metro. **Source grades:** 1 = company's
+  own record; 2 = named executive on the record; 3 = vendor case study; 4 = third-party
+  description of what a company could do. Only grades 1 and 2 support a finding.
+- **Postings naming AI tools.** Phrase queries on CareerOneStop (NLx), 25-mile radius of each
+  principal city, same day for all metros, for: `AI agent`, `agentic`, `LangChain`,
+  `Copilot Studio`, `Agentforce`, `Model Context Protocol`, `prompt engineering`, `ChatGPT`,
+  `Claude`, `Copilot`, `Gemini`, `OpenAI`, `large language model`, `retrieval-augmented`.
+  Reported per 100,000 residents aged 18–64 because the tool caps displayed totals at 10,000,
+  so a share of all postings cannot be computed.
+
+### 8.3 Hypotheses, tests and decision rules
+
+**H12 — Convening relative to peers. Confirmatory.** For each of L1, L2 and L3, report
+Cincinnati's value, its rank in P1, and the P1 median and interquartile range. Cincinnati is
+described as **above its peers** only if it lies above the P1 interquartile range on at least
+two of the three; **below** if under it on at least two; otherwise **within the normal range of
+peers**. P2 and P3 are not collected for this lens, and the report says so.
+
+**H13 — Breadth. Descriptive, with conventions fixed now.** From the Cincinnati census, last
+12 months: participation is described as **reaching beyond technologists** if at least half of
+events are aimed at an audience other than "technical"; employers are described as **in the
+room** if at least 10 of the 25 largest employers appear at least once as host, sponsor or
+speaker's employer in the three-year window. Both thresholds are conventions, labelled as such.
+The same two statistics are shown for the six-metro subset.
+
+**H14 — Is awareness related to adoption? Exploratory.** Across the 20 metros, Spearman rank
+correlation between each of L1–L3 and postings naming AI tools per 100,000, with an exact
+permutation p-value. Described as **related** only if ρ ≥ 0.4 with p < 0.10 on at least two of
+the three; otherwise "no relationship detectable with 20 metros". Shown as scatters. No
+regression. Within Cincinnati: the count of employers appearing in both the event census (A6)
+and the agent register at grades 1–2, out of each list's total.
+
+**H15 — Does awareness lead? Descriptive only.** Monthly Cincinnati event counts against any
+monthly metro series of AI-related postings. If no such monthly series exists in a public
+source, this is reported as **not testable**, and "early indicator" is used in the report only
+as a description of sequence in principle, not as a finding.
+
+**H16 — Agents at work. Descriptive.** Reported whatever the result: in-scope employers by
+group; how many have grade 1–2 evidence of an agent **in production**, of one announced or in
+pilot, of assistants only, and of nothing; functions; every quantified claim with its source;
+every grade 1–2 statement linking agents to headcount, quoted. The sentence "AI agents are in
+production at large Greater Cincinnati employers" is used only if at least three in-scope
+employers have grade 1–2 evidence of an agent, as defined in 8.2, in production. No disclosure
+is reported as no disclosure, never as no use.
+
+**AI Participation Index.** Computed only after H12–H14 are reported. Components A1, A3, A4,
+A5, A6 (six-metro subset plus Cincinnati) and L3, each standardized across the metros, equal
+weights. Published only if Cincinnati's rank moves by no more than two places when each
+component is dropped in turn; otherwise the components are reported alone. Labelled a
+constructed summary. Subject to the author's decision.
+
+### 8.4 What this lens will not be used for
+
+No attendance or membership figure is summed across groups. No organizer-reported figure
+appears without its source. No event measure is offered as evidence of a change in employment,
+hiring or output. Organizations are named; attendees are not.
+
+---
+
 ## Amendments
 
 | Date | Change | Reason | Made before or after seeing data? |
 |---|---|---|---|
 | 13 Nov 2026 | **Add H2b**: occupation-based entry-door test using ACS 1-year PUMS for the PUMAs that make up CBSA 17140. Outcome: employment of ages 22–25 relative to 35–54 in occupations in the top tercile of exposure (same four measures, national 2022 OEWS employment weights) vs the bottom tercile; pre-period 2018–2019 pooled, post-period 2023–2025 pooled (2020–2022 excluded); same peers. Secondary to H1 because ACS measures employment, not hires, and metro samples are small; reported with replicate-weight standard errors. | QWI has industries, not occupations; ACS adds the occupational dimension that the Brynjolfsson–Chandar–Chen design uses. | **Before.** No ACS value had been seen. |
 | 13 Nov 2026 | Noted, no change to hypotheses: after the commit of this file, web searches for the design memo surfaced statewide data-center job figures (Weldon Cooper Center via news: about 22,300 short-term and 4,500 permanent Ohio jobs as of 2024; a study of 1,584 data centers reported at about 2.7 non-construction local jobs per MW of eventual capacity) and that the Chamber's 565 MW counts 17 existing and 2 planned facilities. | Disclosure. H8's thresholds were fixed before these were seen. | After the commit; H8 unchanged. |
+| 14 Nov 2026 | **Add section 8** (RQ7–RQ8, H12–H16, definitions for the event census, like-for-like measures, the agent register and the AI Participation Index). Project renamed 2.1; work moves to branch `v2.1`. | The author's 2.1 prompt adds a sixth lens (awareness and participation) and a register of AI agents in local workflows. | **Mixed, disclosed in 8.0.** Cincinnati membership, meeting-schedule and attendance claims had been seen in search snippets; no peer-metro value, event count, search-interest value or AI-tool postings count had been seen. H12 is comparative for that reason; Cincinnati level statements are descriptive. |
