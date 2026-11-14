@@ -1,0 +1,34 @@
+CBSA,short,POPESTIMATE2025,p1,p2,p3,computing_rd_thousands,total_rd_thousands,institutions,largest_institution,largest_thousands,computing_rd_per_capita,question_used
+16980,Chicago,9434123,False,False,True,75983,2636720,12,"University of Chicago, The",33015,8.054060774912518,09A + 11A
+12060,Atlanta,6482182,True,False,False,252700,3093503,8,Georgia Institute of Technology,235289,38.983786632340774,09A + 11A
+19820,Detroit,4390913,True,False,True,8713,347207,4,Oakland University,4439,1.9843253555695592,09A + 11A
+33460,Minneapolis,3790295,True,False,True,29333,1417652,3,"University of Minnesota, Twin Cities",29109,7.738975462332087,09A + 11A
+45300,Tampa,3418895,True,False,False,25342,521892,1,University of South Florida,25342,7.412336442037559,09A + 11A
+19740,Denver,3092037,True,True,False,6216,189848,3,Colorado School of Mines,4700,2.0103252322012963,09A + 11A
+36740,Orlando,2957672,False,True,False,30959,284943,1,University of Central Florida,30959,10.467354054134468,09A + 11A
+16740,Charlotte,2938830,True,True,False,12566,103822,4,"University of North Carolina at Charlotte, The",12084,4.275851274146514,09A + 11A
+12580,Baltimore,2857781,True,True,False,331563,4371282,6,Johns Hopkins University,302764,116.02113667912272,09A + 11A
+41180,St. Louis,2814421,True,True,True,8275,1371318,4,Washington University in St. Louis,5731,2.940213990728466,09A + 11A
+41700,San Antonio,2813140,False,True,False,24570,188095,4,"University of Texas at San Antonio, The",23992,8.734012526927206,09A + 11A
+12420,Austin,2620945,True,True,False,160617,1310534,3,"University of Texas at Austin, The",155613,61.28209481694579,09A + 11A
+38900,Portland,2542282,False,True,True,1857,59755,3,Portland State University,1834,0.7304461110136483,09A + 11A
+40900,Sacramento,2477274,False,True,False,10006,1039709,2,"University of California, Davis",9848,4.039117190912269,09A + 11A
+38300,Pittsburgh,2421992,True,True,False,238092,2011339,3,Carnegie Mellon University,226521,98.3042057942388,09A + 11A
+29820,Las Vegas,2407226,False,True,False,3282,118049,1,"University of Nevada, Las Vegas",3282,1.363395044752757,09A + 11A
+17140,Cincinnati,2312858,False,False,False,6469,771715,3,University of Cincinnati,5655,2.7969724038397517,09A + 11A
+28140,Kansas City,2270682,True,True,True,2783,57030,1,"University of Missouri, Kansas City",2783,1.2256229626165178,09A + 11A
+18140,Columbus,2242028,True,True,True,33627,1582680,2,"Ohio State University, The",33585,14.998474595321735,09A + 11A
+26900,Indianapolis,2205695,True,True,False,5159,97826,3,"Indiana University-Purdue University, Indianapolis",5108,2.338945321089271,09A + 11A
+34980,Nashville,2197416,True,True,False,31928,1398739,5,Vanderbilt University and Vanderbilt University Medical Center,28126,14.529793175256756,09A + 11A
+17410,Cleveland,2165775,True,True,True,7009,644472,2,Case Western Reserve University,6796,3.236254920294121,09A + 11A
+41940,San Jose,1984473,False,True,False,28826,1730086,2,Stanford University,28450,14.525770821774849,09A + 11A
+47260,Virginia Beach,1797213,False,True,False,11951,188780,4,William & Mary,5211,6.649740459255525,09A + 11A
+27260,Jacksonville,1785500,False,True,False,577,19318,1,University of North Florida,577,0.32315877905348644,09A + 11A
+39300,Providence,1708161,False,True,False,22669,559907,5,Brown University,17725,13.270997288897242,09A + 11A
+39580,Raleigh,1595720,True,True,False,29902,717004,1,North Carolina State University,29902,18.738876494623117,09A + 11A
+33340,Milwaukee,1575010,True,True,False,2949,118459,3,Marquette University,2289,1.8723690643234012,09A + 11A
+36420,Oklahoma City,1512813,False,True,False,10414,478538,2,"University of Oklahoma, The",10171,6.883864694446703,09A + 11A
+31140,Louisville,1402509,True,True,True,87,224969,1,University of Louisville,87,0.06203168749719253,09A + 11A
+40060,Richmond,1389338,False,True,False,5572,540527,3,Virginia Commonwealth University,5397,4.010543150766768,09A + 11A
+15380,Buffalo,1155653,False,False,True,22073,544333,2,"State University of New York, University at Buffalo",22035,19.100023969132604,09A + 11A
+19430,Dayton,826554,True,False,False,44694,329388,3,University of Dayton,33562,54.072692165303174,09A + 11A

@@ -1,0 +1,53 @@
+BTOS metros published (25): Atlanta-Sandy Springs-Alpharetta, GA; Baltimore-Columbia-Towson, MD; Boston-Cambridge-Newton, MA-NH; Charlotte-Concord-Gastonia, NC-SC; Chicago-Naperville-Elgin, IL-IN-WI; Dallas-Fort Worth-Arlington, TX; Denver-Aurora-Lakewood, CO; Detroit-Warren-Dearborn, MI; Houston-The Woodlands-Sugar Land, TX; Los Angeles-Long Beach-Anaheim, CA; Miami-Fort Lauderdale-Pompano Beach, FL; Minneapolis-St. Paul-Bloomington, MN-WI; New York-Newark-Jersey City, NY-NJ-PA; Orlando-Kissimmee-Sanford, FL; Philadelphia-Camden-Wilmington, PA-NJ-DE-MD; Phoenix-Mesa-Chandler, AZ; Portland-Vancouver-Hillsboro, OR-WA; Riverside-San Bernardino-Ontario, CA; San Antonio-New Braunfels, TX; San Diego-Chula Vista-Carlsbad, CA; San Francisco-Oakland-Berkeley, CA; Seattle-Tacoma-Bellevue, WA; St. Louis, MO-IL; Tampa-St. Petersburg-Clearwater, FL; Washington-Arlington-Alexandria, DC-VA-MD-WV
+Cincinnati among them: False
+Q7 (current_use): In the last two weeks, did this business use Super Intelligence or SI (formerly referred to as Artificial Intelligence or AI) in any of its business functions? (Examples of SI use include: SI-powered data analysis; generative SI for marketing, product design, or coding; virtual SI agents for customer service; SI-powered forecasting or pricing; SI-driven computer vision for quality control, etc.)
+Q8 (employee_genai_use): In the last two weeks, did this business’s employees use Generative Super Intelligence or SI (formerly referred to as Artificial Intelligence or AI) to assist in any work-related tasks? (Generative SI is a type of Super Intelligence that uses prompts or other inputs to create text, images, music, videos, or code. Some examples of Generative SI include ChatGPT, Gemini, Copilot, Claude, Grok, Dall E, MidJourney, and GitHub Copilot.)
+Q9 (effect_q9): In the last six months, how did this business’s use of Super Intelligence (formerly referred to as Artificial Intelligence or AI) affect the number of employees (total headcount) at this business?
+Q10 (effect_q10): In the last six months, how did this business’s use of Super Intelligence (formerly referred to as Artificial Intelligence or AI) affect the number of new employees hired by this business?
+Q28 (expected_use_6m): During the next six months, do you think this business will be using Super Intelligence or SI (formerly referred to as Artificial Intelligence or AI) in any of its business functions? (Examples of SI use include: SI-powered data analysis; generative SI for marketing, product design, or coding; virtual SI agents for customer service; SI-powered forecasting or pricing; SI-driven computer vision for quality control, etc.)
+
+Periods in file: 202524 to 202622
+Sample Year  Cycle  Panel    Smpdt Collection Start    Col End Reference Period Start    Ref End Publication Date
+          4    2.0    1.0 202524.0       2025-11-17 2025-11-30             2025-11-03 2025-11-16       2025-12-04
+       None    2.0    1.0 202622.0       2026-10-19 2026-11-01             2026-10-05 2026-10-18       2026-11-05
+
+Current AI use, mean of the six most recent periods (202617-202622) and the six earliest in the file (202524-202603):
+  United States  recent  23.7% (se 0.2)   earliest  17.8% (se 0.1)   latest single period 24.2%
+  OH             recent  22.2% (se 0.6)   earliest  17.3% (se 0.7)   latest single period 27.3%
+  KY             recent  23.2% (se 1.2)   earliest  15.6% (se 1.1)   latest single period 22.5%
+  IN             recent  20.2% (se 0.9)   earliest  17.9% (se 0.8)   latest single period 24.0%
+  State ranks (of 53), recent six periods: OH 27, KY 21, IN 41; state median 22.2%
+
+Expected AI use in the next six months, mean of the six most recent periods:
+  United States   27.5%
+  OH              25.8%
+  KY              25.0%
+  IN              23.9%
+
+BTOS metros that are P1 peers, current use, recent six periods:
+area
+San Diego-Chula Vista-Carlsbad, CA MSA              31.7
+Charlotte-Concord-Gastonia, NC-SC MSA               31.2
+Minneapolis-St. Paul-Bloomington, MN-WI MSA         31.1
+Denver-Aurora-Lakewood, CO MSA                      30.9
+San Francisco-Oakland-Berkeley, CA MSA              29.9
+Phoenix-Mesa-Chandler, AZ MSA                       29.7
+Dallas-Fort Worth-Arlington, TX MSA                 29.4
+Orlando-Kissimmee-Sanford, FL MSA                   29.4
+Atlanta-Sandy Springs-Alpharetta, GA MSA            29.3
+Tampa-St. Petersburg-Clearwater, FL MSA             29.2
+Washington-Arlington-Alexandria, DC-VA-MD-WV MSA    28.9
+Portland-Vancouver-Hillsboro, OR-WA MSA             28.8
+Seattle-Tacoma-Bellevue, WA MSA                     28.7
+Miami-Fort Lauderdale-Pompano Beach, FL MSA         27.8
+San Antonio-New Braunfels, TX MSA                   27.0
+Houston-The Woodlands-Sugar Land, TX MSA            26.8
+Baltimore-Columbia-Towson, MD MSA                   25.6
+Boston-Cambridge-Newton, MA-NH MSA                  25.1
+Philadelphia-Camden-Wilmington, PA-NJ-DE-MD MSA     23.9
+Los Angeles-Long Beach-Anaheim, CA MSA              23.5
+Chicago-Naperville-Elgin, IL-IN-WI MSA              22.9
+St. Louis, MO-IL MSA                                21.8
+Detroit-Warren-Dearborn, MI MSA                     20.9
+Riverside-San Bernardino-Ontario, CA MSA            20.4
+New York-Newark-Jersey City, NY-NJ-PA MSA           17.8

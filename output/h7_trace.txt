@@ -1,0 +1,34 @@
+Real GDP per private-sector worker (chained 2017 dollars), Cincinnati MSA (county build):
+ year  exposed_gdp_per_worker  other_gdp_per_worker  exposed_emp  other_emp  gdp_per_worker_51  gdp_per_worker_52  gdp_per_worker_54  gdp_per_worker_55
+ 2019                250586.0              126427.0     154223.0   712657.0           282860.0           403804.0           147930.0           184652.0
+ 2022                277947.0              127436.0     155692.0   714932.0           319715.0           446483.0           175938.0           210191.0
+ 2023                292651.0              125979.0     153018.0   729965.0           335032.0           483145.0           181977.0           215785.0
+ 2024                284487.0              129793.0     153131.0   730460.0           342059.0           446122.0           188650.0           213754.0
+
+Percent change in real GDP per worker; gap = exposed minus other, 2022-24; coverage = share of 2024 private employment in counties used
+               exposed_2019_22  exposed_2022_24  other_2019_22  other_2022_24  gap_2022_24  coverage_2024
+area                                                                                                     
+Kansas City              31.40            -6.77          -0.05           0.60        -7.37           0.98
+Tampa                    21.15             4.61           6.32           5.22        -0.61           0.97
+Cincinnati               10.92             2.35           0.80           1.85         0.50           0.91
+Atlanta                   8.19             2.37           2.36           0.89         1.48           0.93
+Louisville               13.08             3.59           3.56           1.35         2.24           0.90
+United States            11.45             5.44           2.25           2.53         2.92           1.00
+Columbus                 11.69             4.98           5.51           1.76         3.22           0.93
+Cleveland                14.66             5.48           3.36           1.89         3.58           1.00
+Minneapolis              16.91             5.48           2.98           1.77         3.71           0.96
+Pittsburgh               20.23             7.54           0.20           2.74         4.80           1.00
+Detroit                  14.49             8.37           2.70           2.46         5.92           0.98
+Denver                   17.02             8.45           5.30           1.97         6.48           0.99
+St. Louis                16.90             9.05           6.18           2.41         6.64           0.90
+Charlotte                10.64             9.73           2.48           2.99         6.74           0.93
+Nashville                18.05            10.30           9.04           3.48         6.83           0.90
+Indianapolis             -0.17             6.38          -1.20          -0.57         6.95           0.24
+Milwaukee                14.82             7.39           3.68           0.06         7.33           1.00
+Dayton                   20.99             9.55           1.98           0.86         8.69           0.88
+Baltimore                12.99             9.54           3.97           0.49         9.04           0.86
+Raleigh                  14.32            14.03           0.04          -0.20        14.23           0.98
+Austin                   18.16            14.79           4.21          -0.31        15.10           0.98
+
+Cincinnati exposed-sector growth 2022-24: +2.35% | P1 q25 +5.23 median +7.54 q75 +9.54 | US +5.44
+Cincinnati gap 2022-24: +0.50 points | P1 q25 +3.40 median +6.48 q75 +7.14 | US +2.92

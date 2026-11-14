@@ -1,0 +1,46 @@
+(a) Total nonfarm, Sept 2024 -> Sept 2026 (NSA; Sept 2026 preliminary)
+         area  sep_2024_thousands  sep_2026_thousands  change_thousands  growth_pct
+      Detroit              2062.7              2038.4             -24.3       -1.18
+    Baltimore              1457.6              1441.4             -16.2       -1.11
+   Louisville               719.0               711.8              -7.2       -1.00
+    Milwaukee               863.9               857.5              -6.4       -0.74
+   Pittsburgh              1208.7              1203.5              -5.2       -0.43
+    Cleveland              1085.5              1083.9              -1.6       -0.15
+ Indianapolis              1175.6              1175.3              -0.3       -0.03
+    St. Louis              1435.3              1435.7               0.4        0.03
+       Denver              1643.8              1645.7               1.9        0.12
+      Atlanta              3096.1              3101.9               5.8        0.19
+United States            158111.0            159254.0            1143.0        0.72
+   Cincinnati              1169.6              1178.2               8.6        0.74
+        Tampa              1544.5              1557.7              13.2        0.85
+  Kansas City              1164.9              1175.3              10.4        0.89
+       Dayton               397.2               402.2               5.0        1.26
+    Nashville              1188.8              1204.6              15.8        1.33
+     Columbus              1179.5              1195.7              16.2        1.37
+  Minneapolis              1994.3              2025.5              31.2        1.56
+       Austin              1378.0              1416.6              38.6        2.80
+    Charlotte              1367.5              1407.0              39.5        2.89
+      Raleigh               748.1               783.2              35.1        4.69
+P1 q25 -0.289%  median +0.187%  q75 +1.351% | Cincinnati +0.735% | rank 10 of 20 (1 = fastest) | bottom quartile: False
+
+(b) Growth share of projected annual openings
+                                      area          source    base_emp  growth_openings  total_openings  growth_share_pct  replacement_share_pct
+Cincinnati (ODJFS MSA file, Ohio counties) ODJFS 2022-2032    907032.0           2074.0        101316.0              2.05                  97.95
+     Akron (ODJFS MSA file, Ohio counties) ODJFS 2022-2032    335708.0            108.0         36684.0              0.29                  99.71
+    Canton (ODJFS MSA file, Ohio counties) ODJFS 2022-2032    175670.0             34.0         19910.0              0.17                  99.83
+ Cleveland (ODJFS MSA file, Ohio counties) ODJFS 2022-2032   1064327.0            134.0        114171.0              0.12                  99.88
+  Columbus (ODJFS MSA file, Ohio counties) ODJFS 2022-2032   1151223.0           4828.0        132255.0              3.65                  96.35
+    Dayton (ODJFS MSA file, Ohio counties) ODJFS 2022-2032    391230.0            141.0         42340.0              0.33                  99.67
+    Toledo (ODJFS MSA file, Ohio counties) ODJFS 2022-2032    307550.0           -106.0         33688.0             -0.31                 100.31
+Youngstown (ODJFS MSA file, Ohio counties) ODJFS 2022-2032    169734.0           -245.0         19134.0             -1.28                 101.28
+                                      Ohio ODJFS 2022-2032   5831296.0           5867.0        636978.0              0.92                  99.08
+                             United States   BLS 2025-2035 170280800.0         591760.0      17461800.0              3.39                  96.61
+Cincinnati 2.05% | median of the other seven Ohio MSA files 0.17% | difference +1.88 points | within one point: False | median of all eight 0.23%
+
+(c) Labor force decomposition, Cincinnati MSA (Census population by age x ACS participation by age)
+   window     lf_start      lf_end     change  population_size    age_mix  participation  lfpr_start  lfpr_end  pop65_share_start  pop65_share_end  acs_lf_start  acs_lf_end
+2024-2025 1211233.5169 1234737.974 23504.4571       10439.4746 -4253.9379     17318.9204      0.6558    0.6628             0.2216           0.2264     1215870.0   1235990.0
+2023-2025 1200694.3647 1234737.974 34043.6094       24230.9525 -7854.8374     17667.4942      0.6576    0.6628             0.2173           0.2264     1198720.0   1235990.0
+Participation by age (start -> end):
+  2024-2025 {'16-19': (0.469, 0.534), '20-24': (0.798, 0.802), '25-34': (0.879, 0.872), '35-44': (0.855, 0.862), '45-54': (0.839, 0.863), '55-64': (0.699, 0.705), '65+': (0.198, 0.199)}
+  2023-2025 {'16-19': (0.469, 0.534), '20-24': (0.792, 0.802), '25-34': (0.88, 0.872), '35-44': (0.876, 0.862), '45-54': (0.846, 0.863), '55-64': (0.679, 0.705), '65+': (0.192, 0.199)}

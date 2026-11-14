@@ -1,0 +1,20 @@
+Tercile cut points by measure (bottom <=, top >): {'lm_aioe': (-0.4228, 0.7682), 'eloundou': (0.1859, 0.3974), 'aei': (0.0, 0.1378), 'ms': (0.117, 0.2096)}
+
+Cincinnati (PUMAs: 18 in 2010 geography, 18 in 2020 geography):
+ measure    ddd    se      t  n_young_top_pre  n_young_top_post  young_top_pre  young_top_post  old_top_pre  old_top_post  young_bottom_pre  young_bottom_post  old_bottom_pre  old_bottom_post  occupation_coverage
+ lm_aioe  0.069 0.152  0.452              366               361        20210.5         23365.0     145119.5      161592.0           31546.0            30643.5         95577.0          95788.5                0.777
+eloundou  0.100 0.140  0.712              428               422        24233.0         26564.0     164476.0      178450.5           29917.5            28540.5         93812.0          97854.0                0.777
+     aei -0.121 0.150 -0.804              410               356        23572.0         22397.0     124049.0      135462.5           31531.5            31463.5        101220.0         102865.0                0.777
+      ms -0.017 0.136 -0.124              420               383        24491.0         23561.5     109209.5      116153.0           29985.5            28863.0        113862.5         119131.0                0.777
+
+Against P1 peers:
+  lm_aioe   Cincinnati +0.0688 | P1 n=19 q25 -0.1528 median -0.1196 q75 -0.0811 | rank 18 of 20 from the bottom | peers with |t| > 1.645: 5 (negative: 4)
+  eloundou  Cincinnati +0.0996 | P1 n=19 q25 -0.2391 median -0.1726 q75 -0.0744 | rank 19 of 20 from the bottom | peers with |t| > 1.645: 5 (negative: 4)
+  aei       Cincinnati -0.1209 | P1 n=19 q25 -0.2561 median -0.1746 q75 -0.1104 | rank 13 of 20 from the bottom | peers with |t| > 1.645: 5 (negative: 4)
+  ms        Cincinnati -0.0169 | P1 n=19 q25 -0.2387 median -0.1410 q75 -0.0710 | rank 18 of 20 from the bottom | peers with |t| > 1.645: 7 (negative: 7)
+
+Pooled across all 20 metros (sum of weighted employment):
+  lm_aioe   DDD -0.0877 (se 0.0350, t -2.51)
+  eloundou  DDD -0.1190 (se 0.0333, t -3.58)
+  aei       DDD -0.1391 (se 0.0341, t -4.08)
+  ms        DDD -0.1195 (se 0.0313, t -3.82)
