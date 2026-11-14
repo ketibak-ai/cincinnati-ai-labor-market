@@ -33,7 +33,7 @@ import requests
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 P = lambda *a: os.path.join(ROOT, *a)
 TERMS = ["AI", "artificial intelligence", "generative AI", "machine learning", "LLM", "ChatGPT", "agents"]
-TITLE_RE = re.compile(r"(?<![A-Za-z])A\.?I\.?(?![A-Za-z])|artificial intelligence|generative|machine learning|"
+TITLE_RE = re.compile(r"(?<![A-Za-z])A\.?I\.?(?![A-Za-z])|(?-i:[a-z]AI\b)|artificial intelligence|generative|machine learning|"
                       r"\bLLMs?\b|chatgpt|\bGPTs?\b|copilot|\bclaude\b|\bgemini\b|agentic|\bAI agents?\b|"
                       r"prompt engineering|deep learning|\bMLOps\b|data science", re.I)
 CITIES = {  # cbsa: (eventbrite slug, meetup location)
@@ -47,7 +47,24 @@ CITIES = {  # cbsa: (eventbrite slug, meetup location)
     33460: ("mn--minneapolis", "us--mn--Minneapolis"), 34980: ("tn--nashville", "us--tn--Nashville"),
     38300: ("pa--pittsburgh", "us--pa--Pittsburgh"), 39580: ("nc--raleigh", "us--nc--Raleigh"),
     41180: ("mo--st-louis", "us--mo--St. Louis"), 45300: ("fl--tampa", "us--fl--Tampa")}
-TODAY = datetime.date.today()
+# City-hall coordinates of each principal city. Eventbrite's own search area spills into
+# neighbouring metros (Cincinnati's results included Louisville and Dayton-area events), so an
+# Eventbrite event is kept only if its venue lies within 25 miles of the principal city.
+CENTER = {17140: (39.1031, -84.5120), 12060: (33.7490, -84.3880), 12420: (30.2672, -97.7431), 12580: (39.2904, -76.6122),
+          16740: (35.2271, -80.8431), 17410: (41.4993, -81.6944), 18140: (39.9612, -82.9988), 19430: (39.7589, -84.1916),
+          19740: (39.7392, -104.9903), 19820: (42.3314, -83.0458), 26900: (39.7684, -86.1581), 28140: (39.0997, -94.5786),
+          31140: (38.2527, -85.7585), 33340: (43.0389, -87.9065), 33460: (44.9778, -93.2650), 34980: (36.1627, -86.7816),
+          38300: (40.4406, -79.9959), 39580: (35.7796, -78.6382), 41180: (38.6270, -90.1994), 45300: (27.9506, -82.4572)}
+RADIUS_MILES = 25
+
+
+def miles(a, b):
+    import math
+    la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 3958.8 * 2 * math.asin(math.sqrt(h))
+
+TODAY = datetime.date(2026, 11, 14)          # the collection day (fixed so cached responses are reused)
 END = TODAY + datetime.timedelta(days=60)
 RAW = P("raw", "awareness", "l1")
 os.makedirs(RAW, exist_ok=True)
@@ -91,8 +108,13 @@ def eventbrite(cbsa, slug, term):
         pages = (ev.get("pagination") or {}).get("page_count", 1) or 1
         for e in ev.get("results", []):
             v = e.get("primary_venue") or {}
+            ad = v.get("address") or {}
+            try:
+                dist = miles(CENTER[cbsa], (float(ad.get("latitude")), float(ad.get("longitude"))))
+            except (TypeError, ValueError):
+                dist = None
             out.append(dict(platform="eventbrite", cbsa=cbsa, term=term, title=e.get("name", ""), date=e.get("start_date"),
-                            in_person=not e.get("is_online_event", False), city=(v.get("address") or {}).get("city"),
+                            in_person=not e.get("is_online_event", False), city=ad.get("city"), miles_from_center=dist,
                             url=e.get("url"), cancelled=bool(e.get("is_cancelled"))))
         p += 1
     return out
@@ -111,7 +133,7 @@ def meetup(cbsa, loc, term):
     for k, e in st.items():
         if k.startswith("Event:") and e.get("title"):
             out.append(dict(platform="meetup", cbsa=cbsa, term=term, title=e.get("title", ""), date=(e.get("dateTime") or "")[:10],
-                            in_person=e.get("eventType") == "PHYSICAL", city=None, url=e.get("eventUrl"), cancelled=False))
+                            in_person=e.get("eventType") == "PHYSICAL", city=None, miles_from_center=None, url=e.get("eventUrl"), cancelled=False))
     return out
 
 
@@ -126,7 +148,8 @@ A["collected"] = TODAY.isoformat()
 A["date"] = pd.to_datetime(A.date, errors="coerce").dt.date
 A["title_is_ai"] = A.title.fillna("").map(lambda s: bool(TITLE_RE.search(s)))
 A["in_window"] = A.date.map(lambda d: pd.notna(d) and TODAY <= d <= END)
-K = A[A.in_person & A.title_is_ai & A.in_window & ~A.cancelled].copy()
+A["in_radius"] = (A.platform == "meetup") | (A.miles_from_center <= RADIUS_MILES)     # Meetup searches are already centred on the city
+K = A[A.in_person & A.title_is_ai & A.in_window & ~A.cancelled & A.in_radius].copy()
 K["key"] = K.title.str.lower().str.replace(r"[^a-z0-9]+", " ", regex=True).str.strip() + "|" + K.date.astype(str)
 K = K.sort_values(["cbsa", "platform"]).drop_duplicates(["cbsa", "key"])
 K.drop(columns="key").to_csv(P("data", "l1_platform_events.csv"), index=False)
@@ -142,6 +165,7 @@ nm = dict(zip(peers.CBSA, peers.short))
 C = pd.DataFrame({"cbsa": list(CITIES)})
 C["area"] = C.cbsa.map(nm)
 C["raw_results"] = C.cbsa.map(A.groupby("cbsa").size()).fillna(0).astype(int)
+C["dropped_outside_radius"] = C.cbsa.map(A[A.in_person & A.title_is_ai & A.in_window & ~A.cancelled & ~A.in_radius].drop_duplicates(["cbsa", "title", "date"]).groupby("cbsa").size()).fillna(0).astype(int)
 C["events"] = C.cbsa.map(K.groupby("cbsa").size()).fillna(0).astype(int)
 C["events_eventbrite"] = C.cbsa.map(K[K.platform == "eventbrite"].groupby("cbsa").size()).fillna(0).astype(int)
 C["events_meetup"] = C.cbsa.map(K[K.platform == "meetup"].groupby("cbsa").size()).fillna(0).astype(int)
@@ -150,6 +174,6 @@ C["events_per_100k_18_64"] = C.events / C.pop_18_64 * 1e5
 C["collected"] = TODAY.isoformat()
 C["window_end"] = END.isoformat()
 C.to_csv(P("data", "l1_platform_counts.csv"), index=False)
-pd.DataFrame(log, columns=["tag", "url", "status", "sha256_16"]).to_csv(os.path.join(RAW, f"_log_{TODAY}.csv"), index=False)
+pd.DataFrame(log, columns=["tag", "url", "status", "sha256_16"]).to_csv(os.path.join(RAW, f"_log_{TODAY}_run{len(os.listdir(RAW))}.csv"), index=False)
 print(C.sort_values("events_per_100k_18_64", ascending=False).to_string(index=False))
 print("failed requests:", sum(1 for l in log if l[2] != 200))

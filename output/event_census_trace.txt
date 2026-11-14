@@ -1,0 +1,34 @@
+Census rows: 56 | held: 50 | upcoming: 5 | cancelled: 1
+
+A1 events held per year (the last year runs to the collection day, 14 Nov 2026):
+yr
+Dec 2023-Nov 2024    16
+Dec 2024-Nov 2025    16
+Dec 2025-Nov 2026    18
+
+A2 organizers with at least one held event, by year:
+yr
+Dec 2023-Nov 2024    4
+Dec 2024-Nov 2025    3
+Dec 2025-Nov 2026    7
+
+A3 meeting regularity, recurring series (held meetings by year):
+yr                       Dec 2023-Nov 2024  Dec 2024-Nov 2025  Dec 2025-Nov 2026
+series_name                                                                     
+AI Tinkerers Cincinnati                  1                  3                  1
+Cincy AI Week                            1                  1                  1
+CincyAI for Humans                      12                 12                 11
+MidwestCon                               0                  0                  1
+OhioX State of AI                        0                  0                  1
+CincyAI for Humans: scheduled in the three-year window (to 14 Nov 2026): 36 | held: 35 | cancelled: 1
+
+A5 audience of events held in the last 12 months (15 Nov 2025 - 14 Nov 2026):
+audience
+general public           15
+business or executive     2
+technical                 1
+Share aimed at an audience other than 'technical': 94.4% of 18 -> reaches beyond technologists: True
+
+A7 public-sector presence: events organised by a public body in the census: 1
+
+Upcoming in-person AI events found by the platform search (next 60 days): 5

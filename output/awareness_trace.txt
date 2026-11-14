@@ -1,0 +1,63 @@
+H12. Convening relative to P1 (19 peers)
+  L1 platform listings per 100k      Cincinnati   0.363 | P1 q25   0.330 median   0.495 q75   0.874 | rank 15 of 20 | inside IQR
+  L2 chapter meetings per 100k       Cincinnati   0.073 | P1 q25   0.000 median   0.000 q75   0.333 | rank 10 of 20 | inside IQR
+  L3 search interest (index)         Cincinnati  30.667 | P1 q25  32.333 median  34.667 q75  39.833 | rank 17 of 20 | below IQR
+  Verdict: WITHIN the normal range of peers (above on 0, below on 1 of 3)
+
+  Raw counts:
+               area  l1_events  events_eventbrite  events_meetup  l1_per_100k  l2_meetings               l2_status  l2_per_100k  l3_ChatGPT  l3_Claude_AI  l3_Microsoft_Copilot  l3_mean
+cbsa                                                                                                                                                                                    
+12420        Austin         33                 26              7         1.91            9                 chapter         0.52        61.0          63.0                  18.0    47.33
+19740        Denver         33                 23             10         1.66            5                 chapter         0.25        52.0          47.0                  25.0    41.33
+12060       Atlanta         46                 35             11         1.13           12                 chapter         0.30        72.0          52.0                  24.0    49.33
+39580       Raleigh          9                  7              2         0.90            5                 chapter         0.50        63.0          41.0                  22.0    42.00
+17410     Cleveland         11                  8              3         0.88            0        no_chapter_found         0.00        48.0          26.0                  14.0    29.33
+18140      Columbus         12                  8              4         0.87           10                 chapter         0.73        51.0          35.0                  18.0    34.67
+34980     Nashville          8                  4              4         0.58            5                 chapter         0.36        51.0          33.0                  15.0    33.00
+33340     Milwaukee          5                  3              2         0.54            0        no_chapter_found         0.00        54.0          33.0                  17.0    34.67
+28140   Kansas City          7                  6              1         0.52            0  chapter_page_no_events         0.00        54.0          36.0                  19.0    36.33
+16740     Charlotte          9                  6              3         0.50            0  chapter_page_no_events         0.00        58.0          36.0                  18.0    37.33
+33460   Minneapolis         11                  6              5         0.48            4                 chapter         0.17        51.0          33.0                  16.0    33.33
+41180     St. Louis          7                  7              0         0.42            5                 chapter         0.30        50.0          33.0                  16.0    33.00
+45300         Tampa          8                  5              3         0.39            0        no_chapter_found         0.00        57.0          41.0                  19.0    39.00
+26900  Indianapolis          5                  5              0         0.38            0        no_chapter_found         0.00        50.0          29.0                  15.0    31.33
+17140    Cincinnati          5                  5              0         0.36            1                 chapter         0.07        49.0          28.0                  15.0    30.67
+38300    Pittsburgh          4                  4              0         0.28            0  chapter_page_no_events         0.00        47.0          32.0                  16.0    31.67
+19820       Detroit          7                  7              0         0.27            0        no_chapter_found         0.00        55.0          36.0                  15.0    35.33
+31140    Louisville          2                  2              0         0.24            4                 chapter         0.48        43.0          21.0                  14.0    26.00
+12580     Baltimore          4                  4              0         0.23            0        no_chapter_found         0.00        60.0          44.0                  18.0    40.67
+19430        Dayton          1                  1              0         0.21            0        no_chapter_found         0.00        48.0          24.0                  11.0    27.67
+
+  Cincinnati's media market ranks 108 of 211 US markets for 'ChatGPT'.
+
+H14. Is convening related to postings that name AI tools? (Spearman, exact-style permutation p, 20 metros)
+  l1_per_100k  vs postings ('AI agent' + 'large language model') per 100k: rho +0.54, p 0.017, n 20 | vs 'ChatGPT' postings: rho -0.19, p 0.442, n 19
+  l2_per_100k  vs postings ('AI agent' + 'large language model') per 100k: rho +0.41, p 0.073, n 20 | vs 'ChatGPT' postings: rho -0.17, p 0.490, n 19
+  l3_mean      vs postings ('AI agent' + 'large language model') per 100k: rho +0.32, p 0.166, n 20 | vs 'ChatGPT' postings: rho -0.46, p 0.050, n 19
+  Verdict: RELATED (rho >= 0.4 and p < 0.10 on at least two of three)
+
+  Postings naming AI tools, per 100k aged 18-64:
+               area  post_ai_agent  post_llm  post_chatgpt  post_two_terms_per_100k  post_chatgpt_per_100k
+cbsa                                                                                                      
+39580       Raleigh          146.0      14.0           NaN                    15.92                    NaN
+12420        Austin          229.0      38.0         129.0                    15.44                   7.46
+34980     Nashville          174.0      20.0         130.0                    14.12                   9.46
+18140      Columbus          157.0      29.0         150.0                    13.49                  10.88
+26900  Indianapolis          132.0      19.0         139.0                    11.39                  10.48
+33340     Milwaukee           86.0      10.0         114.0                    10.30                  12.23
+33460   Minneapolis          195.0      33.0         203.0                     9.94                   8.85
+12580     Baltimore          140.0      25.0         208.0                     9.57                  12.06
+19740        Denver          155.0      31.0         234.0                     9.37                  11.79
+16740     Charlotte          127.0      24.0         119.0                     8.31                   6.55
+38300    Pittsburgh          105.0      12.0         142.0                     8.26                  10.03
+17410     Cleveland           92.0       8.0         163.0                     7.97                  13.00
+17140    Cincinnati           94.0      13.0         129.0                     7.76                   9.36
+12060       Atlanta          239.0      37.0         212.0                     6.79                   5.22
+28140   Kansas City           82.0       7.0         135.0                     6.56                   9.95
+31140    Louisville           40.0       3.0          94.0                     5.15                  11.26
+19820       Detroit          121.0      12.0         228.0                     5.07                   8.69
+45300         Tampa           90.0      11.0         159.0                     4.96                   7.82
+41180     St. Louis           75.0       7.0         182.0                     4.94                  10.97
+19430        Dayton            3.0       4.0          58.0                     1.45                  12.02
+  Cincinnati 7.76 | P1 median 8.31 | rank 13 of 20
+  Other Cincinnati phrase counts (same day): {'generative AI': 64, 'OpenAI': 63, 'prompt engineering': 3, 'agentic (stemmed by the tool; not used)': 862}
