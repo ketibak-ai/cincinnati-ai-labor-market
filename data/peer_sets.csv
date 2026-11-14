@@ -1,0 +1,34 @@
+CBSA,NAME,POPESTIMATE2025,p2,duncan,sectors_compared,private_emp_covered,p1,p3,short
+16980,"Chicago-Naperville-Elgin, IL-IN",9434123,False,0.07734639459832515,20.0,0.9852,False,True,Chicago
+12060,"Atlanta-Sandy Springs-Roswell, GA",6482182,False,0.11760569549892742,20.0,0.9637,True,False,Atlanta
+19820,"Detroit-Warren-Dearborn, MI",4390913,False,0.07931290427205376,20.0,0.9964,True,True,Detroit
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI",3790295,False,0.08166881032895851,20.0,0.9836,True,True,Minneapolis
+45300,"Tampa-St. Petersburg-Clearwater, FL",3418895,False,0.1444826544301574,20.0,1.0,True,False,Tampa
+19740,"Denver-Aurora-Centennial, CO",3092037,True,0.1545845999851115,20.0,0.9964,True,False,Denver
+36740,"Orlando-Kissimmee-Sanford, FL",2957672,True,0.20441592339840917,20.0,1.0,False,False,Orlando
+16740,"Charlotte-Concord-Gastonia, NC-SC",2938830,True,0.10791274849658986,20.0,0.9615,True,False,Charlotte
+12580,"Baltimore-Columbia-Towson, MD",2857781,True,0.17511345584655955,20.0,0.9455,True,False,Baltimore
+41180,"St. Louis, MO-IL",2814421,True,0.07942887195965576,20.0,0.9784,True,True,St. Louis
+41700,"San Antonio-New Braunfels, TX",2813140,True,0.1426532381648542,20.0,0.9972,False,False,San Antonio
+12420,"Austin-Round Rock-San Marcos, TX",2620945,True,0.18502697366123003,20.0,0.9996,True,False,Austin
+38900,"Portland-Vancouver-Hillsboro, OR-WA",2542282,True,0.0711973046598144,20.0,0.9419,False,True,Portland
+40900,"Sacramento-Roseville-Folsom, CA",2477274,True,0.17280854411155958,20.0,0.9846,False,False,Sacramento
+38300,"Pittsburgh, PA",2421992,True,0.12362650475721022,20.0,0.9978,True,False,Pittsburgh
+29820,"Las Vegas-Henderson-North Las Vegas, NV",2407226,True,0.23277248697339234,20.0,1.0,False,False,Las Vegas
+17140,"Cincinnati, OH-KY-IN",2312858,False,,,,False,False,Cincinnati
+28140,"Kansas City, MO-KS",2270682,True,0.08275027881906907,20.0,0.9802,True,True,Kansas City
+18140,"Columbus, OH",2242028,True,0.0755639618852167,20.0,0.9825,True,True,Columbus
+26900,"Indianapolis-Carmel-Greenwood, IN",2205695,True,0.08974346181768461,20.0,0.982,True,False,Indianapolis
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",2197416,True,0.1035893481212519,20.0,0.9794,True,False,Nashville
+17410,"Cleveland, OH",2165775,True,0.0688043954668012,20.0,0.9744,True,True,Cleveland
+41940,"San Jose-Sunnyvale-Santa Clara, CA",1984473,True,0.22296889522536628,20.0,0.9991,False,False,San Jose
+47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",1797213,True,0.12936666404538605,20.0,0.9219,False,False,Virginia Beach
+27260,"Jacksonville, FL",1785500,True,0.13361621109778848,20.0,0.9832,False,False,Jacksonville
+39300,"Providence-Warwick, RI-MA",1708161,True,0.1471275966311643,20.0,0.8879,False,False,Providence
+39580,"Raleigh-Cary, NC",1595720,True,0.17980821945516656,20.0,0.981,True,False,Raleigh
+33340,"Milwaukee-Waukesha, WI",1575010,True,0.09942185532179244,20.0,0.9257,True,False,Milwaukee
+36420,"Oklahoma City, OK",1512813,True,0.13398003443301318,20.0,0.9101,False,False,Oklahoma City
+31140,"Louisville/Jefferson County, KY-IN",1402509,True,0.07540091070088535,20.0,0.9723,True,True,Louisville
+40060,"Richmond, VA",1389338,True,0.12971269355641704,20.0,0.9189,False,False,Richmond
+15380,"Buffalo-Cheektowaga, NY",1155653,False,0.0778132261555294,20.0,1.0,False,True,Buffalo
+19430,"Dayton-Kettering-Beavercreek, OH",826554,False,,,,True,False,Dayton

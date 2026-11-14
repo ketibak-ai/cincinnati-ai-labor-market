@@ -1,0 +1,45 @@
+National share of employment in computer and mathematical occupations (OEWS May 2025): 3.3828%
+Cincinnati actual share: 2.9372%  (32,340 of 1,101,030); LQ 0.868
+Cincinnati expected share from its industry mix: 3.1249%; LQ expected 0.924
+Gap vs nation: -0.446 points = industry mix -0.258 + within-industry -0.188
+Within-industry share of the gap: 42.1%
+In jobs (at the OEWS total): gap -4,906 = mix -2,839 + within -2,066
+Employment carried at each level of industry detail (Cincinnati): {'n4': 0.7308, 'n3': 0.1138, 'n2': 0.024, 'all': 0.0221, 'gov': 0.1092}
+
+All metros, sorted by within-industry component (points):
+         short    p1  lq_actual  lq_expected    gap  industry_mix  within_industry
+    Louisville  True      0.628        0.823 -1.258        -0.600           -0.658
+     Las Vegas False      0.546        0.714 -1.536        -0.968           -0.567
+       Chicago False      0.860        0.961 -0.473        -0.131           -0.342
+     Cleveland  True      0.836        0.905 -0.555        -0.320           -0.234
+  Indianapolis  True      0.839        0.907 -0.543        -0.314           -0.229
+    Providence False      0.736        0.802 -0.892        -0.671           -0.220
+        Dayton  True      1.017        1.082  0.057         0.277           -0.220
+       Buffalo False      0.757        0.820 -0.822        -0.607           -0.214
+     Nashville  True      0.915        0.973 -0.286        -0.093           -0.194
+    Cincinnati False      0.868        0.924 -0.446        -0.258           -0.188
+     Milwaukee  True      0.818        0.843 -0.615        -0.532           -0.082
+      Columbus  True      0.965        0.975 -0.118        -0.084           -0.033
+   San Antonio False      0.851        0.858 -0.504        -0.482           -0.022
+         Tampa  True      1.040        1.037  0.135         0.126            0.008
+    Pittsburgh  True      0.919        0.915 -0.275        -0.289            0.014
+   Kansas City  True      1.066        1.058  0.225         0.197            0.028
+  Jacksonville False      0.959        0.924 -0.138        -0.258            0.119
+   Minneapolis  True      1.110        1.069  0.371         0.233            0.138
+       Detroit  True      0.986        0.940 -0.048        -0.204            0.157
+     St. Louis  True      0.974        0.924 -0.088        -0.257            0.169
+       Atlanta  True      1.219        1.160  0.741         0.540            0.200
+       Orlando False      0.930        0.871 -0.236        -0.437            0.201
+Virginia Beach False      0.961        0.881 -0.133        -0.403            0.270
+ Oklahoma City False      0.940        0.827 -0.203        -0.585            0.382
+      Portland False      1.171        1.011  0.577         0.036            0.540
+        Denver  True      1.589        1.412  1.994         1.394            0.600
+        Austin  True      1.908        1.726  3.072         2.457            0.614
+      Richmond False      1.093        0.890  0.315        -0.372            0.687
+    Sacramento False      1.003        0.778  0.011        -0.751            0.762
+       Raleigh  True      1.742        1.482  2.509         1.629            0.879
+     Charlotte  True      1.352        1.067  1.192         0.228            0.964
+     Baltimore  True      1.442        1.063  1.497         0.212            1.284
+      San Jose False      3.906        2.803  9.831         6.098            3.733
+
+P1: Cincinnati within-industry rank 6 of 20 from the bottom; P1 q25 -0.138, median +0.028, q75 +0.400

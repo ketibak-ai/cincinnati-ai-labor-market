@@ -1,0 +1,470 @@
+CBSA,STCOU,NAME,POPESTIMATE2025
+12060,13013,"Barrow County, GA",99773
+12060,13035,"Butts County, GA",27218
+12060,13045,"Carroll County, GA",131036
+12060,13063,"Clayton County, GA",297471
+12060,13077,"Coweta County, GA",160240
+12060,13085,"Dawson County, GA",35365
+12060,13089,"DeKalb County, GA",774394
+12060,13097,"Douglas County, GA",154293
+12060,13113,"Fayette County, GA",125156
+12060,13117,"Forsyth County, GA",282805
+12060,13121,"Fulton County, GA",1098791
+12060,13135,"Gwinnett County, GA",1018099
+12060,13149,"Heard County, GA",12149
+12060,13151,"Henry County, GA",264922
+12060,13159,"Jasper County, GA",17632
+12060,13187,"Lumpkin County, GA",36178
+12060,13199,"Meriwether County, GA",21516
+12060,13211,"Morgan County, GA",22095
+12060,13217,"Newton County, GA",125583
+12060,13227,"Pickens County, GA",37167
+12060,13231,"Pike County, GA",20932
+12060,13247,"Rockdale County, GA",98416
+12060,13255,"Spalding County, GA",70775
+12060,13297,"Walton County, GA",112696
+12060,13015,"Bartow County, GA",120800
+12060,13057,"Cherokee County, GA",299273
+12060,13067,"Cobb County, GA",793345
+12060,13143,"Haralson County, GA",33066
+12060,13223,"Paulding County, GA",190996
+12420,48021,"Bastrop County, TX",118908
+12420,48055,"Caldwell County, TX",55150
+12420,48209,"Hays County, TX",304390
+12420,48453,"Travis County, TX",1389670
+12420,48491,"Williamson County, TX",752827
+12580,24003,"Anne Arundel County, MD",603380
+12580,24005,"Baltimore County, MD",847650
+12580,24013,"Carroll County, MD",176677
+12580,24025,"Harford County, MD",266446
+12580,24027,"Howard County, MD",339183
+12580,24035,"Queen Anne's County, MD",54448
+12580,24510,"Baltimore city, MD",569997
+13820,01007,"Bibb County, AL",22262
+13820,01009,"Blount County, AL",60156
+13820,01021,"Chilton County, AL",47708
+13820,01073,"Jefferson County, AL",665742
+13820,01115,"St. Clair County, AL",98206
+13820,01117,"Shelby County, AL",238552
+13820,01127,"Walker County, AL",65140
+14460,25021,"Norfolk County, MA",739749
+14460,25023,"Plymouth County, MA",546829
+14460,25025,"Suffolk County, MA",791891
+14460,25009,"Essex County, MA",826653
+14460,25017,"Middlesex County, MA",1669979
+14460,33015,"Rockingham County, NH",324077
+14460,33017,"Strafford County, NH",135043
+14860,09120,"Greater Bridgeport Planning Region, CT",337697
+14860,09190,"Western Connecticut Planning Region, CT",640482
+15380,36029,"Erie County, NY",946741
+15380,36063,"Niagara County, NY",208912
+16740,37007,"Anson County, NC",21758
+16740,37025,"Cabarrus County, NC",249725
+16740,37071,"Gaston County, NC",246558
+16740,37097,"Iredell County, NC",211798
+16740,37109,"Lincoln County, NC",98654
+16740,37119,"Mecklenburg County, NC",1233383
+16740,37159,"Rowan County, NC",155096
+16740,37179,"Union County, NC",267674
+16740,45023,"Chester County, SC",33001
+16740,45057,"Lancaster County, SC",114296
+16740,45091,"York County, SC",306887
+16980,17031,"Cook County, IL",5194625
+16980,17043,"DuPage County, IL",934298
+16980,17063,"Grundy County, IL",54052
+16980,17111,"McHenry County, IL",317751
+16980,17197,"Will County, IL",712253
+16980,17037,"DeKalb County, IL",101835
+16980,17089,"Kane County, IL",525757
+16980,17093,"Kendall County, IL",145470
+16980,17097,"Lake County, IL",719339
+16980,18073,"Jasper County, IN",33894
+16980,18089,"Lake County, IN",504612
+16980,18111,"Newton County, IN",14188
+16980,18127,"Porter County, IN",176049
+17140,18029,"Dearborn County, IN",51609
+17140,18047,"Franklin County, IN",23286
+17140,18115,"Ohio County, IN",5994
+17140,21015,"Boone County, KY",145316
+17140,21023,"Bracken County, KY",8511
+17140,21037,"Campbell County, KY",95441
+17140,21077,"Gallatin County, KY",8840
+17140,21081,"Grant County, KY",26181
+17140,21117,"Kenton County, KY",175779
+17140,21191,"Pendleton County, KY",14800
+17140,39015,"Brown County, OH",44397
+17140,39017,"Butler County, OH",400128
+17140,39025,"Clermont County, OH",216977
+17140,39061,"Hamilton County, OH",838418
+17140,39165,"Warren County, OH",257181
+17410,39007,"Ashtabula County, OH",96713
+17410,39035,"Cuyahoga County, OH",1232925
+17410,39055,"Geauga County, OH",95676
+17410,39085,"Lake County, OH",232217
+17410,39093,"Lorain County, OH",323219
+17410,39103,"Medina County, OH",185025
+18140,39041,"Delaware County, OH",242032
+18140,39045,"Fairfield County, OH",169752
+18140,39049,"Franklin County, OH",1361536
+18140,39073,"Hocking County, OH",27512
+18140,39089,"Licking County, OH",185564
+18140,39097,"Madison County, OH",46985
+18140,39117,"Morrow County, OH",36305
+18140,39127,"Perry County, OH",35918
+18140,39129,"Pickaway County, OH",62978
+18140,39159,"Union County, OH",73446
+19100,48085,"Collin County, TX",1297179
+19100,48113,"Dallas County, TX",2661397
+19100,48121,"Denton County, TX",1069346
+19100,48139,"Ellis County, TX",240867
+19100,48231,"Hunt County, TX",123336
+19100,48257,"Kaufman County, TX",209235
+19100,48397,"Rockwall County, TX",140738
+19100,48251,"Johnson County, TX",218048
+19100,48367,"Parker County, TX",184767
+19100,48439,"Tarrant County, TX",2248466
+19100,48497,"Wise County, TX",83778
+19430,39057,"Greene County, OH",174322
+19430,39109,"Miami County, OH",112634
+19430,39113,"Montgomery County, OH",539598
+19740,08001,"Adams County, CO",554668
+19740,08005,"Arapahoe County, CO",673820
+19740,08014,"Broomfield County, CO",79174
+19740,08019,"Clear Creek County, CO",8994
+19740,08031,"Denver County, CO",740613
+19740,08035,"Douglas County, CO",399396
+19740,08039,"Elbert County, CO",30534
+19740,08047,"Gilpin County, CO",6073
+19740,08059,"Jefferson County, CO",580451
+19740,08093,"Park County, CO",18314
+19820,26163,"Wayne County, MI",1769038
+19820,26087,"Lapeer County, MI",89516
+19820,26093,"Livingston County, MI",197315
+19820,26099,"Macomb County, MI",886221
+19820,26125,"Oakland County, MI",1288337
+19820,26147,"St. Clair County, MI",160486
+23420,06019,"Fresno County, CA",1035456
+23420,06039,"Madera County, CA",167927
+24340,26015,"Barry County, MI",63991
+24340,26067,"Ionia County, MI",66557
+24340,26081,"Kent County, MI",675232
+24340,26117,"Montcalm County, MI",69406
+24340,26139,"Ottawa County, MI",308459
+24860,45007,"Anderson County, SC",219930
+24860,45045,"Greenville County, SC",583125
+24860,45059,"Laurens County, SC",71848
+24860,45077,"Pickens County, SC",139198
+25540,09110,"Capitol Planning Region, CT",994115
+25540,09130,"Lower Connecticut River Valley Planning Region, CT",177311
+26420,48015,"Austin County, TX",33625
+26420,48039,"Brazoria County, TX",419080
+26420,48071,"Chambers County, TX",57594
+26420,48157,"Fort Bend County, TX",975191
+26420,48167,"Galveston County, TX",372207
+26420,48201,"Harris County, TX",5045026
+26420,48291,"Liberty County, TX",121364
+26420,48339,"Montgomery County, TX",781194
+26420,48407,"San Jacinto County, TX",29488
+26420,48473,"Waller County, TX",69858
+26900,18011,"Boone County, IN",80689
+26900,18013,"Brown County, IN",15777
+26900,18057,"Hamilton County, IN",387036
+26900,18059,"Hancock County, IN",90969
+26900,18063,"Hendricks County, IN",193510
+26900,18081,"Johnson County, IN",174262
+26900,18095,"Madison County, IN",135088
+26900,18097,"Marion County, IN",992196
+26900,18109,"Morgan County, IN",74967
+26900,18145,"Shelby County, IN",45882
+26900,18159,"Tipton County, IN",15319
+27260,12003,"Baker County, FL",29737
+27260,12019,"Clay County, FL",239593
+27260,12031,"Duval County, FL",1062963
+27260,12089,"Nassau County, FL",106879
+27260,12109,"St. Johns County, FL",346328
+28140,20091,"Johnson County, KS",636906
+28140,20103,"Leavenworth County, KS",84590
+28140,20107,"Linn County, KS",9950
+28140,20121,"Miami County, KS",36240
+28140,20209,"Wyandotte County, KS",170597
+28140,29013,"Bates County, MO",16512
+28140,29025,"Caldwell County, MO",9012
+28140,29037,"Cass County, MO",115859
+28140,29047,"Clay County, MO",265032
+28140,29049,"Clinton County, MO",21661
+28140,29095,"Jackson County, MO",732994
+28140,29107,"Lafayette County, MO",33531
+28140,29165,"Platte County, MO",114400
+28140,29177,"Ray County, MO",23398
+28940,47001,"Anderson County, TN",82066
+28940,47009,"Blount County, TN",143820
+28940,47013,"Campbell County, TN",40290
+28940,47057,"Grainger County, TN",25739
+28940,47093,"Knox County, TN",511453
+28940,47105,"Loudon County, TN",63764
+28940,47129,"Morgan County, TN",22160
+28940,47145,"Roane County, TN",57395
+28940,47173,"Union County, TN",21450
+29820,32003,"Clark County, NV",2407226
+31080,06059,"Orange County, CA",3149507
+31080,06037,"Los Angeles County, CA",9694934
+31140,18019,"Clark County, IN",130451
+31140,18043,"Floyd County, IN",82153
+31140,18061,"Harrison County, IN",40437
+31140,18175,"Washington County, IN",28383
+31140,21029,"Bullitt County, KY",86454
+31140,21103,"Henry County, KY",16447
+31140,21111,"Jefferson County, KY",795222
+31140,21163,"Meade County, KY",30699
+31140,21179,"Nelson County, KY",49036
+31140,21185,"Oldham County, KY",70986
+31140,21211,"Shelby County, KY",51243
+31140,21215,"Spencer County, KY",20998
+32820,05035,"Crittenden County, AR",46210
+32820,28009,"Benton County, MS",7502
+32820,28033,"DeSoto County, MS",197918
+32820,28093,"Marshall County, MS",34654
+32820,28137,"Tate County, MS",28725
+32820,28143,"Tunica County, MS",8819
+32820,47047,"Fayette County, TN",45071
+32820,47157,"Shelby County, TN",910226
+32820,47167,"Tipton County, TN",62287
+33100,12011,"Broward County, FL",2013317
+33100,12086,"Miami-Dade County, FL",2802029
+33100,12099,"Palm Beach County, FL",1575726
+33340,55079,"Milwaukee County, WI",924216
+33340,55089,"Ozaukee County, WI",94346
+33340,55131,"Washington County, WI",139238
+33340,55133,"Waukesha County, WI",417210
+33460,27003,"Anoka County, MN",381605
+33460,27019,"Carver County, MN",114379
+33460,27025,"Chisago County, MN",59142
+33460,27037,"Dakota County, MN",457710
+33460,27053,"Hennepin County, MN",1284784
+33460,27059,"Isanti County, MN",44386
+33460,27079,"Le Sueur County, MN",29453
+33460,27095,"Mille Lacs County, MN",27753
+33460,27123,"Ramsey County, MN",541623
+33460,27139,"Scott County, MN",159017
+33460,27141,"Sherburne County, MN",104194
+33460,27163,"Washington County, MN",286895
+33460,27171,"Wright County, MN",157559
+33460,55093,"Pierce County, WI",43519
+33460,55109,"St. Croix County, WI",98276
+34980,47015,"Cannon County, TN",15296
+34980,47021,"Cheatham County, TN",42778
+34980,47037,"Davidson County, TN",745904
+34980,47043,"Dickson County, TN",58662
+34980,47081,"Hickman County, TN",26219
+34980,47111,"Macon County, TN",27663
+34980,47119,"Maury County, TN",118131
+34980,47147,"Robertson County, TN",80175
+34980,47149,"Rutherford County, TN",386352
+34980,47159,"Smith County, TN",20981
+34980,47165,"Sumner County, TN",215538
+34980,47169,"Trousdale County, TN",12623
+34980,47187,"Williamson County, TN",272061
+34980,47189,"Wilson County, TN",175033
+35380,22051,"Jefferson Parish, LA",431398
+35380,22071,"Orleans Parish, LA",362154
+35380,22075,"Plaquemines Parish, LA",22256
+35380,22087,"St. Bernard Parish, LA",45642
+35380,22089,"St. Charles Parish, LA",50586
+35380,22093,"St. James Parish, LA",18938
+35380,22095,"St. John the Baptist Parish, LA",39875
+35620,34023,"Middlesex County, NJ",883335
+35620,34025,"Monmouth County, NJ",651035
+35620,34029,"Ocean County, NJ",673746
+35620,34035,"Somerset County, NJ",356486
+35620,36059,"Nassau County, NY",1398939
+35620,36103,"Suffolk County, NY",1546090
+35620,34013,"Essex County, NJ",896379
+35620,34019,"Hunterdon County, NJ",131781
+35620,34027,"Morris County, NJ",524251
+35620,34037,"Sussex County, NJ",148063
+35620,34039,"Union County, NJ",601863
+35620,34003,"Bergen County, NJ",977026
+35620,34017,"Hudson County, NJ",735033
+35620,34031,"Passaic County, NJ",531624
+35620,36005,"Bronx County, NY",1406332
+35620,36047,"Kings County, NY",2653963
+35620,36061,"New York County, NY",1664862
+35620,36079,"Putnam County, NY",99028
+35620,36081,"Queens County, NY",2358182
+35620,36085,"Richmond County, NY",501290
+35620,36087,"Rockland County, NY",357397
+35620,36119,"Westchester County, NY",1015743
+36420,40017,"Canadian County, OK",187189
+36420,40027,"Cleveland County, OK",303973
+36420,40051,"Grady County, OK",59128
+36420,40081,"Lincoln County, OK",35278
+36420,40083,"Logan County, OK",55473
+36420,40087,"McClain County, OK",49647
+36420,40109,"Oklahoma County, OK",822125
+36540,19085,"Harrison County, IA",14623
+36540,19129,"Mills County, IA",14793
+36540,19155,"Pottawattamie County, IA",92996
+36540,31025,"Cass County, NE",27657
+36540,31055,"Douglas County, NE",606460
+36540,31153,"Sarpy County, NE",208303
+36540,31155,"Saunders County, NE",23702
+36540,31177,"Washington County, NE",21302
+36740,12069,"Lake County, FL",456068
+36740,12095,"Orange County, FL",1528002
+36740,12097,"Osceola County, FL",481718
+36740,12117,"Seminole County, FL",491884
+37980,34005,"Burlington County, NJ",481439
+37980,34007,"Camden County, NJ",535799
+37980,34015,"Gloucester County, NJ",312638
+37980,42017,"Bucks County, PA",647828
+37980,42029,"Chester County, PA",557116
+37980,42091,"Montgomery County, PA",877643
+37980,42045,"Delaware County, PA",580937
+37980,42101,"Philadelphia County, PA",1574281
+37980,10003,"New Castle County, DE",588026
+37980,24015,"Cecil County, MD",107131
+37980,34033,"Salem County, NJ",66280
+38060,04013,"Maricopa County, AZ",4689558
+38060,04021,"Pinal County, AZ",539380
+38300,42003,"Allegheny County, PA",1225035
+38300,42005,"Armstrong County, PA",63698
+38300,42007,"Beaver County, PA",166032
+38300,42019,"Butler County, PA",200169
+38300,42051,"Fayette County, PA",123021
+38300,42073,"Lawrence County, PA",83911
+38300,42125,"Washington County, PA",210802
+38300,42129,"Westmoreland County, PA",349324
+38900,41005,"Clackamas County, OR",426280
+38900,41009,"Columbia County, OR",54091
+38900,41051,"Multnomah County, OR",795391
+38900,41067,"Washington County, OR",611708
+38900,41071,"Yamhill County, OR",110024
+38900,53011,"Clark County, WA",532119
+38900,53059,"Skamania County, WA",12669
+39300,25005,"Bristol County, MA",593640
+39300,44001,"Bristol County, RI",50001
+39300,44003,"Kent County, RI",173495
+39300,44005,"Newport County, RI",83051
+39300,44007,"Providence County, RI",678179
+39300,44009,"Washington County, RI",129795
+39580,37069,"Franklin County, NC",82037
+39580,37101,"Johnston County, NC",256448
+39580,37183,"Wake County, NC",1257235
+40060,51007,"Amelia County, VA",13632
+40060,51036,"Charles City County, VA",6623
+40060,51041,"Chesterfield County, VA",397148
+40060,51053,"Dinwiddie County, VA",28896
+40060,51075,"Goochland County, VA",29187
+40060,51085,"Hanover County, VA",116423
+40060,51087,"Henrico County, VA",342775
+40060,51097,"King and Queen County, VA",6743
+40060,51101,"King William County, VA",19617
+40060,51127,"New Kent County, VA",28022
+40060,51145,"Powhatan County, VA",32591
+40060,51149,"Prince George County, VA",43936
+40060,51183,"Sussex County, VA",10755
+40060,51570,"Colonial Heights city, VA",18738
+40060,51670,"Hopewell city, VA",23261
+40060,51730,"Petersburg city, VA",33734
+40060,51760,"Richmond city, VA",237257
+40140,06065,"Riverside County, CA",2544916
+40140,06071,"San Bernardino County, CA",2224091
+40380,36051,"Livingston County, NY",61438
+40380,36055,"Monroe County, NY",750506
+40380,36069,"Ontario County, NY",113130
+40380,36073,"Orleans County, NY",39825
+40380,36117,"Wayne County, NY",91250
+40900,06017,"El Dorado County, CA",192323
+40900,06061,"Placer County, CA",442081
+40900,06067,"Sacramento County, CA",1618460
+40900,06113,"Yolo County, CA",224410
+41180,17005,"Bond County, IL",16959
+41180,17013,"Calhoun County, IL",4300
+41180,17027,"Clinton County, IL",37128
+41180,17083,"Jersey County, IL",21160
+41180,17117,"Macoupin County, IL",43748
+41180,17119,"Madison County, IL",263110
+41180,17133,"Monroe County, IL",34840
+41180,17163,"St. Clair County, IL",250708
+41180,29071,"Franklin County, MO",108090
+41180,29099,"Jefferson County, MO",233132
+41180,29113,"Lincoln County, MO",66676
+41180,29183,"St. Charles County, MO",426499
+41180,29189,"St. Louis County, MO",990911
+41180,29219,"Warren County, MO",39016
+41180,29510,"St. Louis city, MO",278144
+41620,49035,"Salt Lake County, UT",1220916
+41620,49045,"Tooele County, UT",87461
+41700,48013,"Atascosa County, TX",53590
+41700,48019,"Bandera County, TX",22876
+41700,48029,"Bexar County, TX",2160088
+41700,48091,"Comal County, TX",209166
+41700,48187,"Guadalupe County, TX",201111
+41700,48259,"Kendall County, TX",53289
+41700,48325,"Medina County, TX",56881
+41700,48493,"Wilson County, TX",56139
+41740,06073,"San Diego County, CA",3282248
+41860,06001,"Alameda County, CA",1636630
+41860,06013,"Contra Costa County, CA",1170070
+41860,06075,"San Francisco County, CA",826079
+41860,06081,"San Mateo County, CA",743568
+41860,06041,"Marin County, CA",253694
+41940,06069,"San Benito County, CA",70082
+41940,06085,"Santa Clara County, CA",1914391
+42660,53061,"Snohomish County, WA",870656
+42660,53033,"King County, WA",2344939
+42660,53053,"Pierce County, WA",946288
+45300,12103,"Pinellas County, FL",948563
+45300,12053,"Hernando County, FL",221701
+45300,12057,"Hillsborough County, FL",1574115
+45300,12101,"Pasco County, FL",674516
+46060,04019,"Pima County, AZ",1074685
+46140,40037,"Creek County, OK",74967
+46140,40111,"Okmulgee County, OK",37241
+46140,40113,"Osage County, OK",46794
+46140,40117,"Pawnee County, OK",16029
+46140,40131,"Rogers County, OK",102197
+46140,40143,"Tulsa County, OK",698782
+46140,40145,"Wagoner County, OK",93263
+46520,15003,"Honolulu County, HI",988703
+47260,37029,"Camden County, NC",11315
+47260,37053,"Currituck County, NC",33158
+47260,37073,"Gates County, NC",10234
+47260,51073,"Gloucester County, VA",40097
+47260,51093,"Isle of Wight County, VA",41321
+47260,51095,"James City County, VA",83326
+47260,51115,"Mathews County, VA",8529
+47260,51181,"Surry County, VA",6603
+47260,51199,"York County, VA",71374
+47260,51550,"Chesapeake city, VA",255332
+47260,51650,"Hampton city, VA",137315
+47260,51700,"Newport News city, VA",183230
+47260,51710,"Norfolk city, VA",231013
+47260,51735,"Poquoson city, VA",13292
+47260,51740,"Portsmouth city, VA",96777
+47260,51800,"Suffolk city, VA",104699
+47260,51810,"Virginia Beach city, VA",453737
+47260,51830,"Williamsburg city, VA",15861
+47900,51013,"Arlington County, VA",243931
+47900,51043,"Clarke County, VA",15609
+47900,51047,"Culpeper County, VA",57666
+47900,51059,"Fairfax County, VA",1167873
+47900,51061,"Fauquier County, VA",76503
+47900,51107,"Loudoun County, VA",449749
+47900,51153,"Prince William County, VA",502966
+47900,51157,"Rappahannock County, VA",7439
+47900,51177,"Spotsylvania County, VA",155388
+47900,51179,"Stafford County, VA",170803
+47900,51187,"Warren County, VA",42740
+47900,51510,"Alexandria city, VA",160662
+47900,51600,"Fairfax city, VA",26772
+47900,51610,"Falls Church city, VA",15159
+47900,51630,"Fredericksburg city, VA",30393
+47900,51683,"Manassas city, VA",44332
+47900,51685,"Manassas Park city, VA",16560
+47900,54037,"Jefferson County, WV",63102
+47900,24021,"Frederick County, MD",302883
+47900,24031,"Montgomery County, MD",1074582
+47900,11001,"District of Columbia, DC",693645
+47900,24017,"Charles County, MD",176593
+47900,24033,"Prince George's County, MD",970374

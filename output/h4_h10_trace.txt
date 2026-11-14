@@ -1,0 +1,39 @@
+H4. Employment-weighted mean exposure, OEWS May 2025
+
+  Against P1:
+  lm_aioe   Cincinnati +0.0792 | US +0.0948 | peers q25 +0.0776 median +0.0961 q75 +0.1566 | rank 14 of 20 (1 = most exposed) | inside IQR
+  eloundou  Cincinnati +0.3061 | US +0.3089 | peers q25 +0.3056 median +0.3100 q75 +0.3267 | rank 15 of 20 (1 = most exposed) | inside IQR
+  aei       Cincinnati +0.1267 | US +0.1305 | peers q25 +0.1275 median +0.1315 q75 +0.1430 | rank 16 of 20 (1 = most exposed) | below IQR
+  ms        Cincinnati +0.1713 | US +0.1721 | peers q25 +0.1697 median +0.1727 q75 +0.1788 | rank 12 of 20 (1 = most exposed) | inside IQR
+
+  Against P2:
+  lm_aioe   Cincinnati +0.0792 | US +0.0948 | peers q25 +0.0789 median +0.0961 q75 +0.1374 | rank 19 of 26 (1 = most exposed) | inside IQR
+  eloundou  Cincinnati +0.3061 | US +0.3089 | peers q25 +0.3048 median +0.3100 q75 +0.3180 | rank 18 of 26 (1 = most exposed) | inside IQR
+  aei       Cincinnati +0.1267 | US +0.1305 | peers q25 +0.1270 median +0.1315 q75 +0.1377 | rank 20 of 26 (1 = most exposed) | below IQR
+  ms        Cincinnati +0.1713 | US +0.1721 | peers q25 +0.1700 median +0.1730 q75 +0.1768 | rank 18 of 26 (1 = most exposed) | inside IQR
+
+  Against P3:
+  lm_aioe   Cincinnati +0.0792 | US +0.0948 | peers q25 +0.0792 median +0.0940 q75 +0.1105 | rank 8 of 11 (1 = most exposed) | below IQR
+  eloundou  Cincinnati +0.3061 | US +0.3089 | peers q25 +0.3055 median +0.3082 q75 +0.3100 | rank 8 of 11 (1 = most exposed) | inside IQR
+  aei       Cincinnati +0.1267 | US +0.1305 | peers q25 +0.1274 median +0.1295 q75 +0.1311 | rank 9 of 11 (1 = most exposed) | below IQR
+  ms        Cincinnati +0.1713 | US +0.1721 | peers q25 +0.1697 median +0.1720 q75 +0.1729 | rank 7 of 11 (1 = most exposed) | inside IQR
+
+  Inside the P1 interquartile range on 3 of 4 measures -> AVERAGE
+
+  Coverage of detailed employment by measure, Cincinnati: {'lm_aioe': 0.975, 'eloundou': 0.973, 'aei': 0.922, 'ms': 0.993}
+
+H4 bands (share of AEI-covered employment at or above each observed-exposure cut; top national decile by measure)
+  aei_share_above_0.30         Cincinnati 0.1827 | US 0.1872 | P1 q25 0.1827 median 0.1951 q75 0.2078 | below IQR
+  aei_share_above_0.40         Cincinnati 0.1000 | US 0.1029 | P1 q25 0.0996 median 0.1050 q75 0.1143 | inside IQR
+  aei_share_above_0.50         Cincinnati 0.0452 | US 0.0413 | P1 q25 0.0405 median 0.0426 q75 0.0498 | inside IQR
+  lm_aioe_share_top_decile     Cincinnati 0.0530 | US 0.0586 | P1 q25 0.0522 median 0.0579 q75 0.0628 | inside IQR
+  eloundou_share_top_decile    Cincinnati 0.0943 | US 0.0971 | P1 q25 0.0921 median 0.0991 q75 0.1108 | inside IQR
+  aei_share_top_decile         Cincinnati 0.2116 | US 0.2184 | P1 q25 0.2130 median 0.2215 q75 0.2441 | below IQR
+  ms_share_top_decile          Cincinnati 0.0751 | US 0.0780 | P1 q25 0.0721 median 0.0744 q75 0.0896 | inside IQR
+
+H10. Wage gradient (top quintile minus bottom quintile of mean exposure)
+  lm_aioe   Cincinnati +1.0258 | US +1.2001 | P1 q25 +1.0527 median +1.0912 q75 +1.1800 | rank 17 of 20 | below IQR
+  eloundou  Cincinnati +0.2034 | US +0.2386 | P1 q25 +0.2102 median +0.2214 q75 +0.2354 | rank 17 of 20 | below IQR
+  aei       Cincinnati +0.0632 | US +0.0932 | P1 q25 +0.0732 median +0.0837 q75 +0.0953 | rank 19 of 20 | below IQR
+  ms        Cincinnati -0.0085 | US +0.0126 | P1 q25 -0.0047 median +0.0045 q75 +0.0177 | rank 18 of 20 | below IQR
+  Metros (of all in the peer sets, plus the US) with a positive LM-AIOE gradient: 34 of 34

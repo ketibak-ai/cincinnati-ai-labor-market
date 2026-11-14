@@ -21,3 +21,19 @@ raw/local_institutions/
 
 # Local slide preview harness, regenerated on demand
 .preview/
+
+# 2.1 source downloads: regenerate with scripts/fetch_public.py, scripts/fetch_qwi.py and
+# scripts/fetch_qcew_counties.py. raw/_manifest_2_1.csv and raw/qwi/_manifest.csv record
+# each file's URL, size, checksum and download date.
+raw/qwi/*.csv.gz
+raw/qwi/*.log
+raw/qcew_county/
+raw/oes/*.zip
+raw/oes/*_M20*.csv
+raw/bea/
+raw/ipeds/
+raw/btos/
+raw/census/
+raw/acs/
+raw/patents/
+raw/herd/

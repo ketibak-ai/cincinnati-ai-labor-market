@@ -1,0 +1,95 @@
+Metros in the peer sets without QWI through 2025Q4 (excluded): [(19820, 'Detroit')]
+Usable metros: 32
+
+Cincinnati, new hires (HirN), ages 22-24 vs 35-54, terciles:
+ measure     ddd  perm_p10  perm_p90  perm_pctile  n_exposed  n_less  cov_exposed  cov_less
+ lm_aioe  0.0104   -0.1148    0.1291         45.0         16      26       0.9885    0.9706
+eloundou  0.0140   -0.1089    0.1165         50.0         20      28       0.9867    0.9660
+     aei  0.0291   -0.1134    0.1190         56.2         20      23       0.9896    0.9751
+      ms -0.0440   -0.1153    0.1140         35.9         20      22       0.9893    0.9756
+
+Peer distribution (P1), HirN DDD:
+  lm_aioe   n=18 q25=-0.0743 median=-0.0218 q75=+0.0099 | Cincinnati +0.0104 rank 14 of 19 | in bottom quartile: False
+  eloundou  n=18 q25=-0.0923 median=-0.0771 q75=-0.0320 | Cincinnati +0.0140 rank 18 of 19 | in bottom quartile: False
+  aei       n=18 q25=-0.0876 median=-0.0558 q75=-0.0229 | Cincinnati +0.0291 rank 18 of 19 | in bottom quartile: False
+  ms        n=18 q25=-0.1990 median=-0.1606 q75=-0.1246 | Cincinnati -0.0440 rank 19 of 19 | in bottom quartile: False
+
+Peer distribution (P2), HirN DDD:
+  lm_aioe   n=25 q25=-0.0697 median=-0.0350 q75=-0.0065 | Cincinnati +0.0104 rank 22 of 26 | in bottom quartile: False
+  eloundou  n=25 q25=-0.1173 median=-0.0814 q75=-0.0373 | Cincinnati +0.0140 rank 26 of 26 | in bottom quartile: False
+  aei       n=25 q25=-0.0955 median=-0.0558 q75=-0.0369 | Cincinnati +0.0291 rank 26 of 26 | in bottom quartile: False
+  ms        n=25 q25=-0.2010 median=-0.1558 q75=-0.1238 | Cincinnati -0.0440 rank 26 of 26 | in bottom quartile: False
+
+Peer distribution (P3), HirN DDD:
+  lm_aioe   n= 9 q25=-0.0350 median=-0.0143 q75=+0.0411 | Cincinnati +0.0104 rank 6 of 10 | in bottom quartile: False
+  eloundou  n= 9 q25=-0.0785 median=-0.0472 q75=+0.0077 | Cincinnati +0.0140 rank 8 of 10 | in bottom quartile: False
+  aei       n= 9 q25=-0.0558 median=-0.0496 q75=+0.0200 | Cincinnati +0.0291 rank 8 of 10 | in bottom quartile: False
+  ms        n= 9 q25=-0.1529 median=-0.1373 q75=-0.0785 | Cincinnati -0.0440 rank 9 of 10 | in bottom quartile: False
+
+Other outcomes and groupings, Cincinnati:
+outcome young grouping  measure     ddd  perm_pctile
+   HirN   A03 quartile  lm_aioe  0.0187          NaN
+   HirN   A03 quartile eloundou -0.0184          NaN
+   HirN   A03 quartile      aei  0.0297          NaN
+   HirN   A03 quartile       ms -0.0378          NaN
+   HirN   A04  tercile  lm_aioe  0.0095          NaN
+   HirN   A04  tercile eloundou  0.0344          NaN
+   HirN   A04  tercile      aei  0.0515          NaN
+   HirN   A04  tercile       ms -0.0213          NaN
+  HirAS   A03  tercile  lm_aioe -0.0153         38.3
+  HirAS   A03  tercile eloundou -0.0218         36.5
+  HirAS   A03  tercile      aei  0.0011         50.2
+  HirAS   A03  tercile       ms -0.0377         24.3
+    Emp   A03  tercile  lm_aioe -0.0134         42.0
+    Emp   A03  tercile eloundou -0.0738         18.3
+    Emp   A03  tercile      aei -0.0277         33.6
+    Emp   A03  tercile       ms -0.1241          5.0
+
+Rate-shock checks 1 and 2, Cincinnati:
+ measure     ddd  ddd_excl_51_52_53  n_exposed_excl  exposed_vs_comp  placebo_vs_comp  n_placebo  n_comp
+ lm_aioe  0.0104             0.0237               8           0.0435           0.1521         11      18
+eloundou  0.0140             0.0291              11           0.0525           0.1701         11      19
+     aei  0.0291             0.0489              12           0.0595           0.1722         11      17
+      ms -0.0440            -0.0302              13          -0.0103           0.1013         11      15
+
+Rate-shock check 3 (timing), Cincinnati: yearly gap relative to the 2018-19 mean
+measure     aei  eloundou  lm_aioe      ms
+year                                      
+2018    -0.0068    0.0081  -0.0029  0.0106
+2019     0.0068   -0.0081   0.0029 -0.0106
+2020     0.0005   -0.0203  -0.0003 -0.0565
+2021    -0.0400   -0.0486  -0.0160 -0.0904
+2022    -0.0305   -0.0310  -0.0147 -0.0806
+2023     0.0175    0.0064  -0.0136 -0.0386
+2024     0.0284    0.0021   0.0056 -0.0358
+2025     0.0435    0.0364   0.0428 -0.0579
+
+All usable metros, HirN DDD by measure:
+          count     25%     50%     75%
+measure                                
+aei        32.0 -0.0907 -0.0507 -0.0041
+eloundou   32.0 -0.0906 -0.0693 -0.0192
+lm_aioe    32.0 -0.0577 -0.0169  0.0142
+ms         32.0 -0.1949 -0.1531 -0.1056
+
+Share of metros with DDD < 0 and with DDD <= -0.05:
+            neg   le05
+measure               
+aei       0.750  0.500
+eloundou  0.875  0.562
+lm_aioe   0.656  0.312
+ms        1.000  0.938
+
+Share of metros whose DDD is below their own permutation 10th percentile:
+measure
+aei         0.188
+eloundou    0.281
+lm_aioe     0.031
+ms          0.719
+
+H3 earnings of new stable hires, Cincinnati (ddd_earn; young and old monthly earnings in exposed industries):
+ measure  ddd_earn  young_exp_pre  young_exp_post  old_exp_pre  old_exp_post
+ lm_aioe     0.003       2735.958        3436.960     5408.143      6666.223
+eloundou     0.006       2680.662        3434.045     5465.491      6843.378
+     aei     0.009       2635.322        3358.567     5365.844      6674.008
+      ms     0.001       2354.658        2977.215     4791.026      5981.772
