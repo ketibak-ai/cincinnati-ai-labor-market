@@ -568,3 +568,143 @@ A note on that verification: the workbook's summary sheets contain live Excel fo
 openpyxl writes without cached values. The usual check is to recalculate with LibreOffice, which
 was not installed on the machine this was built on, so the Python recomputation stands in for it.
 Excel computes the formulas on first open.
+
+---
+
+# Version 2.1: how every new number was produced
+
+Sections 1–9 above document version 1.0 and are unchanged. This part covers 2.1. Run
+`python tests/test_study_2_1.py` to check every figure below against the data files.
+
+## 2.1-A. Acquiring the sources
+
+Three access problems shaped how sources were obtained. Each is a deviation logged in
+`PREREGISTRATION.md`.
+
+- **BLS file server.** It refused automated requests on 14 November 2026. OEWS workbooks and
+  the SOC crosswalk were taken from the Internet Archive's dated copies of the same BLS URLs
+  (`scripts/fetch_public.py` holds each archive timestamp). Employment for 20 metros came from
+  the BLS public API (`scripts/fetch_ces_peers.py`). QCEW came from BLS's open-data service,
+  which still works.
+- **Census API.** It now requires a key. ACS tables were read from the Census summary files
+  and microdata on `www2.census.gov`, which need none.
+- **USPTO and PatentsView.** The USPTO's portal requires an account. The AI Patent Dataset
+  and the PatentsView inventor and location tables were taken from Internet Archive copies.
+
+`raw/_manifest_2_1.csv`, `raw/qwi/_manifest.csv` and `raw/acs/_pums_manifest.csv` record each
+file's URL, size, SHA-256 checksum and download date. The three patent files' checksums are in
+`raw/patents/_fetch.log`. Large raw files are not committed; the fetch scripts regenerate
+them.
+
+| Script | Gets | Notes |
+|---|---|---|
+| `fetch_public.py` | Census population, OEWS workbooks, exposure measures, BEA county GDP, IPEDS, BTOS | Writes the manifest |
+| `fetch_qwi.py <states>` | Census QWI metro files, 27 states | Streams each state file (0.1–0.8 GB) and keeps only the rows used |
+| `fetch_qcew_counties.py [year] [p1]` | QCEW county files | 469 counties for 2025; 202 for 2019 and 2022–2024 |
+| `fetch_pums.py` | ACS 1-year microdata, 18 states × 4 years | Keeps employed civilians aged 22–54 |
+| `fetch_ces_peers.py` | Total nonfarm employment, 20 metros and the US | BLS public API |
+
+## 2.1-B. Vintage table
+
+| Series | Last data point | File or release date | Used for |
+|---|---|---|---|
+| Census QWI (OH, IN and 18 other states) | 2026 Q1 | Released 5–12 Nov 2026 | H1–H3 |
+| Census QWI (KY, SC, CO, IL, NY, RI) | 2025 Q4 | Released Aug 2026 | H1–H3: sets the common end, 2025 Q4 |
+| Census QWI (MI) | 2021 Q4 | — | Detroit excluded |
+| ACS 1-year PUMS | 2024 | Dec 2025 | H2b |
+| ACS 1-year table B23001 / B23025 | 2025 | Sept 2026 | H9 labor force |
+| Census Vintage 2025 population | 1 July 2025 | 2026 | Peer set P2; per-capita rates |
+| BLS CES total nonfarm (NSA) | Sept 2026, preliminary | Retrieved 14 Nov 2026 | H9 growth |
+| BLS OEWS | May 2025 (metro, national, industry); May 2022 (industry staffing) | Archive copies of Sept–Nov 2026 | H1 exposure classes; H4; H6; H10 |
+| BLS QCEW county | 2025 annual; 2019, 2022–2024 annual | Retrieved 14 Nov 2026 | P3; H6; H7; H8 |
+| BEA CAGDP9 | 2024 | Feb 2026 | H7 |
+| Census BTOS | Period 2026-22 (ending 18 Oct 2026) | 5 Nov 2026 | H5 |
+| Anthropic Economic Index | April–May 2026 | 26 June 2026 | H5 (state); exposure |
+| ODJFS projections (8 Ohio MSA files, Ohio) | 2022–2032 | June 2025 | H9 |
+| BLS Employment Projections | 2025–2035 | Archive copy of 2 Oct 2026 | H9 |
+| USPTO AIPD | Patents to 2023 | Archive copy of 22 Feb 2025 | H6 |
+| PatentsView inventor and location tables | Grants to 2024 | Archive copies of 20 Mar 2025 | H6 |
+| NSF HERD | FY2024 | Retrieved 14 Nov 2026 | H6 |
+| IPEDS completions and directory | 2023–24 | Retrieved 14 Nov 2026 | H6 |
+| SEC EDGAR full-text search | Filings to 14 Nov 2026 | Read 14 Nov 2026 | H5 |
+| Event listings, chapter pages, Trends, postings | 14 Nov 2026 | Collected 14 Nov 2026 | H12–H14 |
+
+HERD FY2025 (due 24 November 2026) and BEA 2025 county GDP (due December 2026) fall after the
+analysis and are not used.
+
+## 2.1-C. Peer sets (`scripts/build_peers.py` → `data/peer_sets.csv`)
+
+- **P1:** the Chamber's 19 peers, listed by hand from *State of the Region 2026*, p. 6.
+- **P2:** metros with 2025 population between 0.6× and 1.4× Cincinnati's 2,312,858, that is
+  1,387,715 to 3,238,001. 25 metros.
+- **P3:** among the 60 most populous metros, the 10 with the lowest Duncan index against
+  Cincinnati's private employment shares across 20 sectors:
+  `0.5 × SUM |share_i(Cincinnati) − share_i(metro)|`. Shares come from 2025 county files
+  summed to each metro. Published cells cover 97.5% of Cincinnati's private employment.
+  Result: Cleveland 0.069, Portland 0.071, Louisville 0.075, Columbus 0.076, Chicago 0.077,
+  Buffalo 0.078, Detroit 0.079, St. Louis 0.079, Minneapolis 0.082, Kansas City 0.083.
+
+## 2.1-D. Industry exposure (`scripts/build_industry_exposure.py`)
+
+```
+exposure(industry) = SUM(emp_occ × score_occ) / SUM(emp_occ)     over detailed occupations with a score
+```
+
+Employment is national OEWS May 2022 by three-digit industry. Scores: Felten language-model
+AIOE (carried from 2010 to 2018 codes with the BLS crosswalk), Eloundou human-rated β,
+Anthropic observed exposure, Microsoft applicability. Industries are ranked on each score and
+cut into thirds of national employment. 84 private industries; 16 are in the top third on all
+four measures and 25 in the bottom third on all four. Rank correlations between the four
+industry rankings run from 0.84 to 0.94.
+
+## 2.1-E. The hiring test (`scripts/analyze_hiring.py` → `data/h1_ddd.csv`)
+
+```
+gap(period, group) = ln( mean quarterly new hires, ages 22–24 ) − ln( mean quarterly new hires, ages 35–54 )
+DDD = [ gap(post, exposed) − gap(pre, exposed) ] − [ gap(post, less) − gap(pre, less) ]
+```
+
+pre = 2018Q1–2019Q4 (8 quarters); post = 2023Q1–2025Q4 (12 quarters). Hires are summed across
+industries in the group and across the state parts of the metro. A state-part × industry
+series enters only if all three age cells are published in all 20 quarters.
+
+Cincinnati, new hires: +0.0104 (Felten), +0.0140 (Eloundou), +0.0291 (Anthropic), −0.0440
+(Microsoft). Chance range (10th–90th percentile of 1,000 random industry assignments, seed
+20261114): about −0.11 to +0.12 for each. Coverage of pre-period employment: 98.7–99.0% in
+exposed industries, 96.6–97.6% in less-exposed.
+
+The raw percentage changes quoted in the report (for example −8.9% for ages 22–24 in the most
+exposed third) are computed in `scripts/make_figures.py` from all published cells and saved to
+`data/h1_hires_by_age_group_cincinnati.csv`:
+`(post hires / 12) / (pre hires / 8) − 1`.
+
+## 2.1-F. Shift-share (`scripts/analyze_shift_share.py` → `data/h6_shift_share.csv`)
+
+```
+expected share = SUM_i( local employment_i × national share of SOC 15-0000 in industry i ) / local employment
+gap            = actual share − national share        = 2.9372% − 3.3828% = −0.446 points
+industry mix   = expected share − national share      = 3.1249% − 3.3828% = −0.258 points
+within         = actual share − expected share        = 2.9372% − 3.1249% = −0.188 points
+```
+
+At the OEWS total of 1,101,030 jobs: −4,906 = −2,839 + −2,066. Local employment is carried at
+four-digit detail for 73.1% of jobs, three-digit for 11.4%, sector for 2.4%, the all-industry
+rate for 2.2% and government for 10.9%; a suppressed cell is never estimated.
+
+## 2.1-G. Other 2.1 figures
+
+| Figure | Arithmetic | Script → file |
+|---|---|---|
+| Growth 0.735% | 1,178.2 / 1,169.6 − 1 (thousands, Sept 2026 over Sept 2024) | `analyze_h9.py` → `h9_growth_peers.csv` |
+| Growth share 2.05% | 2,074 / 101,316 | `analyze_h9.py` → `h9_projection_growth_share.csv` |
+| US growth share 3.39% | (5,917.6 / 10) / 17,461.8 (thousands) | same |
+| Labor-force parts | size = (P1/P0 − 1) × LF0; age mix = SUM(P1_a × r0_a) − LF0 − size; participation = SUM(P1_a × (r1_a − r0_a)); P from Census estimates, r from ACS B23001 | `analyze_h9.py` → `h9_labor_force_decomposition.csv` |
+| AI patents 44.3 per 100,000 | 1,025 patents (2019–23, any inventor in the metro, USPTO 86% flag) / 2,312,858 | `build_capability_patents.py` |
+| Computing R&D $2.80 per resident | $6,469,000 (HERD questions 9 and 11, computer and information sciences, three institutions) / 2,312,858 | `build_capability_herd.py` |
+| Computing awards 130 per 100,000 | 3,006 awards (CIP 11, 14.09, 27.05, 30.70, 30.71; first majors; all levels) / 2,312,858 | `build_capability_ipeds.py` |
+| Output per worker +2.35% | 284,487 / 277,947 − 1 (real GDP per private worker, four exposed sectors, 2024 over 2022; counties with full data, 91% of private employment) | `analyze_output.py` |
+| Data-center jobs +401 | 1,977 − 1,576 (QCEW NAICS 518210, six published counties) | `h8_qcew_518210_counties.csv` |
+| 0.48 jobs per MW | 120 / 250 (Trenton commitment) | `h8_data_center_evidence.csv` |
+| L1 0.36 per 100,000 | 5 events / 1,378,472 residents aged 18–64 | `collect_l1_platform_listings.py` |
+| Postings 7.8 per 100,000 | (94 + 13) / 1,378,472 | `analyze_awareness.py` |
+| Spearman 0.54 | rank correlation of L1 with postings per adult, 20 metros; p from 20,000 permutations | `analyze_awareness.py` |

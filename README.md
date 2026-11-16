@@ -17,6 +17,78 @@ wages May 2025; projections 2022–2032; job postings collected 30 October 2026.
 
 ---
 
+## Version 2.1 (16 November 2026, draft, not yet published)
+
+**Cincinnati AI Labor Market 2.1: Early Evidence on Awareness, Adoption, Hiring and Investment
+in Greater Cincinnati.** The full report is [`REPORT_2.1.md`](REPORT_2.1.md).
+
+2.1 re-tests version 1.0's claims by comparison with other metros, with the tests written down
+before the data were examined ([`PREREGISTRATION.md`](PREREGISTRATION.md)). It adds two things
+1.0 did not have: a measure of public AI awareness and participation, and a register of how the
+region's large employers are using AI and AI agents. Version 2.0 was an unpublished design
+stage.
+
+### What 2.1 found
+
+1. **No narrowing of the entry door to AI-exposed work in Greater Cincinnati; most peers show
+   one.** The change in young workers' share of new hires in exposed industries was −0.04 to
+   +0.03 log points, inside the range chance produces. The peer median was negative on all
+   four exposure measures.
+2. **Young workers' hiring fell across the board:** −9% in the most exposed third of
+   industries, −16% in the middle third, −11% in the least exposed.
+3. **A steady, broad AI community, smaller than peers':** the main group held 35 of 36 monthly
+   meetings in three years; the region ranks 15th, 10th and 17th of 20 on three comparable
+   measures.
+4. **Assistants are in production; agents are mostly announced.** Eight large employers have
+   an AI system in production on the record; one local vendor documents agents in production.
+5. **State adoption tracks the nation** (Ohio 22%, US 24% of businesses). No metro figure
+   exists.
+6. **The shortfall in computing jobs is 58% industry mix.**
+7. **Capability is uneven:** 16th of 20 on AI patents, 14th on computing research, 8th on
+   graduates.
+8. **Data centers remain a small jobs story:** +401 industry jobs in three years; 120 jobs
+   committed for 250 MW; 250 MW under contract with the utility.
+9. **Job growth is ordinary, not slow:** 0.7% in two years, the national rate, 10th of 20.
+
+### What 2.1 corrects in 1.0
+
+"Slow growth" as the region's real fragility is withdrawn. The 98% replacement share is a
+property of the projection method. The labor-force decline is not established. "Buying rather
+than building" is restated. The full list, with evidence, is Part I of [`AUDIT.md`](AUDIT.md).
+
+### Checking it
+
+```
+python tests/test_study_2_1.py     # 24 checks: every 2.1 figure
+python tests/test_study.py         # 16 checks: every 1.0 figure
+```
+
+| 2.1 document | What it holds |
+|---|---|
+| `REPORT_2.1.md` | The report |
+| `DECK_2.1.md` | Presentation outline with speaker notes |
+| `PREREGISTRATION.md` | Hypotheses H1–H16, decision rules, 21 deviations |
+| `RESEARCH_DESIGN_MEMO.md`, `RESEARCH_DESIGN_MEMO_2.1_ADDENDUM.md` | Design and the author's decisions |
+| `METHODS_AWARENESS.md` | Search terms, sources and rules for the awareness measures |
+| `MONITORING.md` | One-page sheet of leading indicators and how to update each |
+| `AUDIT.md` | Corrections to 1.0 and the response to each reviewer objection |
+| `CALCULATIONS.md` | How every number is produced; vintage table |
+| `PROMPT_2.1.md` | The assignment |
+
+2.1 scripts are in `scripts/` (`fetch_*`, `build_*`, `analyze_*`, `collect_*`, `make_figures.py`).
+Large downloads are not committed; the fetch scripts regenerate them and the manifests in
+`raw/` record each file's source and checksum.
+
+**Not completed in 2.1:** state layoff (WARN) notices; employers present at AI events; training
+on offer; event censuses for comparison metros. The report says where each would have gone.
+
+---
+
+# Version 1.0 (published November 2026)
+
+The remainder of this file describes version 1.0 as published. Where 2.1 corrects it, the
+correction is in `AUDIT.md`.
+
 ## Headline findings
 
 **Cincinnati's AI exposure is average, not elevated.** Weighting every occupation by its May 2025

@@ -1,23 +1,76 @@
 # Audit log — Cincinnati AI Labor Market
 
-This file has two parts. **Part I** records every change from 1.0 to 2.0 and why (in progress
-on the `v2.0` branch). **Part II** is 1.0's audit of the preliminary draft, unchanged.
+This file has two parts. **Part I** records every change from 1.0 to 2.1 and why. **Part II** is 1.0's audit of the preliminary draft, unchanged.
 
 ---
 
-# Part I — Changes from 1.0 to 2.0 (in progress)
+# Part I — Changes from 1.0 to 2.1
 
-### Corrections to 1.0 found during the 2.0 design phase (13 November 2026)
+Version 2.0 was an unpublished design stage (13 November 2026). Version 2.1 (16 November
+2026) is the first version after 1.0 with results. This part records every correction to a
+1.0 number or claim, what was done about each of the reviewer's objections, and what changed
+in method.
+
+### Corrections to 1.0
+
+C1–C5 were found at the design stage; C6–C12 came from the 2.1 analysis.
 
 | # | 1.0 said (where) | Correction | Evidence |
 |---|---|---|---|
-| C1 | "The region's nineteen facilities hold roughly 565 MW" (`archive/v1.0/report.txt:1509`); recorded as existing capacity (`data/local_institutional_sources.csv:20`) | 565+ MW is the Chamber's estimate for **17 existing and 2 planned** facilities, the two planned hyperscalers being the largest. It mixes operating and announced capacity and does not state the MW basis. | Chamber, *Data Centers: A Cincinnati Regional Perspective*, 12 Oct 2026, "Cincinnati Region Data Centers" panel (`raw/local_institutions/chamber_data_centers_2026.txt:53-55, 103-110`) |
-| C2 | "Neither the task force nor a training lab appears in the approved FY2026–2027 budget" (`archive/v1.0/report.txt:1462`; `data/local_institutional_sources.csv:31`) | The approved FY2026–2027 budget includes "MidWest Con – AI Investment – $50,000"; the approved FY2027 update includes "Plans Examination Artificial Intelligence Enhancement", $300,000 (capital). At the 4 May 2026 meeting a council member said "the ask was more than $200,000, we were only able to get you $200,000", indicating an earlier allocation not yet located. | City of Cincinnati Approved FY2026–2027 Biennial Budget, Vol. I, pp. 31, 140; Approved FY2027 Budget Update, Capital Exhibit 3; CitiCable recording, archive.org item 34260501-eco, ≈1:14:38 |
-| C3 | Fifth Third "has announced no reductions at all" (`README.md:48-50`; `docs/index.html:303`) | Since 1.0's sources, Fifth Third completed its Comerica acquisition (1 Feb 2026) and merger-related layoffs have been reported in Texas (WARN, 184 jobs) and Michigan. Merger-attributed, not AI-attributed; none reported in Cincinnati. | Banking Dive and other reporting; Texas WARN notice to be retrieved |
-| C4 | Kroger AI attribution "Partly" (`archive/v1.0/report.txt:1008`; `data/ai_adoption_employers.csv:2`) | Coded "technology named, AI not named" on the memo text as reported, pending the full memo. | Fortune, 14 Oct 2026 (quoting Business Insider); Fast Company |
-| C5 | "Thirteen checks" (`README.md:147`; `VERIFICATION.md:64`); test label "Cincinnati observed exposure" for the LM-AIOE value (`tests/test_study.py:116-117`) | The suite runs 16 checks; the label should read language-model AIOE. No number changes. | `python tests/test_study.py` output, 13 Nov 2026 |
+| C1 | "The region's nineteen facilities hold roughly 565 MW" (`archive/v1.0/report.txt:1509`); recorded as existing capacity (`data/local_institutional_sources.csv:20`) | 565+ MW is the Chamber's estimate for **17 existing and 2 planned** facilities, the two planned hyperscalers being the largest. It mixes operating and announced capacity and does not state the MW basis. | Chamber, *Data Centers: A Cincinnati Regional Perspective*, 12 Oct 2026 (`raw/local_institutions/chamber_data_centers_2026.txt:53-55, 103-110`) |
+| C2 | "Neither the task force nor a training lab appears in the approved FY2026–2027 budget" (`archive/v1.0/report.txt:1462`) | The approved FY2026–2027 budget includes "MidWest Con – AI Investment – $50,000"; the approved FY2027 update includes "Plans Examination Artificial Intelligence Enhancement", $300,000 (capital). | City of Cincinnati budget documents; CitiCable recording of 4 May 2026 |
+| C3 | Fifth Third "has announced no reductions at all" (`README.md:48-50` and the 1.0 site) | Merger-related layoffs followed the Comerica acquisition (1 Feb 2026). Merger-attributed, not AI-attributed; none reported in Cincinnati. | Reporting identified at the design stage; Texas WARN notice not retrieved |
+| C4 | Kroger AI attribution "Partly" (`archive/v1.0/report.txt:1008`; `data/ai_adoption_employers.csv:2`) | Coded "technology named, AI not named" on the memo text as reported. "Partly" is retired. | Reporting identified at the design stage |
+| C5 | "Thirteen checks" (`README.md:147`; `VERIFICATION.md:64`); a test label calling the LM-AIOE value "observed exposure" | The 1.0 suite runs 16 checks; the label should read language-model AIOE. No number changes. | `python tests/test_study.py` |
+| C6 | Language-model exposure 0.0884 for Cincinnati and 0.0931 for the nation (`CALCULATIONS.md` section 4) | **0.0792 and 0.0948.** 1.0 joined the Felten scores by code only; they are published on 2010 occupation codes and the employment data use 2018 codes, so 20% of employment went unmatched. 2.1 carries the scores across with the BLS crosswalk (coverage 97.5%). The conclusion (average exposure) is unchanged; the gap to the nation is 0.016, not 0.005. 1.0's figures remain correct for 1.0's method and its tests still pass. | `scripts/build_industry_exposure.py`; `data/h4_exposure_peers.csv`; `tests/test_study_2_1.py::test_h4_exposure_average` |
+| C7 | "The real fragility is slow growth" (`README.md:27-32`) | Growth of 0.735% from Sept 2024 to Sept 2026 equals the nation's (0.723%) and ranks 10th of 20 against the Chamber's peers (median 0.187%). **Withdrawn.** | `data/h9_growth_peers.csv`; `test_h9_growth_not_slow` |
+| C8 | 98% of projected openings are replacements: "the most consequential number in this study" | Replacement is 96.3% to 101.3% of openings in every other Ohio metro file, 99.1% for Ohio and 96.6% nationally. Cincinnati's growth share (2.05%) exceeds six of seven other Ohio metros'. A property of the projection method. | `data/h9_projection_growth_share.csv`; `test_h9_replacement_share` |
+| C9 | The labor force shrank by about 9,400 | The LAUS fall is entirely between Sept 2025 and Sept 2026 (model-based, revised each March). ACS shows 1,215,870 (2024) and 1,235,990 (2025). Not established. | `data/cincinnati_laus_history.csv`; `data/h9_labor_force_decomposition.csv`; `test_h9_labor_force` |
+| C10 | "Cincinnati is buying AI capability rather than building it" | 57.9% of the computing-jobs gap is industry mix; 42.1% is within industries. Restated. Capability ranks: patents 16th, computing R&D 14th, awards 8th of 20. | `data/h6_shift_share.csv` and the three `h6_*` files; `test_h6_shift_share`, `test_h6_capability_ranks` |
+| C11 | Exposure rising with pay presented as a Cincinnati finding | Positive in all 33 metros and the nation; Cincinnati's gradient (1.03) is below the nation's (1.20) and below the peers' middle half. | `data/h10_wage_gradient.csv`; `test_h10_gradient_is_national` |
+| C12 | "No measurable AI-caused job losses"; the entry-level risk "hard to see in job counts" | Now tested. No narrowing of the entry door in AI-exposed industries in Cincinnati (−0.04 to +0.03, inside the chance range); young workers' hiring fell in every industry group. | `data/h1_ddd.csv`; `test_h1_cincinnati_entry_door` |
 
-The full list of 2.0 changes, with the reason for each, is completed when 2.0 is finished.
+Also noted: BLS suppresses most private-sector cells in the Cincinnati MSA-level QCEW file
+(19 of 20 sectors in 2024). 1.0's county tables were unaffected because they used county
+files.
+
+### The reviewer's objections and what 2.1 did
+
+Verdicts are from the 2.0 design memo (`RESEARCH_DESIGN_MEMO.md`, section 3).
+
+| # | Objection | Verdict | What 2.1 did |
+|---|---|---|---|
+| 1 | Title promises an effect the paper doesn't find | Partly | Title names what was tested. Key finding 1 states the result of the test, including what it could not detect |
+| 2 | Dismisses the Chamber's model output while relying on its own | Valid | Both labeled as model output; the 98% compared with other projection files (C8) |
+| 3 | Strongest material buried | Partly | "Numbers in circulation" box; corrections table on page 1 |
+| 4 | Distributional results are national patterns | Valid | Tested (C11); said plainly |
+| 5 | Rejects 2019 baselines, relies on 2022-base projections | Partly | Projections used only as labeled context; the hiring test uses observed flows |
+| 6 | Labor-force decline never decomposed | Valid | Decomposed on the ACS window (C9) |
+| 7 | Low computing LQ may be industry mix | Valid | Shift-share run as the reviewer specified (C10) |
+| 8 | 98% near-mechanical; +0.7% has no comparator | Valid | Both given comparators (C7, C8) |
+| 9 | No research question | Valid | Stated in section 1 |
+| 10 | No literature review | Valid | Section 2; every work cited was confirmed to exist |
+| 11 | Exposure band moved from 0.50 to 0.40 with no robustness check | Partly | Shares reported at 0.30, 0.40 and 0.50 |
+| 12 | Potential-versus-revealed result rests on one index | Valid | Microsoft's applicability score added as a second revealed-use measure; Eloundou et al. as a second potential measure |
+| 13 | Reproducibility is the real contribution, and buried | Partly | "How this study is checked" on page 2 |
+| 14 | Three news stories buried | Partly | "Numbers in circulation" gives each, with both ratios for the 3,203 figure |
+| 15 | The Richardson line | Valid | Name removed from the findings; role described; the recording cited in the design memo; a request for comment drafted, **not sent**; the audio still needs a human check |
+| 16 | Kroger "Partly" | Valid | One three-way rule applied to every employer (C4) |
+| 17 | Kroger and Fifth Third told in two table rows | Partly | A case box in section 8 |
+
+### What changed in method
+
+- **Comparisons, not levels.** 19 Chamber peers (P1), 25 metros by population (P2) and 10 by
+  industry structure (P3), fixed by rule before any value was computed.
+- **Pre-registration.** Hypotheses H1–H16 and their decision rules were committed before the
+  data they cover were examined. 21 deviations are listed in `PREREGISTRATION.md`.
+- **New lenses.** Awareness and participation (events, communities, search interest);
+  adoption with a register of AI agents; capability; output per worker; a full data-center
+  section.
+- **Not completed in 2.1:** WARN notices; employer presence at events; training on offer;
+  event censuses for comparison metros; the participation index. Each is stated in the report.
+- **Tests.** 24 new checks in `tests/test_study_2_1.py`. The 16 checks for 1.0 are unchanged
+  and still pass.
 
 ---
 
