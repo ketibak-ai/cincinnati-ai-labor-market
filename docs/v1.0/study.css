@@ -1,0 +1,124 @@
+  :root{
+    --bg:#FBFBF8; --surface:#FFFFFF; --surface-2:#F2F1EC;
+    --ink:#14213D; --ink-soft:#4A5568; --ink-faint:#6A7179;
+    --line:#D9DCD6; --line-soft:#E8E7E1;
+    --accent:#1F5FA8; --accent-soft:#DCE8F7; --accent-ink:#1F5FA8;
+    --warn:#B5451B; --warn-soft:#FCE9DF; --warn-ink:#8C3A10;
+    --bar-muted:#C9CCC4;
+    --maxw:860px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0E1524; --surface:#16203A; --surface-2:#1B2742;
+      --ink:#EEF3FA; --ink-soft:#AFBDD4; --ink-faint:#8795AE;
+      --line:#2A3657; --line-soft:#223052;
+      --accent:#6BA3E8; --accent-soft:#1D2E53; --accent-ink:#8FB4E3;
+      --warn:#E2794A; --warn-soft:#3A2016; --warn-ink:#F0A383;
+      --bar-muted:#46516B;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0E1524; --surface:#16203A; --surface-2:#1B2742;
+    --ink:#EEF3FA; --ink-soft:#AFBDD4; --ink-faint:#8795AE;
+    --line:#2A3657; --line-soft:#223052;
+    --accent:#6BA3E8; --accent-soft:#1D2E53; --accent-ink:#8FB4E3;
+    --warn:#E2794A; --warn-soft:#3A2016; --warn-ink:#F0A383;
+    --bar-muted:#46516B;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+    font-size:17px; line-height:1.65;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 16px}
+
+  /* ---------- masthead ---------- */
+  .masthead{background:var(--ink); color:#FBFBF8; padding:72px 0 56px; border-bottom:1px solid var(--line)}
+  :root[data-theme="dark"] .masthead,
+  .masthead{color:#FBFBF8}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .masthead{background:#111B2E} }
+  .eyebrow{font-size:13px; letter-spacing:.18em; text-transform:uppercase; font-weight:600; color:#8FB4E3; margin:0 0 20px}
+  .masthead h1{
+    font-family:'Source Serif 4',Georgia,serif; font-weight:600;
+    font-size:clamp(32px,6.2vw,54px); line-height:1.08; margin:0 0 20px; color:#FBFBF8;
+  }
+  .standfirst{font-size:clamp(17px,2.4vw,21px); line-height:1.55; color:#BFD8D5; margin:0 0 32px; max-width:62ch}
+  .meta{display:flex; flex-wrap:wrap; gap:10px 28px; font-size:14px; color:#8FB4E3; border-top:1px solid #2E4470; padding-top:24px}
+  .meta b{color:#FBFBF8; font-weight:600}
+  .actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:28px}
+  .btn{
+    display:inline-block; padding:11px 20px; border-radius:8px; text-decoration:none;
+    font-size:15px; font-weight:600; border:1px solid #2E4470; color:#FBFBF8;
+  }
+  .btn-primary{background:#1F5FA8; border-color:#1F5FA8}
+  .btn:hover{opacity:.88}
+
+  /* ---------- structure ---------- */
+  section{padding:56px 0; border-bottom:1px solid var(--line-soft)}
+  section:last-of-type{border-bottom:0}
+  h2{
+    font-family:'Source Serif 4',Georgia,serif; font-weight:600;
+    font-size:clamp(25px,4.2vw,34px); line-height:1.2; margin:0 0 8px; letter-spacing:-.01em;
+  }
+  .kicker{font-size:13px; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:var(--accent-ink); margin:0 0 14px}
+  h3{font-size:19px; font-weight:600; margin:32px 0 10px}
+  p{margin:0 0 18px; max-width:68ch}
+  .lede{font-size:clamp(18px,2.4vw,20px); line-height:1.55}
+  a{color:var(--accent-ink)}
+  strong{font-weight:600}
+
+  /* ---------- stat row ---------- */
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; margin:28px 0 8px}
+  .stat{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:24px}
+  .stat .n{font-size:40px; font-weight:700; line-height:1; color:var(--accent-ink); font-variant-numeric:tabular-nums; letter-spacing:-.02em}
+  .stat .l{font-size:15px; font-weight:600; margin:12px 0 6px}
+  .stat .d{font-size:14px; color:var(--ink-soft); line-height:1.5; margin:0}
+
+  /* ---------- callouts ---------- */
+  .note{background:var(--surface-2); border-radius:14px; padding:22px 24px; margin:26px 0; border:1px solid var(--line-soft)}
+  .note p{margin:0; max-width:none}
+  .note.warn{background:var(--warn-soft); border-color:transparent}
+  .note.warn p{color:var(--warn-ink)}
+  .note .h{font-weight:600; display:block; margin-bottom:6px}
+
+  /* ---------- tables ---------- */
+  .scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:24px 0}
+  table{border-collapse:collapse; width:100%; font-size:15px; min-width:520px}
+  caption{text-align:left; font-size:13px; color:var(--ink-faint); padding-bottom:10px; line-height:1.45}
+  th,td{padding:11px 14px; text-align:left; border-bottom:1px solid var(--line-soft)}
+  thead th{background:var(--ink); color:#FBFBF8; font-weight:600; font-size:14px; border-bottom:0}
+  thead th:first-child{border-radius:8px 0 0 0}
+  thead th:last-child{border-radius:0 8px 0 0}
+  .num{text-align:right; font-variant-numeric:tabular-nums}
+  tbody tr:nth-child(even){background:var(--surface-2)}
+  tr.hl td{background:var(--accent-soft); font-weight:600}
+  tr.alert td{background:var(--warn-soft); color:var(--warn-ink)}
+  .pos{color:var(--accent-ink)} .neg{color:var(--warn)}
+
+  /* ---------- figure ---------- */
+  figure{margin:28px 0 24px}
+  figure svg{display:block; width:100%; height:auto}
+  figcaption{font-size:13px; color:var(--ink-faint); line-height:1.5; margin-top:12px}
+
+  /* ---------- claims list ---------- */
+  .claims{list-style:none; padding:0; margin:22px 0; display:grid; gap:12px}
+  .claims li{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--warn); border-radius:10px; padding:16px 18px; font-size:15px; line-height:1.55}
+  .claims b{display:block; margin-bottom:4px}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--surface-2); padding:48px 0 64px; font-size:14px; color:var(--ink-soft)}
+  footer h2{font-size:20px; margin-bottom:16px}
+  footer ul{margin:0 0 20px; padding-left:20px}
+  footer li{margin-bottom:7px}
+  .byline-edit{font-size:13px; color:var(--ink-faint); border-top:1px solid var(--line); padding-top:18px; margin-top:26px}
+
+  @media (max-width:560px){
+    body{font-size:16px}
+    .masthead{padding:48px 0 40px}
+    section{padding:40px 0}
+    .stat{padding:20px}
+    .stat .n{font-size:34px}
+  }
