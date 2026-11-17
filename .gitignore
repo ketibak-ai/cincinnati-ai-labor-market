@@ -40,3 +40,7 @@ raw/herd/
 
 # Raw platform responses and saved web pages for the awareness lens (not redistributed)
 raw/awareness/
+
+# Abandoned metro-level QCEW download (2.1 uses county files instead; see PREREGISTRATION.md D1).
+# Kept out of the repository; not read by any script.
+raw/qcew_msa/
