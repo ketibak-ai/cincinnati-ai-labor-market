@@ -382,7 +382,7 @@ mentions).
 > I can include a short statement from you if you wish.
 >
 > Thank you,
-> KetiB, [AFFILIATION]
+> Keti Bakiri
 
 ### 9.4 Newer AEI release or projections round?
 

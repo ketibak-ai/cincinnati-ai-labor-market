@@ -10,7 +10,7 @@ Charts are in `docs/figures/`.
 
 **Cincinnati AI Labor Market 2.1**
 Early evidence on awareness, adoption, hiring and investment in Greater Cincinnati
-[KetiB, AFFILIATION] · November 2026
+Keti Bakiri · Draft work, November 2026
 
 *Notes.* This is the second published version of an independent study. The first asked how AI
 is affecting the region's labor market and could not really answer, because it had nothing to

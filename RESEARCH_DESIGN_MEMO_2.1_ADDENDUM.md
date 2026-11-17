@@ -216,7 +216,7 @@ are comparable. It needs your approval to send. Draft:
 > in the report.
 >
 > Thank you,
-> KetiB, [AFFILIATION]
+> Keti Bakiri
 
 **9. Private platforms as sources.** The study has used government data wherever possible.
 This lens cannot: Google Trends, Eventbrite, Luma, Meetup and organizers' own pages are all

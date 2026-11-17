@@ -1,6 +1,6 @@
 # Cincinnati AI Labor Market 2.1: Early Evidence on Awareness, Adoption, Hiring and Investment in Greater Cincinnati
 
-**[KetiB, AFFILIATION]** · Published 17 November 2026
+**Keti Bakiri** · Draft work, 17 November 2026
 
 *An independent study. It follows the format of a metropolitan policy report and has no
 affiliation with any research institution. Version 2.0 was an unpublished design stage; this

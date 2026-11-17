@@ -17,7 +17,7 @@ wages May 2025; projections 2022–2032; job postings collected 30 October 2026.
 
 ---
 
-## Version 2.1 (published 17 November 2026)
+## Version 2.1 (draft work, 17 November 2026)
 
 **Cincinnati AI Labor Market 2.1: Early Evidence on Awareness, Adoption, Hiring and Investment
 in Greater Cincinnati.**
