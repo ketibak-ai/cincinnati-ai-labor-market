@@ -1,6 +1,6 @@
 # Cincinnati AI Labor Market 2.1: Early Evidence on Awareness, Adoption, Hiring and Investment in Greater Cincinnati
 
-**[KetiB, AFFILIATION]** · Draft of 16 November 2026 · Not yet published
+**[KetiB, AFFILIATION]** · Published 17 November 2026
 
 *An independent study. It follows the format of a metropolitan policy report and has no
 affiliation with any research institution. Version 2.0 was an unpublished design stage; this
@@ -479,8 +479,8 @@ not.
 ### Two employers, two paths
 
 Kroger announced about 3,000 corporate job cuts in October 2026. Its memo, as reported, says
-technology "is reshaping what's possible" and does not name AI. In the same autumn it
-described AI tools in use by up to 150,000 staff. Fifth Third reports that nearly a third of
+technology "is reshaping what's possible" and does not name AI. Earlier that year a Kroger
+executive said its staff AI assistant was in use by up to 150,000 associates. Fifth Third reports that nearly a third of
 its new code is AI-generated and has attributed no job cut to AI; its chief executive has said
 clients tell him AI is not what is driving their productivity gains. Two of the region's
 largest employers use AI heavily. One is cutting corporate jobs and one is not, and neither
@@ -635,8 +635,8 @@ fallen.
 limited by the ability to build energy, housing and public capacity. The region's record here
 is cautious: 250 MW contracted against thousands around Columbus, and local moratoria and
 zoning controls. That caution has a cost in investment and a benefit in avoided risk to
-ratepayers. The prompt for this study asked for Klein's writing on AI's risks to workers and
-institutions; no specific piece was confirmed, so none is cited.
+ratepayers. Klein has also discussed AI's risks to workers and to institutions; no specific
+piece was confirmed for this report, so none is cited.
 
 **The exponential gap (Azeem Azhar).** Azhar argues that technology improves faster than
 institutions adapt. The region gives one clean example: every large public company named AI in

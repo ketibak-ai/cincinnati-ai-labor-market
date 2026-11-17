@@ -17,10 +17,14 @@ wages May 2025; projections 2022–2032; job postings collected 30 October 2026.
 
 ---
 
-## Version 2.1 (16 November 2026, draft, not yet published)
+## Version 2.1 (published 17 November 2026)
 
 **Cincinnati AI Labor Market 2.1: Early Evidence on Awareness, Adoption, Hiring and Investment
-in Greater Cincinnati.** The full report is [`REPORT_2.1.md`](REPORT_2.1.md).
+in Greater Cincinnati.**
+
+- Report: [editable doc](https://claude.ai/artifact/HmTGiep1fUHFH2EgoZnysg) · [web page](https://ketibak-ai.github.io/cincinnati-ai-labor-market/) · [`REPORT_2.1.md`](REPORT_2.1.md)
+- Presentation, with speaker notes: [slides](https://claude.ai/artifact/52uT1dxWPsjeDuVzvFSyJP) · outline in [`DECK_2.1.md`](DECK_2.1.md)
+- Version 1.0 stays available: [archived site](https://ketibak-ai.github.io/cincinnati-ai-labor-market/v1.0/index.html) · [all versions](https://ketibak-ai.github.io/cincinnati-ai-labor-market/archive.html)
 
 2.1 re-tests version 1.0's claims by comparison with other metros, with the tests written down
 before the data were examined ([`PREREGISTRATION.md`](PREREGISTRATION.md)). It adds two things

@@ -1,6 +1,6 @@
 # Cincinnati AI Labor Market 2.1 — presentation
 
-**Status: outline with speaker notes, ready to build into slides on approval. Not published.**
+**Status: published as slides, 17 November 2026: https://claude.ai/artifact/52uT1dxWPsjeDuVzvFSyJP. This file is the outline the slides were built from.**
 18 slides, about 20 minutes. Every number is from `REPORT_2.1.md` and is covered by a test.
 Charts are in `docs/figures/`.
 

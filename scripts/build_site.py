@@ -148,7 +148,7 @@ arch = """<h1>All versions</h1>
 <p>Each version stays reachable as it was published. Later versions correct earlier ones; the corrections are listed in the
 <a href="%s/blob/main/AUDIT.md">audit log</a>.</p>
 <div class="tw"><table><thead><tr><th>Version</th><th>Date</th><th>What it is</th></tr></thead><tbody>
-<tr><td><a href="index.html">2.1</a></td><td>November 2026</td><td>Re-tests 1.0 against peer metros with pre-registered tests. Adds AI awareness and participation,
+<tr><td><a href="index.html">2.1</a> (<a href="https://claude.ai/artifact/HmTGiep1fUHFH2EgoZnysg">editable doc</a>, <a href="https://claude.ai/artifact/52uT1dxWPsjeDuVzvFSyJP">slides</a>)</td><td>17 November 2026</td><td>Re-tests 1.0 against peer metros with pre-registered tests. Adds AI awareness and participation,
 a register of AI agents at large employers, capability measures and a full data-center section.</td></tr>
 <tr><td>2.0</td><td>13 November 2026</td><td>Design stage only: a research design memo and pre-registration. Never published as a report.</td></tr>
 <tr><td><a href="v1.0/index.html">1.0</a></td><td>November 2026</td><td>The first published study. Kept unchanged.
